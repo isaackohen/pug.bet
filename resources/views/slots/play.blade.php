@@ -5,7 +5,11 @@
                     <iframe src="<?php echo $url; ?>" style="min-height: 100%; border: none !important;" border="0"></iframe>
                 </div>
             </div>
+@livewire('latestgames', ['rowlength' => '5'])
+
         </div>
+
+
     <style>
     #balance-id {
         display: none;

@@ -4,6 +4,14 @@
   http://jedwatson.github.io/classnames
 */
 
+/*!
+ * Pusher JavaScript Library v7.0.3
+ * https://pusher.com/
+ *
+ * Copyright 2020, Pusher
+ * Released under the MIT licence.
+ */
+
 /*! ../../internals/path */
 
 /*! ../../modules/es.array.from */

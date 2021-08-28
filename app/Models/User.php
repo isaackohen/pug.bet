@@ -13,6 +13,7 @@ use Laravel\Sanctum\HasApiTokens;
 use Jenssegers\Mongodb\Eloquent\Model as Eloquent;
 use MongoDB\BSON\Decimal128;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 class User extends Authenticatable
 {
@@ -65,78 +66,14 @@ class User extends Authenticatable
      * The accessors to append to the model's array form.
      *
      * @var array
-     */
     protected $appends = [
         'profile_photo_url',
     ];
+     */
 
 
-    public function getBalance(Request $request)
-    {
-        $playerId = $request['playerid'];
-        $currency = $request['currency'];
-        $user = \App\Models\User::where('_id', $playerId)->first();
-                $balancenumber = number_format($user->usd * 100, 0, '.', '');
-
-                return response()->json([
-                    'status' => 'ok',
-                    'result' => ([
-                        'balance' => $balancenumber,
-                        'freegames' => 0
-                    ])
-                ]);
-
-    }
-
-
-    public function bet(Request $request)
-     {
-        $playerId = $request['playerid'];
-        $currency = $request['currency'];
-        $user = \App\Models\User::where('_id', $playerId)->first();
-        $gameid = $request['gameid'];
-        $bet = $request['bet'];
-        $win = $request['win'];
-        $roundid = $request['roundid'];
-        $final = $request['final'];
-
-        $gamestatus = 'game';      
-        if($final === '1') {
-            $gamestatus = 'game_final';
-        }
-
-        if($bet > 0 ){
-            $user->subtract(round($bet / 100, 2), 'usd', $gamestatus, array("game" => $gameid, "round" => $roundid));
-        }
-
-        if($win > 0) {
-            $user->add(round($win / 100, 2), 'usd', $gamestatus, array("game" => $gameid, "round" => $roundid));
-        }
-
-        if($final === '1') {
-        $getwager = BalanceLog::where('internal', '=', $roundid)->where('subtract', '>', '0')->first() ?? 0;
-        $getwager = $getwager['subtract'];
-        GameHistory::create([
-            'u' => $playerId,
-            'win' => $win,
-            'bet' => $getwager,
-            'gameid' => $gameid,
-            'curr' => $currency,
-            'meta' => null
-        ]);
-        }
-
-        return response()->json([
-            'status' => 'ok',
-            'result' => ([
-                'balance' => number_format($user->balance() * 100, 0, '.', ''),
-                'freegames' => 0
-            ])
-        ]);
-    }
-
-
-    public function add(float $amount, $type, $reason, array $data = null) {
+    public function add(float $amount, $type, $reason, $internal = null, array $data = null) {
+        $decode = json_decode($internal, true);
         $balance = $this->balance();
         $this->update([
             $type => floatval(number_format($balance + $amount, 2, '.', ''))
@@ -150,14 +87,16 @@ class User extends Authenticatable
             'bal' => $this->balance(),
             'curr' => $type,
             'meta' => $reason,
-            'data' => $data ?? []
+            'internal' => $decode['round'] ?? 0,
+            'data' => $internal ?? []
         ]);
 
     }
 
-    public function subtract(float $amount, $type, $reason, array $data = null) {
+    public function subtract(float $amount, $type, $reason, $internal = null, array $data = null) {
         $balance = $this->balance();
         $value = $this->balance() - $amount;
+        $decode = json_decode($internal, true);
         if($value < 0) $value = 0;
         $this->update([
             $type => floatval(number_format($value, 2, '.', ''))
@@ -170,10 +109,16 @@ class User extends Authenticatable
             'bal' => $this->balance(),
             'curr' => $type,
             'meta' => $reason,
-            'data' => $data ?? []
+            'internal' => $decode['round'] ?? 0,
+            'data' => $internal ?? []
         ]);
 
 
+    } 
+
+    public static function findUsername($id) {
+        $user = \App\Models\User::where('_id', $id)->first();
+        return $user->name;
     }
 
     public function balance(): float {

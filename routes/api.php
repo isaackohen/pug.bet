@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Models\User;
+use App\Http\Controllers\GameController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,7 +22,8 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 
 
+Route::any('callback/apigamble/payment', 'App\Http\Controllers\PaymentController@callback')->name('payment.callback');
 
 
-Route::any('callback/apigamble/slots/balance', 'App\Models\User@getBalance')->name('slots.getBalance');
-Route::any('callback/apigamble/slots/bet', 'App\Models\User@bet')->name('slots.bet');
+Route::any('callback/apigamble/slots/balance', 'App\Http\Controllers\GameController@getBalance')->name('slots.getBalance');
+Route::any('callback/apigamble/slots/bet', 'App\Http\Controllers\GameController@bet')->name('slots.bet');

@@ -39,7 +39,7 @@
 
     <div class="p-6 border-t border-gray-200 md:border-t-0 md:border-l">
         <div class="flex items-center">
-            <i style="font-size: 1.4rem;" class="fas fa-football-helmet text-blue-600 shadow-inner shadow-md"></i>
+            <i style="font-size: 1.4rem;" class="fak fa-777 text-blue-600"></i>
             <div class="ml-4 text-lg text-gray-700 leading-7 font-semibold"><a href="/slots">Slots</a></div>
         </div>
 
@@ -62,7 +62,7 @@
 
     <div class="p-6 border-t border-gray-200 md:border-t-0 md:border-l rounded-bl-xl">
         <div class="flex items-center">
-            <i style="font-size: 1.4rem;" class="fas fa-football-helmet text-blue-600 shadow-inner shadow-md"></i>
+            <i style="font-size: 1.4rem;" class="fak fa-cards text-blue-600"></i>
             <div class="ml-4 text-lg text-gray-700 leading-7 font-semibold"><a href="/poker">Poker</a></div>
         </div>
 
@@ -85,7 +85,7 @@
 
     <div class="p-6 border-t border-gray-200 md:border-t-0 md:border-l rounded-br-xl">
         <div class="flex items-center">
-            <i style="font-size: 1.4rem;" class="fas fa-football-helmet text-blue-600 shadow-inner shadow-md"></i>
+            <i style="font-size: 1.4rem;" class="fas fa-camera-polaroid text-blue-600 shadow-inner shadow-md"></i>
             <div class="ml-4 text-lg text-gray-700 leading-7 font-semibold"><a href="/livecasino">Live Casino</a></div>
         </div>
 

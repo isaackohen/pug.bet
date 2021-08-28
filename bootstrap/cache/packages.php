@@ -101,6 +101,17 @@
       'LivewireFlash' => 'MattLibera\\LivewireFlash\\LivewireFlash',
     ),
   ),
+  'mckenziearts/laravel-notify' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Mckenziearts\\Notify\\LaravelNotifyServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Notify' => 'Mckenziearts\\Notify\\Facades\\LaravelNotify',
+    ),
+  ),
   'mostafamaklad/laravel-permission-mongodb' => 
   array (
     'providers' => 

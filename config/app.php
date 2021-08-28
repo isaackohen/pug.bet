@@ -163,7 +163,7 @@ return [
         Illuminate\View\ViewServiceProvider::class,
         Jenssegers\Mongodb\MongodbServiceProvider::class,
         Arcanedev\LogViewer\LogViewerServiceProvider::class,
-
+        Mckenziearts\Notify\LaravelNotifyServiceProvider::class,
         /*
          * Package Service Providers...
          */

@@ -42,5 +42,7 @@
             </div>
             @endforeach
         </div>
-    </div>
+
+                                @livewire('latestgames')
+
     </x-app-layout>

@@ -7,8 +7,7 @@
         <title>{{ config('app.name', 'Gamble') }}</title>
         <link rel="icon" type="image/png" href="/img/pug-icon.png">
         <!-- Fontawesome !-->
-        <script src="https://kit.fontawesome.com/23f13eab24.js" crossorigin="anonymous"></script>
-        
+<script src="https://kit.fontawesome.com/23f13eab24.js" crossorigin="anonymous"></script>        
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap">
 
@@ -19,7 +18,6 @@
 
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
-        
     </head>
     <body class="font-body antialiased">
         <x-jet-banner />
@@ -47,5 +45,6 @@
         @stack('modals')
 
         @livewireScripts
+        <x:notify-messages />
     </body>
 </html>

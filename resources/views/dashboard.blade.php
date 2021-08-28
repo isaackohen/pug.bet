@@ -12,4 +12,9 @@
             </div>
         </div>
     </div>
+
+
+@livewire('latestgames', ['rowlength' => '10'])
+</body>
+
 </x-app-layout>

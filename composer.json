@@ -16,8 +16,10 @@
         "laravel/tinker": "^2.5",
         "livewire/livewire": "^2.5",
         "mattlibera/livewire-flash": "^0.5.1",
+        "mckenziearts/laravel-notify": "^2.2",
         "mostafamaklad/laravel-permission-mongodb": "^3.1",
-        "predis/predis": "^1.1"
+        "predis/predis": "^1.1",
+        "pusher/pusher-php-server": "^7.0"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
