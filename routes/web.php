@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Livewire\Slots;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -35,10 +36,27 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 
+Route::middleware(['auth:sanctum', 'verified'])->get('/livecasino', function () {
+    $slotslist = DB::table('slotslist')->where('p', '=', 'upgames')->get();
+    return view('livewire.livecasino', ['slots' => $slotslist]);
+})->name('livecasino');
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/payment/paydash/{orderid}', function ($orderid) {
+
+    $redirectURL = "https://paydash.co.uk/checkout/" . $orderid;
+
+    return view('livewire/paydash-orderpage', ['url' => $redirectURL]);
+})->name('paydash-orderpage');
+
+
+
 Route::middleware(['auth:sanctum', 'verified'])->get('/slots', function () {
     $slotslist = DB::table('slotslist')->get();
     return view('slots/slotslist', ['slots' => $slotslist]);
 })->name('slots');
+
+
+
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/slots/demo/{game}', function ($game) { 
     $apigamble_apikey = 'F158EA0AFC6CFC5F91E29790BBC6FCC0';
@@ -52,9 +70,15 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/slots/demo/{game}', funct
     return view('slots/play')->with('id_game', $game)->with('name_game', $filter)->with('url', $url);           
 })->name('slots.demo');
 
+Route::middleware(['auth:sanctum', 'verified'])->get('/poker', function () { 
+
+    return view('poker-page');           
+})->name('poker');
+
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/slots/real/{game}', function ($game) { 
     $currency = 'usd';
+    if(auth()->user()->balance() === '0') { redirect('slots.demo');};
     $playerid = auth()->user()->_id;
     $apigamble_apikey = 'F158EA0AFC6CFC5F91E29790BBC6FCC0';
     $construct = 'https://apigamble.com/api/slots/createSession/'.$apigamble_apikey.'/'.$playerid.'-'.$currency.'/'.$game.'/usd';

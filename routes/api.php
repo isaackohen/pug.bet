@@ -21,6 +21,12 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 
+/* Route::middleware(['web', 'fortify'])->group(function () {
+	Route::post('token', 'App\Http\Controllers\UserController@token')->middleware('fortify');
+}); */
+
+Route::any('callback/poker', 'App\Http\Controllers\GameController@pokerCallback')->name('poker.callback');
+
 
 Route::any('callback/apigamble/payment', 'App\Http\Controllers\PaymentController@callback')->name('payment.callback');
 

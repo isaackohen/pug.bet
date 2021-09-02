@@ -3,7 +3,7 @@
         
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="inline-block min-w-full shadow rounded-lg overflow-hidden">
-                <table class="min-w-full leading-normal">
+                <table class="min-w-full leading-normal livefeed">
                     <thead>
                         <tr>
                             <th

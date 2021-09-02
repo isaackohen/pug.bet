@@ -14,17 +14,17 @@
     <div
       data-modal="balance-modal"
       class="invisible opacity-0 fixed inset-0 w-full h-full z-20 outline-none overflow-x-hidden overflow-y-auto transition-all"
-      style="transition-duration: 500ms;"
+      style="transition-duration: 200ms;"
      >
       <div
         data-modal-toggle="balance-modal"
         data-modal-action="close"
-        class="fixed inset-0 w-full h-full bg-black bg-opacity-50"
+        class="fixed inset-0 w-full h-full bg-black bg-opacity-70"
       ></div>
       <div
         data-modal-main="balance-modal"
-        class="modal relative w-auto my-8 mx-4 pointer-events-none transition-all duration-300 transform -translate-y-full">
-        <div class="relative shadow-lg rounded-md w-full pointer-events-auto bg-white text-gray-800 max-w-screen-sm mx-auto">
+        class="modal relative w-auto my-8 mx-4 pointer-events-none transition-all duration-200 transform -translate-y-full">
+        <div class="relative shadow-lg rounded-md w-full pointer-events-auto bg-white text-gray-800 max-w-screen-lg mx-auto">
           <header class="flex flex-wrap p-1">
         <button class="text-gray-600 py-2 px-4 block hover:text-blue-500 focus:outline-none text-blue-500 border-b-2 font-medium border-blue-500">
             Deposit
@@ -38,7 +38,9 @@
           <main class="p-2 text-center">
             <p>
               @auth
-                <p></p>
+                <p>                        @livewire('payment-deposit-apipurse')</p> 
+                                <p>                        @livewire('paydash')</p> 
+
               @else
                 <p>You need to be logged in to deposit or withdraw.</p>
               @endauth

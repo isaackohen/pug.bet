@@ -4,6 +4,15 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
+		<script>
+		window.Laravel = {!! 
+				json_encode([
+					'csrfToken' => csrf_token(),
+					'userId' => auth()->guest() ? null : auth()->user()->id,
+					'application' => config('app.name')
+				]) 
+		!!};
+        </script>
         <title>{{ config('app.name', 'Gamble') }}</title>
         <link rel="icon" type="image/png" href="/img/pug-icon.png">
         <!-- Fontawesome !-->
@@ -22,13 +31,13 @@
     <body class="font-body antialiased">
         <x-jet-banner />
 
-        <div class="bg-gray-100 mt-2" style="min-height: calc(100vh - 125px);">
+        <div class="bg-gray-100" style="min-height: calc(100vh - 125px);">
             @livewire('navigation-menu')
 
             <!-- Page Heading -->
             @auth
                 <header class="font-header">
-                    <div class="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
+                    <div id="second-header" class="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
                         @livewire('balance')
                     </div>
                 </header>
@@ -38,6 +47,7 @@
             <main>
                 {{ $slot }}
             </main>
+ 
 
         </div>
         @livewire('footer')

@@ -1,0 +1,320 @@
+[1m[22m
+[1mL A R A V E L  E C H O  S E R V E R[22m
+[1m[22m
+[36mversion 1.6.2[39m
+[36m[39m
+[33m⚠ Starting server in DEV mode...[39m
+[33m[39m
+[32m✔ [39m Running at localhost on port 6001
+[32m✔ [39m Channels are ready.
+[32m✔ [39m Listening for http events...
+[32m✔ [39m Listening for redis events...
+[36m[39m
+[36mServer ready![39m
+[36m[39m
+[36m[11:54:52 PM] - wLDkorIO1w0QHAsoAAAA joined channel: pug_database_Everyone[39m
+[31m[11:54:53 PM] - Preparing authentication request to: https://pug.bet[39m
+[36m[11:54:53 PM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[36m[11:54:53 PM] - wLDkorIO1w0QHAsoAAAA authenticated for: pug_database_private-App.User.61269277634a4632033cddd5[39m
+[36m[11:54:53 PM] - wLDkorIO1w0QHAsoAAAA joined channel: pug_database_private-App.User.61269277634a4632033cddd5[39m
+[36m[11:54:54 PM] - GD4GWkzhqxxO6y-MAAAB joined channel: pug_database_Everyone[39m
+[31m[11:54:54 PM] - Preparing authentication request to: https://pug.bet[39m
+[36m[11:54:54 PM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[36m[11:54:54 PM] - GD4GWkzhqxxO6y-MAAAB authenticated for: pug_database_private-App.User.61269277634a4632033cddd5[39m
+[36m[11:54:54 PM] - GD4GWkzhqxxO6y-MAAAB joined channel: pug_database_private-App.User.61269277634a4632033cddd5[39m
+[36m[11:54:55 PM] - YAz92Br0RG69qExpAAAC joined channel: pug_database_Everyone[39m
+[31m[11:54:56 PM] - Preparing authentication request to: https://pug.bet[39m
+[36m[11:54:56 PM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[36m[11:54:56 PM] - YAz92Br0RG69qExpAAAC authenticated for: pug_database_private-App.User.612c190277446508032a2965[39m
+[36m[11:54:56 PM] - YAz92Br0RG69qExpAAAC joined channel: pug_database_private-App.User.612c190277446508032a2965[39m
+[36m[11:54:56 PM] - mUC8Cge8pk38nNIBAAAD joined channel: pug_database_Everyone[39m
+[31m[11:54:56 PM] - Preparing authentication request to: https://pug.bet[39m
+[36m[11:54:56 PM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[36m[11:54:56 PM] - mUC8Cge8pk38nNIBAAAD authenticated for: pug_database_private-App.User.612c190277446508032a2965[39m
+[36m[11:54:56 PM] - mUC8Cge8pk38nNIBAAAD joined channel: pug_database_private-App.User.612c190277446508032a2965[39m
+[36m[11:54:56 PM] - kLMJ-5NIRhY7ykfRAAAE joined channel: pug_database_Everyone[39m
+[31m[11:54:57 PM] - Preparing authentication request to: https://pug.bet[39m
+[36m[11:54:57 PM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[36m[11:54:57 PM] - kLMJ-5NIRhY7ykfRAAAE authenticated for: pug_database_private-App.User.61269277634a4632033cddd5[39m
+[36m[11:54:57 PM] - kLMJ-5NIRhY7ykfRAAAE joined channel: pug_database_private-App.User.61269277634a4632033cddd5[39m
+[36m[11:54:57 PM] - AOkpCGjLXYT7mDCcAAAF joined channel: pug_database_Everyone[39m
+[31m[11:54:57 PM] - Preparing authentication request to: https://pug.bet[39m
+[36m[11:54:57 PM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[36m[11:54:57 PM] - AOkpCGjLXYT7mDCcAAAF authenticated for: pug_database_private-App.User.612c190277446508032a2965[39m
+[36m[11:54:57 PM] - AOkpCGjLXYT7mDCcAAAF joined channel: pug_database_private-App.User.612c190277446508032a2965[39m
+[36mChannel: pug_database_private-App.User.612c190277446508032a2965[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: pug_database_private-App.User.612c190277446508032a2965[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: pug_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36m[11:55:26 PM] - mUC8Cge8pk38nNIBAAAD left channel: pug_database_Everyone (ping timeout)[39m
+[36m[11:55:26 PM] - mUC8Cge8pk38nNIBAAAD left channel: pug_database_private-App.User.612c190277446508032a2965 (ping timeout)[39m
+[36m[11:57:25 PM] - wLDkorIO1w0QHAsoAAAA left channel: pug_database_Everyone (transport close)[39m
+[36m[11:57:25 PM] - wLDkorIO1w0QHAsoAAAA left channel: pug_database_private-App.User.61269277634a4632033cddd5 (transport close)[39m
+[36m[11:58:43 PM] - GD4GWkzhqxxO6y-MAAAB left channel: pug_database_Everyone (transport close)[39m
+[36m[11:58:43 PM] - GD4GWkzhqxxO6y-MAAAB left channel: pug_database_private-App.User.61269277634a4632033cddd5 (transport close)[39m
+[36m[11:58:43 PM] - 238EKpzdQTdthp-_AAAG joined channel: pug_database_Everyone[39m
+[31m[11:58:44 PM] - Preparing authentication request to: https://pug.bet[39m
+[36m[11:58:44 PM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[36m[11:58:44 PM] - 238EKpzdQTdthp-_AAAG authenticated for: pug_database_private-App.User.61269277634a4632033cddd5[39m
+[36m[11:58:44 PM] - 238EKpzdQTdthp-_AAAG joined channel: pug_database_private-App.User.61269277634a4632033cddd5[39m
+[36m[11:58:46 PM] - 238EKpzdQTdthp-_AAAG left channel: pug_database_Everyone (transport close)[39m
+[36m[11:58:46 PM] - 238EKpzdQTdthp-_AAAG left channel: pug_database_private-App.User.61269277634a4632033cddd5 (transport close)[39m
+[36m[11:58:47 PM] - LVGhw9Xgl7D3Oe0vAAAH joined channel: pug_database_Everyone[39m
+[31m[11:58:47 PM] - Preparing authentication request to: https://pug.bet[39m
+[36m[11:58:47 PM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[36m[11:58:47 PM] - LVGhw9Xgl7D3Oe0vAAAH authenticated for: pug_database_private-App.User.61269277634a4632033cddd5[39m
+[36m[11:58:47 PM] - LVGhw9Xgl7D3Oe0vAAAH joined channel: pug_database_private-App.User.61269277634a4632033cddd5[39m
+[36m[11:59:16 PM] - p0kinY2p6ks2gkAFAAAI joined channel: pug_database_Everyone[39m
+[31m[11:59:16 PM] - Preparing authentication request to: https://pug.bet[39m
+[36m[11:59:16 PM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[36m[11:59:16 PM] - p0kinY2p6ks2gkAFAAAI authenticated for: pug_database_private-App.User.612c190277446508032a2965[39m
+[36m[11:59:16 PM] - p0kinY2p6ks2gkAFAAAI joined channel: pug_database_private-App.User.612c190277446508032a2965[39m
+[36m[11:59:16 PM] - 1i3DKcNO1qOOb7EmAAAJ joined channel: pug_database_Everyone[39m
+[31m[11:59:17 PM] - Preparing authentication request to: https://pug.bet[39m
+[36m[11:59:17 PM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[36m[11:59:17 PM] - 1i3DKcNO1qOOb7EmAAAJ authenticated for: pug_database_private-App.User.612c190277446508032a2965[39m
+[36m[11:59:17 PM] - 1i3DKcNO1qOOb7EmAAAJ joined channel: pug_database_private-App.User.612c190277446508032a2965[39m
+[36m[11:59:18 PM] - AOkpCGjLXYT7mDCcAAAF left channel: pug_database_Everyone (ping timeout)[39m
+[36m[11:59:18 PM] - AOkpCGjLXYT7mDCcAAAF left channel: pug_database_private-App.User.612c190277446508032a2965 (ping timeout)[39m
+[36m[11:59:19 PM] - YAz92Br0RG69qExpAAAC left channel: pug_database_Everyone (ping timeout)[39m
+[36m[11:59:19 PM] - YAz92Br0RG69qExpAAAC left channel: pug_database_private-App.User.612c190277446508032a2965 (ping timeout)[39m
+[36m[11:59:40 PM] - n39aNarcJh6lwMmyAAAK joined channel: pug_database_Everyone[39m
+[31m[11:59:40 PM] - Preparing authentication request to: https://pug.bet[39m
+[36m[11:59:40 PM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[36m[11:59:40 PM] - n39aNarcJh6lwMmyAAAK authenticated for: pug_database_private-App.User.61269277634a4632033cddd5[39m
+[36m[11:59:40 PM] - n39aNarcJh6lwMmyAAAK joined channel: pug_database_private-App.User.61269277634a4632033cddd5[39m
+[36m[11:59:42 PM] - LVGhw9Xgl7D3Oe0vAAAH left channel: pug_database_Everyone (ping timeout)[39m
+[36m[11:59:42 PM] - LVGhw9Xgl7D3Oe0vAAAH left channel: pug_database_private-App.User.61269277634a4632033cddd5 (ping timeout)[39m
+[36m[11:59:44 PM] - lNDhTU99ykEbBLLIAAAL joined channel: pug_database_Everyone[39m
+[36m[11:59:44 PM] - YwTuPuaH2ripARF8AAAM joined channel: pug_database_Everyone[39m
+[31m[11:59:44 PM] - Preparing authentication request to: https://pug.bet[39m
+[36m[11:59:44 PM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[36m[11:59:44 PM] - lNDhTU99ykEbBLLIAAAL authenticated for: pug_database_private-App.User.612c190277446508032a2965[39m
+[36m[11:59:44 PM] - lNDhTU99ykEbBLLIAAAL joined channel: pug_database_private-App.User.612c190277446508032a2965[39m
+[31m[11:59:44 PM] - Preparing authentication request to: https://pug.bet[39m
+[36m[11:59:44 PM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[36m[11:59:44 PM] - YwTuPuaH2ripARF8AAAM authenticated for: pug_database_private-App.User.612c190277446508032a2965[39m
+[36m[11:59:44 PM] - YwTuPuaH2ripARF8AAAM joined channel: pug_database_private-App.User.612c190277446508032a2965[39m
+[36m[11:59:47 PM] - p0kinY2p6ks2gkAFAAAI left channel: pug_database_Everyone (ping timeout)[39m
+[36m[11:59:47 PM] - p0kinY2p6ks2gkAFAAAI left channel: pug_database_private-App.User.612c190277446508032a2965 (ping timeout)[39m
+[36m[11:59:47 PM] - 1i3DKcNO1qOOb7EmAAAJ left channel: pug_database_Everyone (ping timeout)[39m
+[36m[11:59:47 PM] - 1i3DKcNO1qOOb7EmAAAJ left channel: pug_database_private-App.User.612c190277446508032a2965 (ping timeout)[39m
+[36m[12:01:08 AM] - kLMJ-5NIRhY7ykfRAAAE left channel: pug_database_Everyone (transport close)[39m
+[36m[12:01:08 AM] - kLMJ-5NIRhY7ykfRAAAE left channel: pug_database_private-App.User.61269277634a4632033cddd5 (transport close)[39m
+[36m[12:01:09 AM] - YZzv5k_fTUMxoYiDAAAN joined channel: pug_database_Everyone[39m
+[31m[12:01:09 AM] - Preparing authentication request to: https://pug.bet[39m
+[36m[12:01:09 AM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[36m[12:01:09 AM] - YZzv5k_fTUMxoYiDAAAN authenticated for: pug_database_private-App.User.61269277634a4632033cddd5[39m
+[36m[12:01:09 AM] - YZzv5k_fTUMxoYiDAAAN joined channel: pug_database_private-App.User.61269277634a4632033cddd5[39m
+[36mChannel: pug_database_private-App.User.61269277634a4632033cddd5[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: pug_database_private-App.User.61269277634a4632033cddd5[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: pug_database_private-App.User.61269277634a4632033cddd5[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: pug_database_private-App.User.61269277634a4632033cddd5[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: pug_database_private-App.User.61269277634a4632033cddd5[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: pug_database_private-App.User.61269277634a4632033cddd5[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: pug_database_private-App.User.61269277634a4632033cddd5[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: pug_database_private-App.User.61269277634a4632033cddd5[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: pug_database_private-App.User.61269277634a4632033cddd5[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: pug_database_private-App.User.61269277634a4632033cddd5[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: pug_database_private-App.User.61269277634a4632033cddd5[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: pug_database_private-App.User.61269277634a4632033cddd5[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: pug_database_private-App.User.61269277634a4632033cddd5[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36m[12:02:32 AM] - YZzv5k_fTUMxoYiDAAAN left channel: pug_database_Everyone (transport close)[39m
+[36m[12:02:32 AM] - YZzv5k_fTUMxoYiDAAAN left channel: pug_database_private-App.User.61269277634a4632033cddd5 (transport close)[39m
+[36m[12:02:33 AM] - CrUpFUx9v1rt4V3FAAAO joined channel: pug_database_Everyone[39m
+[31m[12:02:33 AM] - Preparing authentication request to: https://pug.bet[39m
+[36m[12:02:33 AM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[36m[12:02:33 AM] - CrUpFUx9v1rt4V3FAAAO authenticated for: pug_database_private-App.User.61269277634a4632033cddd5[39m
+[36m[12:02:33 AM] - CrUpFUx9v1rt4V3FAAAO joined channel: pug_database_private-App.User.61269277634a4632033cddd5[39m
+[36mChannel: pug_database_private-App.User.61269277634a4632033cddd5[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: pug_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: pug_database_private-App.User.61269277634a4632033cddd5[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: pug_database_private-App.User.61269277634a4632033cddd5[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: pug_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: pug_database_private-App.User.61269277634a4632033cddd5[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: pug_database_private-App.User.61269277634a4632033cddd5[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: pug_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: pug_database_private-App.User.61269277634a4632033cddd5[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: pug_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: pug_database_private-App.User.61269277634a4632033cddd5[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: pug_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: pug_database_private-App.User.61269277634a4632033cddd5[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: pug_database_private-App.User.61269277634a4632033cddd5[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: pug_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: pug_database_private-App.User.61269277634a4632033cddd5[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: pug_database_private-App.User.61269277634a4632033cddd5[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: pug_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: pug_database_private-App.User.61269277634a4632033cddd5[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: pug_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: pug_database_private-App.User.61269277634a4632033cddd5[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: pug_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: pug_database_private-App.User.61269277634a4632033cddd5[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: pug_database_private-App.User.61269277634a4632033cddd5[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: pug_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: pug_database_private-App.User.61269277634a4632033cddd5[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: pug_database_private-App.User.61269277634a4632033cddd5[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: pug_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36m[12:03:42 AM] - YwTuPuaH2ripARF8AAAM left channel: pug_database_Everyone (transport close)[39m
+[36m[12:03:42 AM] - YwTuPuaH2ripARF8AAAM left channel: pug_database_private-App.User.612c190277446508032a2965 (transport close)[39m
+[36m[12:03:43 AM] - N15P5ZCJsO80Q29TAAAP joined channel: pug_database_Everyone[39m
+[31m[12:03:43 AM] - Preparing authentication request to: https://pug.bet[39m
+[36m[12:03:43 AM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[36m[12:03:43 AM] - N15P5ZCJsO80Q29TAAAP authenticated for: pug_database_private-App.User.612c190277446508032a2965[39m
+[36m[12:03:43 AM] - N15P5ZCJsO80Q29TAAAP joined channel: pug_database_private-App.User.612c190277446508032a2965[39m
+[36mChannel: pug_database_private-App.User.612c190277446508032a2965[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: pug_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: pug_database_private-App.User.61269277634a4632033cddd5[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: pug_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: pug_database_private-App.User.612c190277446508032a2965[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: pug_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36m[12:03:52 AM] - CrUpFUx9v1rt4V3FAAAO left channel: pug_database_Everyone (transport close)[39m
+[36m[12:03:52 AM] - CrUpFUx9v1rt4V3FAAAO left channel: pug_database_private-App.User.61269277634a4632033cddd5 (transport close)[39m
+[36m[12:03:54 AM] - TqafQGG2haTu6LGGAAAQ joined channel: pug_database_Everyone[39m
+[31m[12:03:54 AM] - Preparing authentication request to: https://pug.bet[39m
+[36m[12:03:54 AM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[36m[12:03:54 AM] - TqafQGG2haTu6LGGAAAQ authenticated for: pug_database_private-App.User.61269277634a4632033cddd5[39m
+[36m[12:03:54 AM] - TqafQGG2haTu6LGGAAAQ joined channel: pug_database_private-App.User.61269277634a4632033cddd5[39m
+[36mChannel: pug_database_private-App.User.612c190277446508032a2965[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: pug_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: pug_database_private-App.User.612c190277446508032a2965[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: pug_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: pug_database_private-App.User.612c190277446508032a2965[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: pug_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36m[12:04:13 AM] - N15P5ZCJsO80Q29TAAAP left channel: pug_database_Everyone (transport close)[39m
+[36m[12:04:13 AM] - N15P5ZCJsO80Q29TAAAP left channel: pug_database_private-App.User.612c190277446508032a2965 (transport close)[39m
+[36m[12:04:15 AM] - U1tmE5MkyQAtCghLAAAR joined channel: pug_database_Everyone[39m
+[31m[12:04:15 AM] - Preparing authentication request to: https://pug.bet[39m
+[36m[12:04:15 AM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[36m[12:04:15 AM] - U1tmE5MkyQAtCghLAAAR authenticated for: pug_database_private-App.User.612c190277446508032a2965[39m
+[36m[12:04:15 AM] - U1tmE5MkyQAtCghLAAAR joined channel: pug_database_private-App.User.612c190277446508032a2965[39m
+[36mChannel: pug_database_private-App.User.61269277634a4632033cddd5[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36m[12:04:23 AM] - U1tmE5MkyQAtCghLAAAR left channel: pug_database_Everyone (transport close)[39m
+[36m[12:04:23 AM] - U1tmE5MkyQAtCghLAAAR left channel: pug_database_private-App.User.612c190277446508032a2965 (transport close)[39m
+[36m[12:04:23 AM] - TtnQta1R-2D-Aa59AAAS joined channel: pug_database_Everyone[39m
+[31m[12:04:24 AM] - Preparing authentication request to: https://pug.bet[39m
+[36m[12:04:24 AM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[36m[12:04:24 AM] - TtnQta1R-2D-Aa59AAAS authenticated for: pug_database_private-App.User.612c190277446508032a2965[39m
+[36m[12:04:24 AM] - TtnQta1R-2D-Aa59AAAS joined channel: pug_database_private-App.User.612c190277446508032a2965[39m
+[36mChannel: pug_database_private-App.User.612c190277446508032a2965[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: pug_database_private-App.User.612c190277446508032a2965[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: pug_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: pug_database_private-App.User.612c190277446508032a2965[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: pug_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36m[12:12:41 AM] - n39aNarcJh6lwMmyAAAK left channel: pug_database_Everyone (transport close)[39m
+[36m[12:12:41 AM] - n39aNarcJh6lwMmyAAAK left channel: pug_database_private-App.User.61269277634a4632033cddd5 (transport close)[39m
+[36m[12:12:45 AM] - DWzg7wF5n3feVv04AAAT joined channel: pug_database_Everyone[39m
+[31m[12:12:45 AM] - Preparing authentication request to: https://pug.bet[39m
+[36m[12:12:45 AM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[36m[12:12:45 AM] - DWzg7wF5n3feVv04AAAT authenticated for: pug_database_private-App.User.61269277634a4632033cddd5[39m
+[36m[12:12:45 AM] - DWzg7wF5n3feVv04AAAT joined channel: pug_database_private-App.User.61269277634a4632033cddd5[39m
+[36m[12:12:52 AM] - DWzg7wF5n3feVv04AAAT left channel: pug_database_Everyone (transport close)[39m
+[36m[12:12:52 AM] - DWzg7wF5n3feVv04AAAT left channel: pug_database_private-App.User.61269277634a4632033cddd5 (transport close)[39m
+[36m[12:12:52 AM] - uZU2Ud-2ucCZ1UK6AAAU joined channel: pug_database_Everyone[39m
+[31m[12:12:52 AM] - Preparing authentication request to: https://pug.bet[39m
+[36m[12:12:52 AM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[36m[12:12:52 AM] - uZU2Ud-2ucCZ1UK6AAAU authenticated for: pug_database_private-App.User.61269277634a4632033cddd5[39m
+[36m[12:12:52 AM] - uZU2Ud-2ucCZ1UK6AAAU joined channel: pug_database_private-App.User.61269277634a4632033cddd5[39m
+[36m[12:12:53 AM] - uZU2Ud-2ucCZ1UK6AAAU left channel: pug_database_Everyone (transport close)[39m
+[36m[12:12:53 AM] - uZU2Ud-2ucCZ1UK6AAAU left channel: pug_database_private-App.User.61269277634a4632033cddd5 (transport close)[39m
+[36m[12:12:55 AM] - KJIIWdtfX-VZgsYsAAAV joined channel: pug_database_Everyone[39m
+[31m[12:12:55 AM] - Preparing authentication request to: https://pug.bet[39m
+[36m[12:12:55 AM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[36m[12:12:55 AM] - KJIIWdtfX-VZgsYsAAAV authenticated for: pug_database_private-App.User.61269277634a4632033cddd5[39m
+[36m[12:12:55 AM] - KJIIWdtfX-VZgsYsAAAV joined channel: pug_database_private-App.User.61269277634a4632033cddd5[39m
+[36mChannel: pug_database_private-App.User.61269277634a4632033cddd5[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: pug_database_private-App.User.612c190277446508032a2965[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: pug_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36m[12:16:07 AM] - KJIIWdtfX-VZgsYsAAAV left channel: pug_database_Everyone (transport close)[39m
+[36m[12:16:07 AM] - KJIIWdtfX-VZgsYsAAAV left channel: pug_database_private-App.User.61269277634a4632033cddd5 (transport close)[39m
+[36m[12:16:08 AM] - auoGwI93K68CJILEAAAW joined channel: pug_database_Everyone[39m
+[31m[12:16:08 AM] - Preparing authentication request to: https://pug.bet[39m
+[36m[12:16:08 AM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[36m[12:16:08 AM] - auoGwI93K68CJILEAAAW authenticated for: pug_database_private-App.User.61269277634a4632033cddd5[39m
+[36m[12:16:08 AM] - auoGwI93K68CJILEAAAW joined channel: pug_database_private-App.User.61269277634a4632033cddd5[39m

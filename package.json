@@ -14,7 +14,7 @@
         "@tailwindcss/typography": "^0.4.0",
         "alpinejs": "^3.0.6",
         "axios": "^0.21",
-        "laravel-echo": "^1.11.1",
+        "laravel-echo": "^1.7.0",
         "laravel-mix": "^6.0.6",
         "lodash": "^4.17.19",
         "postcss": "^8.1.14",
@@ -24,6 +24,8 @@
     },
     "dependencies": {
         "@headlessui/react": "^1.4.0",
-        "feather-icons": "^4.28.0"
+        "feather-icons": "^4.28.0",
+        "jquery": "^3.6.0",
+        "socket.io-client": "2.4.0"
     }
 }

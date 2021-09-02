@@ -13,14 +13,11 @@
                     <x-jet-nav-link href="{{ route('slots') }}" :active="request()->routeIs('slots')">
                     {{ __('Slots') }}
                     </x-jet-nav-link>
-                    <x-jet-nav-link href="{{ route('slots') }}" :active="request()->routeIs('sports')">
-                    {{ __('Sports') }}
-                    </x-jet-nav-link>
-                    <x-jet-nav-link href="{{ route('slots') }}" :active="request()->routeIs('poker')">
-                    {{ __('Poker') }}
-                    </x-jet-nav-link>
-                    <x-jet-nav-link href="{{ route('slots') }}" :active="request()->routeIs('livecasino')">
+                    <x-jet-nav-link href="{{ route('livecasino') }}" :active="request()->routeIs('livecasino')">
                     {{ __('Live Casino') }}
+                    </x-jet-nav-link>
+                    <x-jet-nav-link href="{{ route('poker') }}" :active="request()->routeIs('poker')">
+                    {{ __('Poker') }}
                     </x-jet-nav-link>
                 </div>
             </div>

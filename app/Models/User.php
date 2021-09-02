@@ -6,6 +6,7 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Jenssegers\Mongodb\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use App\Events\BalanceModification;
 use Laravel\Fortify\TwoFactorAuthenticatable;
 use Laravel\Jetstream\HasProfilePhoto;
 use Lab404\Impersonate\Models\Impersonate;
@@ -14,6 +15,9 @@ use Jenssegers\Mongodb\Eloquent\Model as Eloquent;
 use MongoDB\BSON\Decimal128;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
+use Maklad\Permission\Traits\HasRoles;
+use Maklad\Permission\Models\Role;
+use Maklad\Permission\Models\Permission;
 
 class User extends Authenticatable
 {
@@ -22,8 +26,10 @@ class User extends Authenticatable
     use HasProfilePhoto;
     use Notifiable;
     use TwoFactorAuthenticatable;
+    use HasRoles;
 
     protected $connection = 'mongodb';
+    public $guard_name = 'sanctum';
 
 
     /**
@@ -35,6 +41,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+		'token',
         'usd',
         'bonus',
         'arcade',
@@ -79,7 +86,7 @@ class User extends Authenticatable
             $type => floatval(number_format($balance + $amount, 2, '.', ''))
         ]);      
 
-        //event(new BalanceModification($this->user, $type, 'subtract', $amount, 0));
+        event(new BalanceModification($this, 'usd', $type, 'subtract', $amount, 0));
         BalanceLog::create([
             'u' => $this->_id,
             'add' => $amount,
@@ -101,7 +108,7 @@ class User extends Authenticatable
         $this->update([
             $type => floatval(number_format($value, 2, '.', ''))
         ]);
-        //event(new BalanceModification($this->user, $type, 'subtract', $amount, 0));
+        event(new BalanceModification($this, 'usd', $type, 'subtract', $amount, 0));
         BalanceLog::create([
             'u' => $this->_id,
             'add' => 0,
@@ -118,6 +125,7 @@ class User extends Authenticatable
 
     public static function findUsername($id) {
         $user = \App\Models\User::where('_id', $id)->first();
+
         return $user->name;
     }
 

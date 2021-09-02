@@ -8,7 +8,7 @@
     </div>
 
    
-    <div class="mt-5 mb-2 text-gray-500">
+    <div class="mt-5 mb-2 text-gray-500" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>>
         Enjoy your stay at the casino. Normally a carousel would be here, but instead you can pick below what you would like to play. <b>Enjoy</b>!
     </div>
 </div>
