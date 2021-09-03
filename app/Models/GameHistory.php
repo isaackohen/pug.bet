@@ -21,6 +21,6 @@ class GameHistory extends User
         'bet',
         'gameid',
         'curr',
-        'meta',
+        'meta'
     ];
 }

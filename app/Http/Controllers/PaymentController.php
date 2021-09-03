@@ -11,6 +11,13 @@ class PaymentController extends Controller
 {
     public function callback(Request $request)
     {   
+     $apipurse_storeid = 'BLiFLSwV57PGUf8wCfPJns8DgTpFVp9URgrP9jPQj8Uk';
+     $apipurse_token = 'b765d914758a9fa32c1826a9ba603ea9ab965ef2';
+
+ 
+
+ 
+
 
         Log::notice($request);
         try {
@@ -18,14 +25,14 @@ class PaymentController extends Controller
         $invoice_id = $request->invoiceId;
         $ch = curl_init();
 
-        curl_setopt($ch, CURLOPT_URL, 'https://pay.apigamble.com/api/v1/stores/9bi269NLCM1tTA1vL8PJavkJ8HxZmMRxnJMTdXMEsFyj/invoices/'.$invoice_id.'');
+        curl_setopt($ch, CURLOPT_URL, 'https://pay.apigamble.com/api/v1/stores/'.$apipurse_storeid.'/invoices/'.$invoice_id.'');
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'GET');
 
 
         $headers = array();
         $headers[] = 'Content-Type: application/json';
-        $headers[] = 'Authorization: token 3573a436e50a61197d35ff1e9b05c3f2ac082e5f';
+        $headers[] = 'Authorization: token '.$apipurse_token;
         curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 
         $result = curl_exec($ch);
@@ -47,6 +54,13 @@ class PaymentController extends Controller
 			"deposit",
 			"nothing"
 		);
+        $invoice = new \App\Models\PaymentApipurseTransactions;
+            $invoice->u = $user->_id; 
+            $invoice->usdamount = round($decode->amount,2 );
+
+
+
+
 			
         } catch (Exception $e) {
                 return 'ok';

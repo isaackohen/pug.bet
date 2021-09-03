@@ -67,7 +67,17 @@
       </div>
     </div>
   </div>
-
+  <div class="tooltip cursor-pointer">
+    <div onclick="copyBtg()" class="flex cursor-pointer items-center p-2 space-x-2 rounded-xl bg-blue-100 rounded-md p-2 text-white cursor-pointer transition duration-300 ease-in-out hover:shadow hover:bg-blue-400">
+      <div class="flex bg-gray-100 p-2 w-full space-x-2 rounded-lg">
+        <input id="wallet-btg" class="w-full cursor-pointer text-black outline-none text-sm" disabled type="text" value="{{ $wallet4 }}" placeholder="Generating..." />
+      </div>
+      <span class="tooltiptext cursor-pointer" id="tooltip-btg">Click to copy address</span>
+      <div class="bg-yellow-600 cursor-pointer py-2 px-3 opacity-90 text-white font-medium rounded-xl w-60 hover:shadow-lg transition duration-200 cursor-pointer">
+        <span>bitcoingold</span>
+      </div>
+    </div>
+  </div>
   <div class="tooltip cursor-pointer">
     <div onclick="copyLtc()" class="flex cursor-pointer items-center p-2 space-x-2 rounded-xl bg-blue-100 rounded-md p-2 text-white cursor-pointer transition duration-300 ease-in-out hover:shadow hover:bg-blue-400">
       <div class="flex bg-gray-100 p-2 w-full space-x-2 rounded-lg">
@@ -79,9 +89,6 @@
       </div>
     </div>
   </div>
-
-
-
   <div class="tooltip cursor-pointer">
     <div onclick="copyDoge()" class="flex cursor-pointer items-center p-2 space-x-2 rounded-xl bg-blue-100 rounded-md p-2 text-white cursor-pointer transition duration-300 ease-in-out hover:shadow hover:bg-blue-400">
       <div class="flex bg-gray-100 p-2 w-full space-x-2 rounded-lg">
@@ -93,10 +100,7 @@
       </div>
     </div>
   </div>
-
-
-
-  </div>
+ </div>
 </div>
 
 
@@ -150,6 +154,26 @@ function copyDoge() {
   tooltipltc.innerHTML = "Click to copy address";
 
 }
+
+function copyBtg() {
+  var copyText = document.getElementById("wallet-btg");
+
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+  navigator.clipboard.writeText(copyText.value);
+  var tooltip = document.getElementById("tooltip-btg");
+  var tooltipbtc = document.getElementById("tooltip-btc");
+  var tooltipltc = document.getElementById("tooltip-ltc");
+  var tooltipdoge = document.getElementById("tooltip-doge");
+  tooltip.innerHTML = "Copied BTG address to clipboard!";
+  tooltipbtc.innerHTML = "Click to copy address";
+  tooltipltc.innerHTML = "Click to copy address";
+  tooltipdoge.innerHTML = "Click to copy address";
+
+}
+
+
 </script>
 
 

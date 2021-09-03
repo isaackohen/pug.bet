@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "84de9e9365828a62815c3b0fc1ba3412",
+    "content-hash": "921ad625bd2bbb22df74f2ca3de18168",
     "packages": [
         {
             "name": "arcanedev/log-viewer",
@@ -431,6 +431,75 @@
                 "source": "https://github.com/cakephp/chronos"
             },
             "time": "2021-06-17T13:49:10+00:00"
+        },
+        {
+            "name": "codespb/livewire-notifier",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/codespb/livewire-notifier.git",
+                "reference": "e5a14ab68206db5b264eb6a3498e0ceb8c5d7aca"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/codespb/livewire-notifier/zipball/e5a14ab68206db5b264eb6a3498e0ceb8c5d7aca",
+                "reference": "e5a14ab68206db5b264eb6a3498e0ceb8c5d7aca",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~7|~8"
+            },
+            "require-dev": {
+                "livewire/livewire": "^2.4",
+                "nunomaduro/collision": "^5.3",
+                "orchestra/canvas": "^6.1",
+                "orchestra/testbench": "^6.0",
+                "pestphp/pest": "^1.0",
+                "pestphp/pest-plugin-laravel": "^1.0",
+                "pestphp/pest-plugin-livewire": "^1.0",
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "CodeSPB\\LivewireNotifier\\LivewireNotifierServiceProvider"
+                    ],
+                    "aliases": {
+                        "LivewireNotifier": "CodeSPB\\LivewireNotifier\\Facades\\LaravelLivewireNotifier"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "CodeSPB\\LivewireNotifier\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dmitriy Belyaev",
+                    "email": "db@codespb.com",
+                    "homepage": "https://codespb.com"
+                }
+            ],
+            "description": "Simple Livewire notifications system without any dependencies except TALL-stack.",
+            "homepage": "https://github.com/codespb/livewire-notifier",
+            "keywords": [
+                "LivewireNotifier",
+                "growl",
+                "laravel",
+                "livewire",
+                "toast"
+            ],
+            "support": {
+                "issues": "https://github.com/codespb/livewire-notifier/issues",
+                "source": "https://github.com/codespb/livewire-notifier/tree/v1.0.3"
+            },
+            "time": "2021-04-13T06:08:28+00:00"
         },
         {
             "name": "dasprid/enum",
@@ -10402,6 +10471,7 @@
                     "type": "github"
                 }
             ],
+            "abandoned": true,
             "time": "2020-09-28T06:45:17+00:00"
         },
         {

@@ -19,7 +19,7 @@ use Maklad\Permission\Traits\HasRoles;
 use Maklad\Permission\Models\Role;
 use Maklad\Permission\Models\Permission;
 
-class User extends Authenticatable
+class User extends Authenticatable implements MustVerifyEmail
 {
     use HasApiTokens;
     use HasFactory;

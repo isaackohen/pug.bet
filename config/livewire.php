@@ -54,7 +54,7 @@ return [
     |
     */
 
-'asset_url'  => env('APP_URL', 'http://localhost'),
+'asset_url'  => env('APP_URL', 'https://localhost'),
 
     /*
     |--------------------------------------------------------------------------
@@ -91,7 +91,7 @@ return [
             'mov', 'avi', 'wmv', 'mp3', 'm4a',
             'jpg', 'jpeg', 'mpga', 'webp', 'wma',
         ],
-        'max_upload_time' => 5, // Max duration (in minutes) before an upload gets invalidated.
+        'max_upload_time' => 1, // Max duration (in minutes) before an upload gets invalidated.
     ],
 
     /*

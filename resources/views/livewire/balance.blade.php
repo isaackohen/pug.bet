@@ -38,8 +38,9 @@
           <main class="p-2 text-center">
             <p>
               @auth
-                <p>                        @livewire('payment-deposit-apipurse')</p> 
-                                <p>                        @livewire('paydash')</p> 
+              <div>
+                <p>@livewire('payment-deposit-apipurse')</p> 
+                <p>@livewire('paydash')</p> 
 
               @else
                 <p>You need to be logged in to deposit or withdraw.</p>

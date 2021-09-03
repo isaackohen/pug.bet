@@ -7,15 +7,14 @@
     "require": {
         "php": "^7.3|^8.0",
         "arcanedev/log-viewer": "~8.0.0",
+        "codespb/livewire-notifier": "^1.0",
+        "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
-
-    "fideloper/proxy": "^4.2",
-    "laravel/nova": "*",
-
         "jenssegers/mongodb": "^3.8",
         "laravel/framework": "^8.54",
         "laravel/jetstream": "^2.3",
+        "laravel/nova": "*",
         "laravel/sanctum": "^2.6",
         "laravel/tinker": "^2.5",
         "livewire/livewire": "^2.5",

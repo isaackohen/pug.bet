@@ -1,5 +1,7 @@
 <?php return array (
+  'auth-modal' => 'App\\Http\\Livewire\\AuthModal',
   'balance' => 'App\\Http\\Livewire\\Balance',
+  'exliner' => 'App\\Http\\Livewire\\Exliner',
   'footer' => 'App\\Http\\Livewire\\Footer',
   'index' => 'App\\Http\\Livewire\\Index',
   'latestgames' => 'App\\Http\\Livewire\\Latestgames',
@@ -11,6 +13,7 @@
   'paydash-orderpage' => 'App\\Http\\Livewire\\PaydashOrderpage',
   'payment-deposit-apipurse' => 'App\\Http\\Livewire\\PaymentDepositApipurse',
   'poker' => 'App\\Http\\Livewire\\Poker',
+  'profile.change-email-form' => 'App\\Http\\Livewire\\Profile\\ChangeEmailForm',
   'search' => 'App\\Http\\Livewire\\Search',
   'slotlist' => 'App\\Http\\Livewire\\Slotlist',
   'test' => 'App\\Http\\Livewire\\Test',

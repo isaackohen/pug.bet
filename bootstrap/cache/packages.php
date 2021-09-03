@@ -7,6 +7,17 @@
       1 => 'Arcanedev\\LogViewer\\Providers\\DeferredServicesProvider',
     ),
   ),
+  'codespb/livewire-notifier' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'CodeSPB\\LivewireNotifier\\LivewireNotifierServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'LivewireNotifier' => 'CodeSPB\\LivewireNotifier\\Facades\\LaravelLivewireNotifier',
+    ),
+  ),
   'facade/ignition' => 
   array (
     'providers' => 

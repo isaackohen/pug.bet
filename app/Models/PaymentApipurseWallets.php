@@ -19,7 +19,7 @@ class PaymentApipurseWallets extends User
      */
 
     protected $fillable = [
-        'u', 'wallet_btc', 'wallet_ltc', 'wallet_btg', 'wallet_xmr', 'wallet_doge'
+        'u', 'wallet_btc', 'wallet_ltc', 'wallet_doge', 'wallet_btg'
     ];
 
 
