@@ -4,6 +4,7 @@
   'exliner' => 'App\\Http\\Livewire\\Exliner',
   'footer' => 'App\\Http\\Livewire\\Footer',
   'index' => 'App\\Http\\Livewire\\Index',
+  'index-header' => 'App\\Http\\Livewire\\IndexHeader',
   'latestgames' => 'App\\Http\\Livewire\\Latestgames',
   'livecasino' => 'App\\Http\\Livewire\\Livecasino',
   'logo-full' => 'App\\Http\\Livewire\\LogoFull',

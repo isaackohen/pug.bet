@@ -27,15 +27,7 @@ class UpdateUserProfileInformation implements UpdatesUserProfileInformation
         if (isset($input['photo'])) {
             $user->updateProfilePhoto($input['photo']);
         }
-        if (isset($input['email2'])) {
-        $user->forceFill([
-            'email' => $input['email2'],
-            'email_verified_at' => null,
-        ])->save();
 
-        $user->sendEmailVerificationNotification();
-
-        }
         if ($input['email'] !== $user->email &&
             $user instanceof MustVerifyEmail) {
             $this->updateVerifiedUser($user, $input);
@@ -45,6 +37,23 @@ class UpdateUserProfileInformation implements UpdatesUserProfileInformation
                 'email' => $input['email'],
             ])->save();
         }
+    }
+
+    /**
+     * Update the given verified user's profile information.
+     *
+     * @param  mixed  $user
+     * @param  array  $input
+     * @return void
+     */
+    public function updateEmail($user, array $input)
+    {
+        $user->forceFill([
+            'email' => $input['email'],
+            'email_verified_at' => null,
+        ])->save();
+
+        $user->sendEmailVerificationNotification();
     }
 
 

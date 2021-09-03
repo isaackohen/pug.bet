@@ -1,11 +1,12 @@
 <x-guest-layout>
+    
     <x-jet-authentication-card>
         <x-slot name="logo">
                 @livewire('logo-full')
         </x-slot>
 
         <div class="mb-2 text-sm text-gray-600">
-            {{ __('Thanks for signing up! Before getting started, could you verify your email address by clicking on the link we just emailed to you? If you didn\'t receive the email, we will gladly send you another.') }}
+            {{ __('Could you verify your email address by clicking on the link we just emailed to you? If you didn\'t receive the email, we will gladly send you another.') }}
         </div>
 
         @if (session('status') == 'verification-link-sent')
@@ -24,6 +25,12 @@
                     </x-jet-button>
                 </div>
             </form>
+                            <a href="/user/profile">
+
+                <button class="underline text-sm text-gray-600 hover:text-gray-900">
+                    {{ __('Change Email') }}
+                </button>
+            </a>
 
             <form method="POST" action="{{ route('logout') }}">
                 @csrf
@@ -33,5 +40,10 @@
                 </button>
             </form>
         </div>
+
+
     </x-jet-authentication-card>
+
+
+
 </x-guest-layout>

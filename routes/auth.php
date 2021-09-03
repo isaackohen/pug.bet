@@ -123,11 +123,11 @@ Route::group(['middleware' => config('fortify.middleware', ['web'])], function (
         }
 
         Route::get('/email/verify/{id}/{hash}', [VerifyEmailController::class, '__invoke'])
-            ->middleware(['auth:'.config('fortify.guard'), 'signed', 'throttle:6,1'])
+            ->middleware(['auth:'.config('fortify.guard'), 'signed', 'throttle:5,10'])
             ->name('verification.verify');
 
         Route::post('/email/verification-notification', [EmailVerificationNotificationController::class, 'store'])
-            ->middleware(['auth:'.config('fortify.guard'), 'throttle:6,1'])
+            ->middleware(['auth:'.config('fortify.guard'), 'throttle:5,10'])
             ->name('verification.send');
     }
 
@@ -136,6 +136,7 @@ Route::group(['middleware' => config('fortify.middleware', ['web'])], function (
         Route::put('/user/profile-information', [ProfileInformationController::class, 'update'])
             ->middleware(['auth:'.config('fortify.guard')])
             ->name('user-profile-information.update');
+
     }
 
     // Passwords...
