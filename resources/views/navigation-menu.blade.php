@@ -157,8 +157,7 @@
     @else
     <div class="flex items-center ml-6">
         <a class="inline-flex rounded-md" href="/login">
-            <button data-modal-toggle="auth-modal"
-                data-modal-action="open" type="button" class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition">
+            <button type="button" class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition">
             Login
             </button>
         </a>

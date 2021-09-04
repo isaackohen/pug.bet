@@ -17,7 +17,7 @@
         <link rel="icon" type="image/png" href="/img/pug-icon.png">
         <!-- Fontawesome !-->
         <!-- Fonts -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
 
         <!-- Styles -->
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
@@ -27,11 +27,16 @@
 
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
-    </head>
-    <body class="font-body antialiased">
-        <x-jet-banner />
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
 
-        <div class="bg-gray-100" style="min-height: calc(100vh - 125px);">
+    </head>
+    <body class="font-body-sans">
+
+        <div class="bg-default" style="min-height: calc(100vh - 125px);">
+
+
+    
+
             @livewire('navigation-menu')
 
             <!-- Page Heading -->
@@ -51,6 +56,7 @@
 
         </div>
         @livewire('footer')
+        @livewire('auth-modal')
 
         @stack('modals')
     <livewire:scripts/>

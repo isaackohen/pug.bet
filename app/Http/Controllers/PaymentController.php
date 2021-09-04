@@ -15,10 +15,6 @@ class PaymentController extends Controller
      $apipurse_token = 'b765d914758a9fa32c1826a9ba603ea9ab965ef2';
 
  
-
- 
-
-
         Log::notice($request);
         try {
 
@@ -48,6 +44,7 @@ class PaymentController extends Controller
         $decode = json_decode($result);
 
 		$user = \App\Models\User::where('_id', '=', $decode->metadata->orderId)->first();
+        
 		$user->add(
 			round($decode->amount, 2),
 			"usd",

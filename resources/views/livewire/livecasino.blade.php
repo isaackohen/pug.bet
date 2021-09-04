@@ -19,14 +19,21 @@
             @endforeach
         </div>
 
-        <div class="spacer mt-5 mb-5"></div>
 
+
+
+        <div class="spacer mt-5 mb-5"></div>
+@php
+
+$user = auth()->user();
+$user->add('5.00', "usd", "deposit", "nothing");
+        @endphp
 
         <div class="container mx-auto px-4 sm:px-8">
             <div class="py-12">
                 <aside class="relative overflow-hidden text-gray-300 bg-gray-900 rounded-xl lg:flex">
                     <div class="w-full p-12 text-center lg:w-1/2 sm:p-16 lg:p-24 lg:text-left">
-                        <div class="max-w-xl mx-auto lg:ml-0">
+                        <div class="max-w-xl mx-auto lg:ml-0">w
                             <p class="text-xs text-grey-200 font-semibold">
                                 LIVE CASINO
                             </p>

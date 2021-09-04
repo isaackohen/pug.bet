@@ -1,10 +1,10 @@
 <x-jet-form-section submit="update">
     <x-slot name="title">
-        {{ __('Update Password') }}
+        {{ __('Update Email') }}
     </x-slot>
 
     <x-slot name="description">
-        {{ __('Ensure your account is using a long, random password to stay secure.') }}
+        {{ __('Ensure you keep your e-mail address updated.') }}
     </x-slot>
 
     <x-slot name="form">

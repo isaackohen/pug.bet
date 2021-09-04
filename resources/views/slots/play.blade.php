@@ -9,7 +9,13 @@
 
         </div>
 
+    @php
+    $wrapper = '<style>.gameWrapper { margin-top: 11px !Important; padding-bottom: 79% !important; } #second-header { display: none !important; }</style>';
 
+    if($name_game === 'livegame') {
+        echo $wrapper;
+    }
+    @endphp
     <style>
     #balance-id {
         display: none;

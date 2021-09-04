@@ -27,6 +27,7 @@ use Laravel\Jetstream\Jetstream;
 */
 
 
+            //http://slots.apigamble.com/api/callback/riselive?provider=evolution&subgame=0&userid=6132c49351836a34fb1ebcf2-btc&operator=62
 
 
 Route::get('/', function () {
@@ -91,6 +92,30 @@ Route::middleware(['auth:sanctum'])->get('/slots/real/{game}', function ($game) 
     return view('slots/play')->with('id_game', $game)->with('name_game', $filter)->with('url', $url);           
 })->name('slots.real');
 
+Route::middleware(['auth:sanctum'])->get('/slots/real/live/lobby/{provider}', function ($provider) { 
+    $currency = 'usd';
+    $playerid = auth()->user()->_id;
+    $playername = auth()->user()->name;
+    $subgame = 0;
+    $construct = 'http://slots.apigamble.com/api/callback/riselive?provider='.$provider.'&subgame='.$subgame.'&name='.$playername.'&userid='.$playerid.'-usd&operator=62';
+    $response = json_decode(file_get_contents($construct), true);
+    $url = $response['url'];
 
+
+    return view('slots/play')->with('id_game', $provider)->with('name_game', 'livegame')->with('url', $url);           
+})->name('live.lobby');
+
+
+Route::middleware(['auth:sanctum'])->get('/slots/real/live/{provider}/{subgame}', function ($provider, $subgame) { 
+    $currency = 'usd';
+    $playerid = auth()->user()->_id;
+    $playername = auth()->user()->name;
+    $construct = 'http://slots.apigamble.com/api/callback/riselive?provider='.$provider.'&subgame='.$subgame.'&name='.$playername.'&userid='.$playerid.'-usd&operator=62';
+    $response = json_decode(file_get_contents($construct), true);
+    $url = $response['url'];
+
+
+    return view('slots/play')->with('id_game', $provider)->with('name_game', 'livegame')->with('url', $url);           
+})->name('live.direct');
 
 
