@@ -2,12 +2,15 @@
 .bannerFondo{
         height: 400px;
 }
+#second-header {
+  display:  none !important;
+}
 </style>
 <div>      
     <div class="bannerFondo bg-primary rounded-component bg-left bg-auto bg-no-repeat" style="background-image: url(https://lunarwin.com/img/misc/happyguy.webp)">
     </div>
 
-      <div class="-mt-64 ">
+      <div class="-mt-40 ">
         <div class="w-full text-center">
           <p class="text-sm tracking-widest text-white">Carousel Start</p>
           <h1 class="font-bold text-5xl text-white">

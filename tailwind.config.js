@@ -2,15 +2,20 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
     mode: 'jit',
+        presets: [
+        require('./vendor/ph7jack/wireui/tailwind.config.js')
+    ],
     purge: [
         "./config/livewire-notifier.php",
         './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
         './vendor/laravel/jetstream/**/*.blade.php',
         './storage/framework/views/*.php',
         './resources/views/**/*.blade.php',
+        './vendor/ph7jack/wireui/resources/**/*.blade.php',
+        './vendor/ph7jack/wireui/ts/**/*.ts',
+        './vendor/ph7jack/wireui/src/View/**/*.php'
     ],
     theme: {
-
         extend: {
 
                 colors: {},
@@ -25,6 +30,7 @@ module.exports = {
     },
     backgroundColor: {
       primary: 'var(--color-bg-primary)',
+      primarysoft: 'var(--color-bg-primary-soft)',
       secondary: 'var(--color-bg-secondary)',
       component: 'var(--color-bg-component)',
 

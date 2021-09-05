@@ -11,6 +11,10 @@ class PaymentController extends Controller
 {
     public function callback(Request $request)
     {   
+        //off
+                return 'ok';
+
+
      $apipurse_storeid = 'BLiFLSwV57PGUf8wCfPJns8DgTpFVp9URgrP9jPQj8Uk';
      $apipurse_token = 'b765d914758a9fa32c1826a9ba603ea9ab965ef2';
 
@@ -54,16 +58,12 @@ class PaymentController extends Controller
         $invoice = new \App\Models\PaymentApipurseTransactions;
             $invoice->u = $user->_id; 
             $invoice->usdamount = round($decode->amount,2 );
-
-
-
-
-			
+		
         } catch (Exception $e) {
                 return 'ok';
         }
 
-        return 'ok';
+
     }
 
 }

@@ -22,7 +22,7 @@
         <!-- Styles -->
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
         <script src="https://kit.fontawesome.com/23f13eab24.js" crossorigin="anonymous"></script>        
-
+<wireui:styles />
         @livewireStyles
 
         <!-- Scripts -->
@@ -30,7 +30,7 @@
         <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
 
     </head>
-    <body class="font-body-sans">
+    <body class="font-body">
 
         <div class="bg-default" style="min-height: calc(100vh - 125px);">
 
@@ -46,6 +46,7 @@
                         @livewire('balance')
                     </div>
                 </header>
+
             @endauth
 
             <!-- Page Content -->
@@ -55,10 +56,13 @@
  
 
         </div>
+                @livewire('modals.wallet')
+
         @livewire('footer')
         @livewire('auth-modal')
 
         @stack('modals')
+         <wireui:scripts />
     <livewire:scripts/>
         <livewire:notifier/>
 

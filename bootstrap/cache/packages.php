@@ -169,6 +169,16 @@
       0 => 'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider',
     ),
   ),
+  'ph7jack/wireui' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'WireUi\\Providers\\WireUiServiceProvider',
+    ),
+    'aliases' => 
+    array (
+    ),
+  ),
   'tymon/jwt-auth' => 
   array (
     'aliases' => 

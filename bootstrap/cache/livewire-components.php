@@ -9,6 +9,7 @@
   'livecasino' => 'App\\Http\\Livewire\\Livecasino',
   'logo-full' => 'App\\Http\\Livewire\\LogoFull',
   'logo-icon' => 'App\\Http\\Livewire\\LogoIcon',
+  'modals.wallet' => 'App\\Http\\Livewire\\Modals\\Wallet',
   'nav-link' => 'App\\Http\\Livewire\\NavLink',
   'paydash' => 'App\\Http\\Livewire\\Paydash',
   'paydash-orderpage' => 'App\\Http\\Livewire\\PaydashOrderpage',

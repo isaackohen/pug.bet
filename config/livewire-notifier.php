@@ -1,12 +1,12 @@
 <?php
 return [
-    'positionClass' => 'absolute top-0 left-0',
-    'defaultMsgClass' => 'w-90 rounded-xl shadow-xl',
-    'duration' => 4000,
+    'positionClass' => 'absolute top-3 right-2 z-50',
+    'defaultMsgClass' => 'w-80 rounded-xl text-sm shadow-2xl',
+    'duration' => 5000,
     'types' => [
         'success' => [
-            // 'msgClass'=>'bg-green-200',
-            'msgClass'=>'bg-gradient-to-r from-green-200 to-green-300',
+            'msgClass'=>'bg-green-200',
+            //'msgClass'=>'bg-gradient-to-r from-green-200 to-green-300',
             'progressClass' => 'bg-green-500',
             'icon' => 'livewire-notifier::icons.success',
         ],

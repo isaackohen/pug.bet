@@ -30,7 +30,7 @@
         <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
 
     </head>
-    <body class="font-body-sans">
+    <body class="font-body">
 
         <div class="bg-default" style="min-height: calc(100vh - 125px);">
 
@@ -59,6 +59,7 @@
         @livewire('auth-modal')
 
         @stack('modals')
+         <wireui:scripts />
     <livewire:scripts/>
         <livewire:notifier/>
 

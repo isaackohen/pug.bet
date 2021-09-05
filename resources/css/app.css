@@ -24,7 +24,7 @@
   --color-bg-component: #f3f4f6;
 
   --color-bg-primary: #8462f4;
-
+  --color-bg-primary-soft: #5a2bdb;  
   --color-bg-secondary: #ffc402;
   --rounded-component: 20px;
 
@@ -76,7 +76,10 @@
 /** purgecss end ignore */
 
 
+.game-slot {
+  box-shadow:  rgb(0 0 0 / 15%) 0px 0px 16px;
 
+}
 .css-transitions-only-after-page-load * {
   -webkit-transition: none !important;
   -moz-transition: none !important;
@@ -85,7 +88,13 @@
   transition: none !important;
 }
 .thumbnail {
-min-height: 200px; max-height: 200px;aspect-ratio: auto 425/589; width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover;
+
+min-height: 225px;
+max-height: 225px;
+aspect-ratio: auto 425/589;
+width: 100%; height: 100%;
+-o-object-fit: cover;
+object-fit: cover;
 }
 .feather-icon {
 height: 10px; width: 10px;

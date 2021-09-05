@@ -7,6 +7,7 @@ window.Alpine = Alpine;
 Alpine.start();
 const feather = require('feather-icons');
 
+
 feather.replace();
 
 $.userId = function() {
@@ -105,3 +106,9 @@ $(document).ready(function() {
 	}
 	
 });
+
+import VanillaTilt from 'vanilla-tilt';
+
+const element = document.querySelector(".js-tilt");
+VanillaTilt.init(element);
+element.addEventListener("tiltChange", callback);
