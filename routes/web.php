@@ -39,7 +39,7 @@ Route::middleware(['auth:sanctum'])->get('/dashboard', function () {
 })->name('dashboard');
 
 Route::middleware(['auth:sanctum'])->get('/livecasino', function () {
-    $slotslist = DB::table('slotslist')->where('p', '=', 'upgames')->get();
+    $slotslist = DB::table('slotslist')->where('type', '=', 'live')->get();
     return view('livewire.livecasino', ['slots' => $slotslist]);
 })->name('livecasino');
 
@@ -79,12 +79,23 @@ Route::middleware(['auth:sanctum'])->get('/poker', function () {
 
 Route::middleware(['auth:sanctum'])->get('/slots/real/{game}', function ($game) { 
     $currency = 'usd';
+    $game = DB::table('slotslist')->where('_id', '=', $game)->first();
+
+    if($game['type'] === 'live' && $game['p'] !== 'upgames') { return redirect('/slots/real/live/'.$game['_id']);};
+
     if(auth()->user()->balance() === '0') { redirect('slots.demo');};
     $playerid = auth()->user()->_id;
     $apigamble_apikey = 'F158EA0AFC6CFC5F91E29790BBC6FCC0';
-    $construct = 'https://apigamble.com/api/slots/createSession/'.$apigamble_apikey.'/'.$playerid.'-'.$currency.'/'.$game.'/usd';
+    if($game['ext'] === 'rise'){
+    $construct = 'http://slots.apigamble.com/api/callback/riseslots?provider='.$game['p'].'&subgame='.$game['_id'].'&userid='.$playerid.'-usd&operator=62';
+    Log::notice($construct);
+    } else {
+    $construct = 'https://apigamble.com/api/slots/createSession/'.$apigamble_apikey.'/'.$playerid.'-'.$currency.'/'.$game['_id'].'/usd';
+    }
     $response = json_decode(file_get_contents($construct), true);
     $url = $response['url'];
+
+
 
     $slotslist = DB::table('slotslist')->get();
     $filter = $slotslist->where('_id', '=', $slotslist)->first();
@@ -106,10 +117,18 @@ Route::middleware(['auth:sanctum'])->get('/slots/real/live/lobby/{provider}', fu
 })->name('live.lobby');
 
 
-Route::middleware(['auth:sanctum'])->get('/slots/real/live/{provider}/{subgame}', function ($provider, $subgame) { 
+Route::middleware(['auth:sanctum'])->get('/slots/real/live/{game}', function ($game) { 
     $currency = 'usd';
+    $game = DB::table('slotslist')->where('_id', '=', $game)->first();
+
+    $subgame = $game['u_id'];
+    $provider = $game['p'];
     $playerid = auth()->user()->_id;
     $playername = auth()->user()->name;
+    if($game['_id'] === 'evo_blackjack_lobby' || $game['_id'] === 'evo_roulette_lobby' || $game['_id'] === 'evo_baccarat_lobby'){
+    $construct = 'http://slots.apigamble.com/api/callback/riselive?provider='.$provider.'&subgame=0&category=blackjack&name='.$playername.'&userid='.$playerid.'-usd&operator=62';
+    }
+
     $construct = 'http://slots.apigamble.com/api/callback/riselive?provider='.$provider.'&subgame='.$subgame.'&name='.$playername.'&userid='.$playerid.'-usd&operator=62';
     $response = json_decode(file_get_contents($construct), true);
     $url = $response['url'];

@@ -24,6 +24,8 @@ class Slotslist extends User
         'UID',
         'd',
         'u_id',
+        'ext',
+        'type'
     ];
 
 
