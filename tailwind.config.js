@@ -66,8 +66,14 @@ module.exports = {
     plugins: [require('@tailwindcss/forms'), 
 
   require('tailwindcss-animatecss')({
-        classes: ['animate__animated', 'animate__bounce', 'animate__bounceIn'],
+        classes: ['animate__animated', 'pulse'],
         settings: {
+          animatedSpeed: 1000,
+          heartBeatSpeed: 1000,
+          hingeSpeed: 3000,
+          bounceInSpeed: 1000,
+          bounceOutSpeed: 750,
+          animationDelaySpeed: 500
         },
         variants: ['responsive', 'hover', 'reduced-motion'],
       }),

@@ -63,7 +63,7 @@ Route::get('/bonus', function () {
     
 
 
-Route::middleware(['auth:sanctum'])->get('/slots', function () {
+Route::get('/slots', function () {
     $slots = DB::table('slotslist')->simplePaginate(60);
       return view('slots/slotslist', compact('slots'));
 })->name('slots');
@@ -97,11 +97,11 @@ Route::middleware(['auth:sanctum'])->get('/poker', function () {
     return view('poker-page');           
 })->name('poker');
 
-Route::middleware(['auth:sanctum'])->get('/slots/real/live/{game}', 'App\Http\Controllers\GameController@livegame')->name('live.direct');
+Route::get('/slots/real/live/{game}', 'App\Http\Controllers\GameController@livegame')->name('live.direct');
 
-Route::middleware(['auth:sanctum'])->get('/slots/real/{game}', 'App\Http\Controllers\GameController@slotsgame')->name('slots.direct');
+Route::get('/slots/real/{game}', 'App\Http\Controllers\GameController@slotsgame')->name('slots.direct');
 
-Route::middleware(['auth:sanctum'])->get('/slots/real/live/lobby/{provider}', function ($provider) { 
+Route::get('/slots/real/live/lobby/{provider}', function ($provider) { 
     $currency = 'usd';
     $playerid = auth()->user()->_id;
     $playername = auth()->user()->name;

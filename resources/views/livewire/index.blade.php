@@ -1,7 +1,7 @@
  <header>
 
     <!-- Section Hero -->
-    <div class="container mx-auto bg-primary h-96 mt-1 bg-right rounded-md bg-no-repeat flex items-center animate__animated animate__bounce" style="background-image: url(/img/Header3.png)">
+    <div class="container mx-auto bg-primary h-96 mt-1 bg-right rounded-md bg-no-repeat flex items-center animate__pulse" style="background-image: url(/img/Header3.png)">
       <div class="sm:ml-20 text-gray-50 text-center sm:text-left">
         <h1 class="text-5xl font-bold mb-4 animate__bounceIn" >
           Bulk.bet <br />
