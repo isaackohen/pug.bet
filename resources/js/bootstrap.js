@@ -1,5 +1,5 @@
 window._ = require('lodash');
-//window.$ = window.jQuery = require('jquery'); 
+window.$ = window.jQuery = require('jquery'); 
 
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
@@ -48,9 +48,4 @@ const connect = function() {
 
 connect();
 
-$(document).ready(function () {
-    $(".css-transitions-only-after-page-load").each(function (index, element) {
-        setTimeout(function () { $(element).removeClass("css-transitions-only-after-page-load") }, 10);
-    });
-});
- 
+import VanillaTilt from 'vanilla-tilt';

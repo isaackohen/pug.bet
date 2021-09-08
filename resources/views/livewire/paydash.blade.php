@@ -1,7 +1,8 @@
-<div x-data="{ paydashmodal: false}" :class="{'overflow-y-hidden': paydashmodal}">
+
+<x-modal blur wire:model.defer="creditcard">
+  <div x-data="{ paydashmodal: false}" :class="{'overflow-y-hidden': paydashmodal}">
 
 
-  </style>
 <style>@import url(https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.min.css);</style>
 <style>
 /*
@@ -85,7 +86,20 @@ module.exports = {
   }
 }
 </style>
+
+    <x-card title="Creditcard">
+
+
+          <header class="flex flex-wrap">
+
+          <main class="p-2 text-center">
+
+
+
 <div>
+
+
+
 
         <div class="mb-5 mt-5">
             <h1 class="text-center font-bold text-md uppercase">Creditcard  <img src="https://leadershipmemphis.org/wp-content/uploads/2020/08/780370.png" class="absolute h-8 ml-3"></h1>
@@ -111,4 +125,12 @@ module.exports = {
         </div>                   
 
     </div>
-</div>
+
+    </x-card>
+    </div>
+
+</x-modal>
+
+
+
+

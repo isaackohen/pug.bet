@@ -5,10 +5,12 @@
   'footer' => 'App\\Http\\Livewire\\Footer',
   'index' => 'App\\Http\\Livewire\\Index',
   'index-header' => 'App\\Http\\Livewire\\IndexHeader',
+  'jackpot' => 'App\\Http\\Livewire\\Jackpot',
   'latestgames' => 'App\\Http\\Livewire\\Latestgames',
   'livecasino' => 'App\\Http\\Livewire\\Livecasino',
   'logo-full' => 'App\\Http\\Livewire\\LogoFull',
   'logo-icon' => 'App\\Http\\Livewire\\LogoIcon',
+  'modals.login' => 'App\\Http\\Livewire\\Modals\\Login',
   'modals.wallet' => 'App\\Http\\Livewire\\Modals\\Wallet',
   'nav-link' => 'App\\Http\\Livewire\\NavLink',
   'paydash' => 'App\\Http\\Livewire\\Paydash',
@@ -20,4 +22,5 @@
   'slotlist' => 'App\\Http\\Livewire\\Slotlist',
   'test' => 'App\\Http\\Livewire\\Test',
   'toast' => 'App\\Http\\Livewire\\Toast',
+  'user-profile' => 'App\\Http\\Livewire\\UserProfile',
 );

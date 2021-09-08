@@ -5,6 +5,7 @@ module.exports = {
         presets: [
         require('./vendor/ph7jack/wireui/tailwind.config.js')
     ],
+      darkMode: false, 
     purge: [
         "./config/livewire-notifier.php",
         './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
@@ -16,6 +17,9 @@ module.exports = {
         './vendor/ph7jack/wireui/src/View/**/*.php'
     ],
     theme: {
+        
+        
+
         extend: {
 
                 colors: {},
@@ -59,5 +63,18 @@ module.exports = {
 
         },
     },
-    plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
+    plugins: [require('@tailwindcss/forms'), 
+
+  require('tailwindcss-animatecss')({
+        classes: ['animate__animated', 'animate__bounce', 'animate__bounceIn'],
+        settings: {
+        },
+        variants: ['responsive', 'hover', 'reduced-motion'],
+      }),
+
+
+
+    require('@tailwindcss/typography')],
 };
+
+

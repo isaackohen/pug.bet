@@ -20576,3 +20576,2027 @@
 [36m[39m
 [36m[10:03:52 AM] - PPfiyBLaqh7MV3wpAAua authenticated for: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
 [36m[10:03:52 AM] - PPfiyBLaqh7MV3wpAAua joined channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36m[10:12:27 AM] - PPfiyBLaqh7MV3wpAAua left channel: pug_database_Everyone (transport close)[39m
+[36m[10:12:27 AM] - PPfiyBLaqh7MV3wpAAua left channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d (transport close)[39m
+[36m[10:12:31 AM] - dweQJLd7iWG08tf0AAub joined channel: pug_database_Everyone[39m
+[31m[10:12:31 AM] - Preparing authentication request to: https://pug.bet[39m
+[36m[10:12:31 AM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[36m[10:12:31 AM] - dweQJLd7iWG08tf0AAub authenticated for: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36m[10:12:31 AM] - dweQJLd7iWG08tf0AAub joined channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36m[10:12:32 AM] - dweQJLd7iWG08tf0AAub left channel: pug_database_Everyone (transport close)[39m
+[36m[10:12:32 AM] - dweQJLd7iWG08tf0AAub left channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d (transport close)[39m
+[36m[10:12:34 AM] - c2KRUCi9lWGqhSUvAAuc joined channel: pug_database_Everyone[39m
+[31m[10:12:34 AM] - Preparing authentication request to: https://pug.bet[39m
+[36m[10:12:34 AM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[36m[10:12:34 AM] - c2KRUCi9lWGqhSUvAAuc authenticated for: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36m[10:12:34 AM] - c2KRUCi9lWGqhSUvAAuc joined channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36m[10:12:37 AM] - c2KRUCi9lWGqhSUvAAuc left channel: pug_database_Everyone (transport close)[39m
+[36m[10:12:37 AM] - c2KRUCi9lWGqhSUvAAuc left channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d (transport close)[39m
+[36m[10:13:02 AM] - 5aYLVKtCkWQURzaXAAuZ left channel: pug_database_Everyone (transport close)[39m
+[36m[10:13:02 AM] - 5aYLVKtCkWQURzaXAAuZ left channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d (transport close)[39m
+[36m[10:13:04 AM] - Lvvsw9tuiDDwQQiEAAud joined channel: pug_database_Everyone[39m
+[31m[10:13:04 AM] - Preparing authentication request to: https://pug.bet[39m
+[36m[10:13:04 AM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[36m[10:13:04 AM] - Lvvsw9tuiDDwQQiEAAud authenticated for: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36m[10:13:04 AM] - Lvvsw9tuiDDwQQiEAAud joined channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36mChannel: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36m[10:13:05 AM] - Lvvsw9tuiDDwQQiEAAud left channel: pug_database_Everyone (transport close)[39m
+[36m[10:13:05 AM] - Lvvsw9tuiDDwQQiEAAud left channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d (transport close)[39m
+[36m[10:13:05 AM] - Cm0nogzVqXBASFNSAAue joined channel: pug_database_Everyone[39m
+[31m[10:13:05 AM] - Preparing authentication request to: https://pug.bet[39m
+[36m[10:13:05 AM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[36m[10:13:05 AM] - Cm0nogzVqXBASFNSAAue authenticated for: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36m[10:13:05 AM] - Cm0nogzVqXBASFNSAAue joined channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36m[10:13:06 AM] - Cm0nogzVqXBASFNSAAue left channel: pug_database_Everyone (transport close)[39m
+[36m[10:13:06 AM] - Cm0nogzVqXBASFNSAAue left channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d (transport close)[39m
+[36m[10:13:32 AM] - NFuRSBgXI4HE-DOhAAuf joined channel: pug_database_Everyone[39m
+[31m[10:13:32 AM] - Preparing authentication request to: https://pug.bet[39m
+[36m[10:13:32 AM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[36m[10:13:32 AM] - NFuRSBgXI4HE-DOhAAuf authenticated for: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36m[10:13:32 AM] - NFuRSBgXI4HE-DOhAAuf joined channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36m[10:13:33 AM] - NFuRSBgXI4HE-DOhAAuf left channel: pug_database_Everyone (transport close)[39m
+[36m[10:13:33 AM] - NFuRSBgXI4HE-DOhAAuf left channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d (transport close)[39m
+[36m[10:13:34 AM] - gpbFllqoHvfF1devAAug joined channel: pug_database_Everyone[39m
+[31m[10:13:34 AM] - Preparing authentication request to: https://pug.bet[39m
+[36m[10:13:34 AM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[36m[10:13:34 AM] - gpbFllqoHvfF1devAAug authenticated for: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36m[10:13:34 AM] - gpbFllqoHvfF1devAAug joined channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36m[10:14:22 AM] - gpbFllqoHvfF1devAAug left channel: pug_database_Everyone (transport close)[39m
+[36m[10:14:22 AM] - gpbFllqoHvfF1devAAug left channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d (transport close)[39m
+[36m[10:14:23 AM] - Jl2QBWt-ZXBE73GkAAuh joined channel: pug_database_Everyone[39m
+[31m[10:14:24 AM] - Preparing authentication request to: https://pug.bet[39m
+[36m[10:14:24 AM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[36m[10:14:24 AM] - Jl2QBWt-ZXBE73GkAAuh authenticated for: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36m[10:14:24 AM] - Jl2QBWt-ZXBE73GkAAuh joined channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36m[10:15:22 AM] - Jl2QBWt-ZXBE73GkAAuh left channel: pug_database_Everyone (transport close)[39m
+[36m[10:15:22 AM] - Jl2QBWt-ZXBE73GkAAuh left channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d (transport close)[39m
+[36m[10:15:22 AM] - U0NpgsFLtBwRX-h0AAui joined channel: pug_database_Everyone[39m
+[31m[10:15:22 AM] - Preparing authentication request to: https://pug.bet[39m
+[36m[10:15:22 AM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[36m[10:15:22 AM] - U0NpgsFLtBwRX-h0AAui authenticated for: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36m[10:15:22 AM] - U0NpgsFLtBwRX-h0AAui joined channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36mChannel: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36m[10:15:24 AM] - U0NpgsFLtBwRX-h0AAui left channel: pug_database_Everyone (transport close)[39m
+[36m[10:15:24 AM] - U0NpgsFLtBwRX-h0AAui left channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d (transport close)[39m
+[36m[10:15:24 AM] - 7BMgZVzlqizTpORnAAuj joined channel: pug_database_Everyone[39m
+[31m[10:15:25 AM] - Preparing authentication request to: https://pug.bet[39m
+[36m[10:15:25 AM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[36m[10:15:25 AM] - 7BMgZVzlqizTpORnAAuj authenticated for: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36m[10:15:25 AM] - 7BMgZVzlqizTpORnAAuj joined channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36m[10:15:26 AM] - 7BMgZVzlqizTpORnAAuj left channel: pug_database_Everyone (transport close)[39m
+[36m[10:15:26 AM] - 7BMgZVzlqizTpORnAAuj left channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d (transport close)[39m
+[36m[10:15:26 AM] - bXTp4nztLjwwyrNWAAuk joined channel: pug_database_Everyone[39m
+[31m[10:15:26 AM] - Preparing authentication request to: https://pug.bet[39m
+[36m[10:15:26 AM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[36m[10:15:26 AM] - bXTp4nztLjwwyrNWAAuk authenticated for: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36m[10:15:26 AM] - bXTp4nztLjwwyrNWAAuk joined channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36mChannel: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36m[10:15:27 AM] - bXTp4nztLjwwyrNWAAuk left channel: pug_database_Everyone (transport close)[39m
+[36m[10:15:27 AM] - bXTp4nztLjwwyrNWAAuk left channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d (transport close)[39m
+[36m[10:15:27 AM] - 13oybzP6DpAtpu5KAAul joined channel: pug_database_Everyone[39m
+[31m[10:15:27 AM] - Preparing authentication request to: https://pug.bet[39m
+[36m[10:15:27 AM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[36m[10:15:27 AM] - 13oybzP6DpAtpu5KAAul authenticated for: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36m[10:15:27 AM] - 13oybzP6DpAtpu5KAAul joined channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36m[10:16:28 AM] - 13oybzP6DpAtpu5KAAul left channel: pug_database_Everyone (transport close)[39m
+[36m[10:16:28 AM] - 13oybzP6DpAtpu5KAAul left channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d (transport close)[39m
+[36m[10:22:47 AM] - 95jku_qy3XmUDzv1AAum joined channel: pug_database_Everyone[39m
+[31m[10:22:47 AM] - Preparing authentication request to: https://pug.bet[39m
+[36m[10:22:47 AM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[36m[10:22:47 AM] - 95jku_qy3XmUDzv1AAum authenticated for: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36m[10:22:47 AM] - 95jku_qy3XmUDzv1AAum joined channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36m[10:24:25 AM] - 95jku_qy3XmUDzv1AAum left channel: pug_database_Everyone (transport close)[39m
+[36m[10:24:25 AM] - 95jku_qy3XmUDzv1AAum left channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d (transport close)[39m
+[36m[11:13:11 AM] - x2dPKQNHb7lJHKSnAAuo joined channel: pug_database_Everyone[39m
+[36m[11:13:11 AM] - IouaW-g_kmPvgFwkAAun joined channel: pug_database_Everyone[39m
+[31m[11:13:11 AM] - Preparing authentication request to: https://pug.bet[39m
+[36m[11:13:11 AM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[36m[11:13:11 AM] - x2dPKQNHb7lJHKSnAAuo authenticated for: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36m[11:13:11 AM] - x2dPKQNHb7lJHKSnAAuo joined channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[31m[11:13:11 AM] - Preparing authentication request to: https://pug.bet[39m
+[36m[11:13:11 AM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[36m[11:13:11 AM] - IouaW-g_kmPvgFwkAAun authenticated for: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36m[11:13:11 AM] - IouaW-g_kmPvgFwkAAun joined channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36m[11:13:12 AM] - x2dPKQNHb7lJHKSnAAuo left channel: pug_database_Everyone (transport close)[39m
+[36m[11:13:12 AM] - x2dPKQNHb7lJHKSnAAuo left channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d (transport close)[39m
+[36m[11:13:15 AM] - IouaW-g_kmPvgFwkAAun left channel: pug_database_Everyone (transport close)[39m
+[36m[11:13:15 AM] - IouaW-g_kmPvgFwkAAun left channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d (transport close)[39m
+[36m[11:13:43 AM] - dJGYrc7kYIcP7WyJAAup joined channel: pug_database_Everyone[39m
+[36m[11:13:52 AM] - dJGYrc7kYIcP7WyJAAup left channel: pug_database_Everyone (transport close)[39m
+[36m[12:01:45 PM] - 9ePkm8O_vIBM27LhAAuq joined channel: pug_database_Everyone[39m
+[36m[12:01:49 PM] - 9ePkm8O_vIBM27LhAAuq left channel: pug_database_Everyone (transport close)[39m
+[36m[12:01:49 PM] - 6CdQclyVG0uwuypMAAur joined channel: pug_database_Everyone[39m
+[36m[12:01:50 PM] - 6CdQclyVG0uwuypMAAur left channel: pug_database_Everyone (transport close)[39m
+[36m[12:01:50 PM] - uykUrYLn_LeOB-cBAAus joined channel: pug_database_Everyone[39m
+[36m[12:01:53 PM] - uykUrYLn_LeOB-cBAAus left channel: pug_database_Everyone (transport close)[39m
+[36m[12:01:53 PM] - VDr-zKS6_tDiy3MYAAut joined channel: pug_database_Everyone[39m
+[36m[12:01:54 PM] - VDr-zKS6_tDiy3MYAAut left channel: pug_database_Everyone (transport close)[39m
+[36m[12:01:56 PM] - h1Rp97n4i8di96ImAAuu joined channel: pug_database_Everyone[39m
+[31m[12:01:56 PM] - Preparing authentication request to: https://pug.bet[39m
+[36m[12:01:56 PM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[36m[12:01:56 PM] - h1Rp97n4i8di96ImAAuu authenticated for: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36m[12:01:56 PM] - h1Rp97n4i8di96ImAAuu joined channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36m[12:01:58 PM] - h1Rp97n4i8di96ImAAuu left channel: pug_database_Everyone (transport close)[39m
+[36m[12:01:58 PM] - h1Rp97n4i8di96ImAAuu left channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d (transport close)[39m
+[36m[12:01:58 PM] - OK3JmcbKiHLBTwYoAAuv joined channel: pug_database_Everyone[39m
+[31m[12:01:58 PM] - Preparing authentication request to: https://pug.bet[39m
+[36m[12:01:58 PM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[36m[12:01:58 PM] - OK3JmcbKiHLBTwYoAAuv authenticated for: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36m[12:01:58 PM] - OK3JmcbKiHLBTwYoAAuv joined channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36m[12:02:48 PM] - OK3JmcbKiHLBTwYoAAuv left channel: pug_database_Everyone (transport close)[39m
+[36m[12:02:48 PM] - OK3JmcbKiHLBTwYoAAuv left channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d (transport close)[39m
+[36m[12:02:48 PM] - 6bcfvzfI5Q1igZ3mAAuw joined channel: pug_database_Everyone[39m
+[31m[12:02:48 PM] - Preparing authentication request to: https://pug.bet[39m
+[36m[12:02:48 PM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[36m[12:02:48 PM] - 6bcfvzfI5Q1igZ3mAAuw authenticated for: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36m[12:02:48 PM] - 6bcfvzfI5Q1igZ3mAAuw joined channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36mChannel: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36m[12:02:49 PM] - 6bcfvzfI5Q1igZ3mAAuw left channel: pug_database_Everyone (transport close)[39m
+[36m[12:02:49 PM] - 6bcfvzfI5Q1igZ3mAAuw left channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d (transport close)[39m
+[36m[12:02:49 PM] - WCHtCmpPb7S9kf_OAAux joined channel: pug_database_Everyone[39m
+[31m[12:02:49 PM] - Preparing authentication request to: https://pug.bet[39m
+[36m[12:02:49 PM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[36m[12:02:49 PM] - WCHtCmpPb7S9kf_OAAux authenticated for: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36m[12:02:49 PM] - WCHtCmpPb7S9kf_OAAux joined channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36m[12:02:50 PM] - WCHtCmpPb7S9kf_OAAux left channel: pug_database_Everyone (transport close)[39m
+[36m[12:02:50 PM] - WCHtCmpPb7S9kf_OAAux left channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d (transport close)[39m
+[36m[12:02:50 PM] - oVp8g4vwgkaqXIlnAAuy joined channel: pug_database_Everyone[39m
+[31m[12:02:51 PM] - Preparing authentication request to: https://pug.bet[39m
+[36m[12:02:51 PM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[36m[12:02:51 PM] - oVp8g4vwgkaqXIlnAAuy authenticated for: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36m[12:02:51 PM] - oVp8g4vwgkaqXIlnAAuy joined channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36mChannel: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36m[12:02:52 PM] - oVp8g4vwgkaqXIlnAAuy left channel: pug_database_Everyone (transport close)[39m
+[36m[12:02:52 PM] - oVp8g4vwgkaqXIlnAAuy left channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d (transport close)[39m
+[36m[12:02:53 PM] - lAefjumFXcOyvZ7bAAuz joined channel: pug_database_Everyone[39m
+[31m[12:02:53 PM] - Preparing authentication request to: https://pug.bet[39m
+[36m[12:02:53 PM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[36m[12:02:53 PM] - lAefjumFXcOyvZ7bAAuz authenticated for: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36m[12:02:53 PM] - lAefjumFXcOyvZ7bAAuz joined channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36mChannel: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36m[12:20:17 PM] - lAefjumFXcOyvZ7bAAuz left channel: pug_database_Everyone (transport close)[39m
+[36m[12:20:17 PM] - lAefjumFXcOyvZ7bAAuz left channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d (transport close)[39m
+[36m[12:20:20 PM] - HOt_RdiLv4Tyf2oGAAu0 joined channel: pug_database_Everyone[39m
+[31m[12:20:20 PM] - Preparing authentication request to: https://pug.bet[39m
+[36m[12:20:20 PM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[36m[12:20:20 PM] - HOt_RdiLv4Tyf2oGAAu0 authenticated for: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36m[12:20:20 PM] - HOt_RdiLv4Tyf2oGAAu0 joined channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36mChannel: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36m[12:27:00 PM] - HOt_RdiLv4Tyf2oGAAu0 left channel: pug_database_Everyone (transport close)[39m
+[36m[12:27:00 PM] - HOt_RdiLv4Tyf2oGAAu0 left channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d (transport close)[39m
+[36m[12:27:03 PM] - 54MymDa3jZtiNjzMAAu1 joined channel: pug_database_Everyone[39m
+[31m[12:27:03 PM] - Preparing authentication request to: https://pug.bet[39m
+[36m[12:27:03 PM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[36m[12:27:03 PM] - 54MymDa3jZtiNjzMAAu1 authenticated for: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36m[12:27:03 PM] - 54MymDa3jZtiNjzMAAu1 joined channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36mChannel: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36m[12:27:24 PM] - 54MymDa3jZtiNjzMAAu1 left channel: pug_database_Everyone (transport close)[39m
+[36m[12:27:24 PM] - 54MymDa3jZtiNjzMAAu1 left channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d (transport close)[39m
+[36m[12:27:24 PM] - zt33QJup9EjPHghQAAu2 joined channel: pug_database_Everyone[39m
+[31m[12:27:25 PM] - Preparing authentication request to: https://pug.bet[39m
+[36m[12:27:25 PM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[36m[12:27:25 PM] - zt33QJup9EjPHghQAAu2 authenticated for: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36m[12:27:25 PM] - zt33QJup9EjPHghQAAu2 joined channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36mChannel: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36m[12:31:20 PM] - zt33QJup9EjPHghQAAu2 left channel: pug_database_Everyone (transport close)[39m
+[36m[12:31:20 PM] - zt33QJup9EjPHghQAAu2 left channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d (transport close)[39m
+[36m[12:31:20 PM] - 3WP-Iq3d1QL7ZOc9AAu3 joined channel: pug_database_Everyone[39m
+[31m[12:31:20 PM] - Preparing authentication request to: https://pug.bet[39m
+[36m[12:31:20 PM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[36m[12:31:21 PM] - 3WP-Iq3d1QL7ZOc9AAu3 authenticated for: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36m[12:31:21 PM] - 3WP-Iq3d1QL7ZOc9AAu3 joined channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36mChannel: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36m[12:31:29 PM] - 3WP-Iq3d1QL7ZOc9AAu3 left channel: pug_database_Everyone (transport close)[39m
+[36m[12:31:29 PM] - 3WP-Iq3d1QL7ZOc9AAu3 left channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d (transport close)[39m
+[36m[12:31:29 PM] - 42AAk31JNSjclsrLAAu4 joined channel: pug_database_Everyone[39m
+[31m[12:31:29 PM] - Preparing authentication request to: https://pug.bet[39m
+[36m[12:31:29 PM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[36m[12:31:29 PM] - 42AAk31JNSjclsrLAAu4 authenticated for: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36m[12:31:29 PM] - 42AAk31JNSjclsrLAAu4 joined channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36mChannel: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36m[12:31:32 PM] - KDCZlb3pn7-OSYNKAAu5 joined channel: pug_database_Everyone[39m
+[31m[12:31:32 PM] - Preparing authentication request to: https://pug.bet[39m
+[36m[12:31:32 PM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[36m[12:31:32 PM] - KDCZlb3pn7-OSYNKAAu5 authenticated for: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36m[12:31:32 PM] - KDCZlb3pn7-OSYNKAAu5 joined channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36m[12:31:32 PM] - 42AAk31JNSjclsrLAAu4 left channel: pug_database_Everyone (transport close)[39m
+[36m[12:31:32 PM] - 42AAk31JNSjclsrLAAu4 left channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d (transport close)[39m
+[36mChannel: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36m[12:31:34 PM] - KDCZlb3pn7-OSYNKAAu5 left channel: pug_database_Everyone (transport close)[39m
+[36m[12:31:34 PM] - KDCZlb3pn7-OSYNKAAu5 left channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d (transport close)[39m
+[36m[12:31:34 PM] - tLFY5GnV85p4HQjYAAu6 joined channel: pug_database_Everyone[39m
+[31m[12:31:34 PM] - Preparing authentication request to: https://pug.bet[39m
+[36m[12:31:34 PM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[36m[12:31:34 PM] - tLFY5GnV85p4HQjYAAu6 authenticated for: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36m[12:31:34 PM] - tLFY5GnV85p4HQjYAAu6 joined channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36mChannel: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36m[12:32:27 PM] - tLFY5GnV85p4HQjYAAu6 left channel: pug_database_Everyone (transport close)[39m
+[36m[12:32:27 PM] - tLFY5GnV85p4HQjYAAu6 left channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d (transport close)[39m
+[36m[12:32:28 PM] - zu7tshAUfkJcRsCdAAu7 joined channel: pug_database_Everyone[39m
+[31m[12:32:28 PM] - Preparing authentication request to: https://pug.bet[39m
+[36m[12:32:28 PM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[36m[12:32:28 PM] - zu7tshAUfkJcRsCdAAu7 authenticated for: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36m[12:32:28 PM] - zu7tshAUfkJcRsCdAAu7 joined channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36mChannel: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36m[12:32:41 PM] - zu7tshAUfkJcRsCdAAu7 left channel: pug_database_Everyone (transport close)[39m
+[36m[12:32:41 PM] - zu7tshAUfkJcRsCdAAu7 left channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d (transport close)[39m
+[36m[12:32:42 PM] - 8x7lJKnJjHX11wTVAAu8 joined channel: pug_database_Everyone[39m
+[31m[12:32:42 PM] - Preparing authentication request to: https://pug.bet[39m
+[36m[12:32:42 PM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[36m[12:32:42 PM] - 8x7lJKnJjHX11wTVAAu8 authenticated for: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36m[12:32:42 PM] - 8x7lJKnJjHX11wTVAAu8 joined channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36mChannel: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36m[12:32:51 PM] - 8x7lJKnJjHX11wTVAAu8 left channel: pug_database_Everyone (transport close)[39m
+[36m[12:32:51 PM] - 8x7lJKnJjHX11wTVAAu8 left channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d (transport close)[39m
+[36m[12:32:51 PM] - A7Iw9-D2_xCcu6NmAAu9 joined channel: pug_database_Everyone[39m
+[31m[12:32:51 PM] - Preparing authentication request to: https://pug.bet[39m
+[36m[12:32:51 PM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[36m[12:32:51 PM] - A7Iw9-D2_xCcu6NmAAu9 authenticated for: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36m[12:32:51 PM] - A7Iw9-D2_xCcu6NmAAu9 joined channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36mChannel: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36m[12:32:53 PM] - A7Iw9-D2_xCcu6NmAAu9 left channel: pug_database_Everyone (transport close)[39m
+[36m[12:32:53 PM] - A7Iw9-D2_xCcu6NmAAu9 left channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d (transport close)[39m
+[36m[12:32:53 PM] - vSv7WszBca3MDMzeAAu- joined channel: pug_database_Everyone[39m
+[31m[12:32:53 PM] - Preparing authentication request to: https://pug.bet[39m
+[36m[12:32:53 PM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[36m[12:32:53 PM] - vSv7WszBca3MDMzeAAu- authenticated for: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36m[12:32:53 PM] - vSv7WszBca3MDMzeAAu- joined channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36mChannel: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36m[12:33:01 PM] - vSv7WszBca3MDMzeAAu- left channel: pug_database_Everyone (transport close)[39m
+[36m[12:33:01 PM] - vSv7WszBca3MDMzeAAu- left channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d (transport close)[39m
+[36m[12:33:01 PM] - 86rAVfjvUcBPSdWxAAu_ joined channel: pug_database_Everyone[39m
+[31m[12:33:01 PM] - Preparing authentication request to: https://pug.bet[39m
+[36m[12:33:01 PM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[36m[12:33:01 PM] - 86rAVfjvUcBPSdWxAAu_ authenticated for: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36m[12:33:01 PM] - 86rAVfjvUcBPSdWxAAu_ joined channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36mChannel: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36m[12:33:26 PM] - 86rAVfjvUcBPSdWxAAu_ left channel: pug_database_Everyone (transport close)[39m
+[36m[12:33:26 PM] - 86rAVfjvUcBPSdWxAAu_ left channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d (transport close)[39m
+[36m[12:33:26 PM] - QQESSqR6oP_rDP7DAAvA joined channel: pug_database_Everyone[39m
+[31m[12:33:26 PM] - Preparing authentication request to: https://pug.bet[39m
+[36m[12:33:26 PM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[36m[12:33:26 PM] - QQESSqR6oP_rDP7DAAvA authenticated for: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36m[12:33:26 PM] - QQESSqR6oP_rDP7DAAvA joined channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36mChannel: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36m[12:33:39 PM] - QQESSqR6oP_rDP7DAAvA left channel: pug_database_Everyone (transport close)[39m
+[36m[12:33:39 PM] - QQESSqR6oP_rDP7DAAvA left channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d (transport close)[39m
+[36m[12:33:39 PM] - CK4sP8XNvLiJ1GqLAAvB joined channel: pug_database_Everyone[39m
+[31m[12:33:39 PM] - Preparing authentication request to: https://pug.bet[39m
+[36m[12:33:39 PM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[36m[12:33:39 PM] - CK4sP8XNvLiJ1GqLAAvB authenticated for: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36m[12:33:39 PM] - CK4sP8XNvLiJ1GqLAAvB joined channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36mChannel: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36m[12:33:46 PM] - CK4sP8XNvLiJ1GqLAAvB left channel: pug_database_Everyone (transport close)[39m
+[36m[12:33:46 PM] - CK4sP8XNvLiJ1GqLAAvB left channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d (transport close)[39m
+[36m[12:33:47 PM] - BOZb09hnkEQ4Se5ZAAvC joined channel: pug_database_Everyone[39m
+[31m[12:33:47 PM] - Preparing authentication request to: https://pug.bet[39m
+[36m[12:33:47 PM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[36m[12:33:47 PM] - BOZb09hnkEQ4Se5ZAAvC authenticated for: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36m[12:33:47 PM] - BOZb09hnkEQ4Se5ZAAvC joined channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36m[12:36:42 PM] - BOZb09hnkEQ4Se5ZAAvC left channel: pug_database_Everyone (transport close)[39m
+[36m[12:36:42 PM] - BOZb09hnkEQ4Se5ZAAvC left channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d (transport close)[39m
+[36m[12:36:44 PM] - v8raSmJXW4Z3-piPAAvD joined channel: pug_database_Everyone[39m
+[31m[12:36:44 PM] - Preparing authentication request to: https://pug.bet[39m
+[36m[12:36:44 PM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[36m[12:36:44 PM] - v8raSmJXW4Z3-piPAAvD authenticated for: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36m[12:36:44 PM] - v8raSmJXW4Z3-piPAAvD joined channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36m[12:37:19 PM] - v8raSmJXW4Z3-piPAAvD left channel: pug_database_Everyone (transport close)[39m
+[36m[12:37:19 PM] - v8raSmJXW4Z3-piPAAvD left channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d (transport close)[39m
+[36m[12:37:21 PM] - WCgA5xgTfIvLMJdMAAvE joined channel: pug_database_Everyone[39m
+[31m[12:37:21 PM] - Preparing authentication request to: https://pug.bet[39m
+[36m[12:37:21 PM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[36m[12:37:21 PM] - WCgA5xgTfIvLMJdMAAvE authenticated for: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36m[12:37:21 PM] - WCgA5xgTfIvLMJdMAAvE joined channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[36m[12:38:07 PM] - xKdgd8zB0fzH7cKgAAvF joined channel: pug_database_Everyone[39m
+[36m[12:38:35 PM] - WCgA5xgTfIvLMJdMAAvE left channel: pug_database_Everyone (transport close)[39m
+[36m[12:38:35 PM] - WCgA5xgTfIvLMJdMAAvE left channel: pug_database_private-App.User.6132f8ec0f5681750711bd2d (transport close)[39m
+[36m[12:38:35 PM] - xKdgd8zB0fzH7cKgAAvF left channel: pug_database_Everyone (transport close)[39m
+[36m[12:38:36 PM] - zWPiznBVScdeSCaTAAvG joined channel: pug_database_Everyone[39m
+[31m[12:38:36 PM] - Preparing authentication request to: https://pug.bet[39m
+[36m[12:38:36 PM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[33m⚠ [12:38:36 PM] - zWPiznBVScdeSCaTAAvG could not be authenticated to pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[31m<html>[39m
+[31m<head><title>404 Not Found</title></head>[39m
+[31m<body>[39m
+[31m<center><h1>404 Not Found</h1></center>[39m
+[31m<hr><center>nginx/1.18.0 (Ubuntu)</center>[39m
+[31m</body>[39m
+[31m</html>[39m
+[31m[39m
+[31mClient can not be authenticated, got HTTP status 404[39m
+[36m[12:52:27 PM] - zWPiznBVScdeSCaTAAvG left channel: pug_database_Everyone (transport close)[39m
+[36m[12:52:29 PM] - tedKlTY9P_5rUkcRAAvH joined channel: pug_database_Everyone[39m
+[31m[12:52:29 PM] - Preparing authentication request to: https://pug.bet[39m
+[36m[12:52:29 PM] - Sending auth request to: https://pug.bet/broadcasting/auth[39m
+[36m[39m
+[33m⚠ [12:52:29 PM] - tedKlTY9P_5rUkcRAAvH could not be authenticated to pug_database_private-App.User.6132f8ec0f5681750711bd2d[39m
+[31m<html>[39m
+[31m<head><title>404 Not Found</title></head>[39m
+[31m<body>[39m
+[31m<center><h1>404 Not Found</h1></center>[39m
+[31m<hr><center>nginx/1.18.0 (Ubuntu)</center>[39m
+[31m</body>[39m
+[31m</html>[39m
+[31m[39m
+[31mClient can not be authenticated, got HTTP status 404[39m
+[36m[1:55:49 PM] - tedKlTY9P_5rUkcRAAvH left channel: pug_database_Everyone (ping timeout)[39m
+[1m[22m
+[1mL A R A V E L  E C H O  S E R V E R[22m
+[1m[22m
+[36mversion 1.6.2[39m
+[36m[39m
+[33m⚠ Starting server in DEV mode...[39m
+[33m[39m
+[32m✔ [39m Running at localhost on port 6001
+[32m✔ [39m Channels are ready.
+[32m✔ [39m Listening for http events...
+[32m✔ [39m Listening for redis events...
+[36m[39m
+[36mServer ready![39m
+[36m[39m
+[36mChannel: pug_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: pug_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: pug_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: pug_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: pug_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: pug_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: pug_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[1m[22m
+[1mL A R A V E L  E C H O  S E R V E R[22m
+[1m[22m
+[36mversion 1.6.2[39m
+[36m[39m
+[33m⚠ Starting server in DEV mode...[39m
+[33m[39m
+[32m✔ [39m Running at localhost on port 6001
+[32m✔ [39m Channels are ready.
+[32m✔ [39m Listening for http events...
+node:events:371
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::6001
+    at Server.setupListenHandle [as _listen2] (node:net:1319:16)
+    at listenInCluster (node:net:1367:12)
+    at Server.listen (node:net:1454:7)
+    at Server.httpServer (/root/.nvm/versions/node/v16.8.0/lib/node_modules/laravel-echo-server/dist/server.js:72:20)
+    at /root/.nvm/versions/node/v16.8.0/lib/node_modules/laravel-echo-server/dist/server.js:34:35
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1346:8)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 6001
+}
+[36mChannel: pug_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: pug_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: pug_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: pug_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: pug_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: pug_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: pug_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: pug_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: pug_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: pug_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: pug_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: pug_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[1m[22m
+[1mL A R A V E L  E C H O  S E R V E R[22m
+[1m[22m
+[36mversion 1.6.2[39m
+[36m[39m
+[33m⚠ Starting server in DEV mode...[39m
+[33m[39m
+[32m✔ [39m Running at localhost on port 6001
+[32m✔ [39m Channels are ready.
+[32m✔ [39m Listening for http events...
+[32m✔ [39m Listening for redis events...
+[36m[39m
+[36mServer ready![39m
+[36m[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6132ecc70f5681750711bd1d[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6132ecc70f5681750711bd1d[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6132ecc70f5681750711bd1d[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6132ecc70f5681750711bd1d[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
+[36mEvent: App\Events\BalanceModification[39m

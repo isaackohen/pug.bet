@@ -1,45 +1,64 @@
-<div>
 
-<x-modal blur wire:model.defer="wallet">
-    <x-card title="Wallet">
+@auth
+<x-modal wire:model.defer="wallet">
+    <div class="container mx-auto px-4 sm:px-8">
+    <div class="py-12">
+       <div class="inline-flex items-center bg-white leading-none ring-4 ring-blue-40 text-blue-600 rounded-full p-2 mb-5 shadow text-grey-700 text-sm hover:ring-4 hover:ring-blue-10 cursor-pointer">
+      
+      <span id="balance-id" class="inline-flex px-2 text-blue-400">Your Balance: &nbsp;<span class="text-blue-500 font-semibold">{{auth()->user()->balance()}} </span>$</span>
+    </div>
 
+<x-card title="Deposit - Cryptocurrency">
+    <x-slot name="action">
 
-          <header class="flex flex-wrap">
-        <button class="text-gray-600 py-2 px-4 block hover:text-blue-500 focus:outline-none text-blue-500 border-b-2 font-medium border-blue-500">
-            Deposit
-        </button><button class="text-gray-600 py-2 px-4 block hover:text-blue-500 focus:outline-none">
-            Withdraw
-        </button><button class="text-gray-600 py-2 px-4 block hover:text-blue-500 focus:outline-none">
-            Transactions
+    </x-slot>
+
+<a href="#_" wire:click="bitcoin()" class="px-5 m-1 py-2.5 font-medium bg-blue-50 hover:bg-blue-100 hover:text-blue-600 text-blue-500 rounded-lg text-sm">
+    Bitcoin
+</a>
+<a href="#_" wire:click="bitcoingold()" class="px-5 m-1 py-2.5 font-medium bg-blue-50 hover:bg-blue-100 hover:text-blue-600 text-blue-500 rounded-lg text-sm">
+    Bitcoin Gold
+</a>  
+<a href="#_" wire:click="litecoin()" class="px-5 m-1 py-2.5 font-medium bg-blue-50 hover:bg-blue-100 hover:text-blue-600 text-blue-500 rounded-lg text-sm">
+    Litecoin
+</a>  
+<a href="#_" wire:click="dogecoin()"
+class="px-5 m-1 py-2.5 font-medium bg-blue-50 hover:bg-blue-100 hover:text-blue-600 text-blue-500 rounded-lg text-sm">
+    Dogecoin
+</a>       
+</x-card>
+<div class="mt-5 mb-5"></div>
+<div class="mt-5 mb-5"></div>
+
+<x-card title="Deposit - Instant Third Party">
+    <x-slot name="action">
+        <button class="rounded-full focus:outline-none focus:ring-2 focus:ring-indigo-600">
+            <x-icon name="information-circle" class="w-4 h-4 text-gray-500" />
+        </button>
+    </x-slot>
+
+        <button class="px-5 m-1 py-2.5 font-medium bg-blue-50 hover:bg-blue-100 hover:text-blue-600 text-blue-500 rounded-lg text-sm">
+          <x-icon name="credit-card" class="w-4 h-4 text-gray-500" /> 
+          <p>Pay Secure by CREDITCARD</p>
         </button>
 
-          </header>
-          <main class="p-2 text-center">
-            <p>
-              @auth
-              <div>
-                <p>@livewire('payment-deposit-apipurse')</p> 
-                <p>@livewire('paydash')</p> 
+        <button onclick="$openModal('sideshift')" class="px-5 m-1 py-2.5 font-medium bg-blue-50 hover:bg-blue-100 hover:text-blue-600 text-blue-500 rounded-lg text-sm">
+           <x-icon name="credit-card" class="w-4 h-4 text-gray-500" /> 
+           <p> Insta-swap crypto with SIDESHIFT.AI</p>
+        </button>
 
-              @else
-                <p>You need to be logged in to deposit or withdraw.</p>
-              @endauth
-            </p>
-          </main>
- 
-      <button data-modal-toggle="balance-modal" data-modal-action="close" class="inline-flex bg-blue-600 shadow-lg text-white rounded-full h-6 px-3 justify-center items-center hover:bg-blue-400"><i class="fas fa-times p-1 text-xs"></i></button>
-
-
-          </footer>
-        <x-slot name="footer">
-            <div class="flex justify-end gap-x-4">
-                <x-button flat label="Cancel" x-on:click="close" />
-                <x-button primary label="I Agree" />
-            </div>
-        </x-slot>
-    </x-card>
+      </x-card>
+      @livewire('paydash')
+      <x-slot name="footer">
+        <div class="flex justify-end gap-x-4">
+            <x-button flat label="Cancel" x-on:click="close" />
+            <x-button primary label="Support" />
+        </div>
+    </x-slot>
+</div>
+</div>
 </x-modal>
 
+@endauth
 
 
-</div>

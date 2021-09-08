@@ -2,7 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Livewire\Slots;
-
+use Jenssegers\Mongodb\Eloquent\Model as Eloquent;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\DB;
 use Laravel\Jetstream\Jetstream;
 
 /*
@@ -58,24 +60,18 @@ Route::get('/bonus', function () {
 
 
 
+    
+
+
+Route::middleware(['auth:sanctum'])->get('/slots', function () {
+    $slots = DB::table('slotslist')->simplePaginate(60);
+      return view('slots/slotslist', compact('slots'));
+})->name('slots');
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Route::get('/slotstest', [App\Http\Controllers\Controller::class, 'getSlots']);
 
 
 
@@ -83,14 +79,10 @@ Route::get('/bonus', function () {
 //slots
 
 
-Route::middleware(['auth:sanctum'])->get('/slots', function () {
-    $slotslist = DB::table('slotslist')->get();
-    return view('slots/slotslist', ['slots' => $slotslist]);
-})->name('slots');
 
 Route::middleware(['auth:sanctum'])->get('/slots/demo/{game}', function ($game) { 
-    $apigamble_apikey = 'F158EA0AFC6CFC5F91E29790BBC6FCC0';
-    $construct = 'https://apigamble.com/api/slots/createDemoSession/'.$apigamble_apikey.'/'.$game;
+    $apigamble_apikey = Controller::operatorkey();
+    $construct = 'https://api.bulk.bet/api/slots/createDemoSession/'.$apigamble_apikey.'/'.$game;
     $response = json_decode(file_get_contents($construct), true);
     $url = $response['url'];
 

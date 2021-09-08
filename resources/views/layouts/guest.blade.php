@@ -14,20 +14,20 @@
         !!};
         </script>
         <title>{{ config('app.name', 'Gamble') }}</title>
-        <link rel="icon" type="image/png" href="/img/pug-icon.png">
+        <link rel="icon" type="image/png" href="/img/bulk-icon.png">
         <!-- Fontawesome !-->
+        <script src="https://kit.fontawesome.com/23f13eab24.js" crossorigin="anonymous"></script>        
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
 
         <!-- Styles -->
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
-        <script src="https://kit.fontawesome.com/23f13eab24.js" crossorigin="anonymous"></script>        
-
         @livewireStyles
+        <wireui:styles />
 
         <!-- Scripts -->
+
         <script src="{{ mix('js/app.js') }}" defer></script>
-        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
 
     </head>
     <body class="font-body">
@@ -46,6 +46,7 @@
                         @livewire('balance')
                     </div>
                 </header>
+
             @endauth
 
             <!-- Page Content -->
@@ -54,14 +55,15 @@
             </main>
  
 
-        </div>
+
         @livewire('footer')
-        @livewire('auth-modal')
 
-        @stack('modals')
-         <wireui:scripts />
-    <livewire:scripts/>
+
+        </div>
+
+
+                <livewire:scripts/>
+        <wireui:scripts />
         <livewire:notifier/>
-
     </body>
 </html>

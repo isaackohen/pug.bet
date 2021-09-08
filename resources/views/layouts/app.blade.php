@@ -14,25 +14,31 @@
         !!};
         </script>
         <title>{{ config('app.name', 'Gamble') }}</title>
-        <link rel="icon" type="image/png" href="/img/pug-icon.png">
+        <link rel="icon" type="image/png" href="/img/bulk-icon.png">
         <!-- Fontawesome !-->
+        <script src="https://kit.fontawesome.com/23f13eab24.js" crossorigin="anonymous"></script>        
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
 
         <!-- Styles -->
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
-        <script src="https://kit.fontawesome.com/23f13eab24.js" crossorigin="anonymous"></script>        
-<wireui:styles />
         @livewireStyles
+        <wireui:styles />
 
         <!-- Scripts -->
+
         <script src="{{ mix('js/app.js') }}" defer></script>
-        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
 
     </head>
     <body class="font-body">
 
-        <div class="bg-default" style="min-height: calc(100vh - 125px);">
+    @livewire('modals.login')     
+            @auth       
+                @livewire('modals.wallet')
+        @endauth
+
+
+        <div class="bg-default">
 
 
     
@@ -53,18 +59,14 @@
             <main>
                 {{ $slot }}
             </main>
- 
-
-        </div>
-                @livewire('modals.wallet')
-
-        @livewire('footer')
-        @livewire('auth-modal')
-
-        @stack('modals')
-         <wireui:scripts />
-    <livewire:scripts/>
+<div wire:poll>
+    Current time: {{ now() }}
+</div>
+        <x-dialog z-index="z-50" blur="md" align="center" />
+        <livewire:scripts/>
+        <wireui:scripts />
         <livewire:notifier/>
+        @livewire('footer')
 
     </body>
 </html>

@@ -52,8 +52,7 @@
                     <div class="block px-4 py-2 text-xs text-gray-400">
                         {{ __('Your Account') }}
                     </div>
-                    <x-jet-dropdown-link href="#" data-modal-toggle="balance-modal"
-                    data-modal-action="close">
+                    <x-jet-dropdown-link href="#">
                     {{ __('Wallet') }}
                     </x-jet-dropdown-link>
                     <x-jet-dropdown-link href="{{ route('profile.show') }}">
@@ -161,11 +160,9 @@
     </div>
     @else
     <div class="flex items-center ml-6">
-        <a class="inline-flex rounded-md" href="/login">
-            <button type="button" class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition">
-            Login
+            <button onclick="$openModal('login')" type="button" class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition">
+            Login 
             </button>
-        </a>
         <a class="inline-flex rounded-md" href="/register">
             <button type="button" class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition">
             Register

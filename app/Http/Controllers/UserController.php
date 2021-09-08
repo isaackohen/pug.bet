@@ -10,12 +10,53 @@ use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
-{ 
-    /**
-     * Handle the incoming request.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
+{
+
+        public static function processGame($playerId, $wager, $win, $gameid) {
+
+         $stats = \App\Models\UserStatistics::where('u', $playerId)->first();
+         $multiplier = 0;
+         if($wager > 0 and $win > 0){
+         $multiplier = round(($win / $wager), 2) ?? 0;
+         }
+
+         if(!$stats) {
+           \App\Models\UserStatistics::create([
+                'u' => $playerId,
+                'usd_games' => 0,
+                'usd_wager' => 0,
+                'usd_win' => 0,
+                'biggest' => 0,
+                'luckiest' => 0,
+                'biggest_game' => 0,
+                'luckiest_game' => 0,
+            ]);
+           return;
+         }
+
+         if($win > $stats->biggest) {
+            $stats->update([
+                'biggest' => $win,
+                'biggest_game' => $gameid,
+            ]);
+         }
+
+         if($wager > 0 and $win > 0) {
+         if(($win / $wager) > $stats->luckiest) {
+            $stats->update([
+                'luckiest' => $multiplier,
+                'luckiest_game' => $gameid,
+            ]);
+         } }
+
+            $stats->update([
+                'usd_games' => $stats->usd_games + 1,
+                'usd_wager' => round($stats->usd_wager + ($wager ?? 0), 2),
+                'usd_win' => round($stats->usd_win + ($win ?? 0), 2),
+            ]);
+
+        }
+
+
 
 }

@@ -1,10 +1,11 @@
-require('./bootstrap');
 
 import Alpine from 'alpinejs';
 
 window.Alpine = Alpine;
 
 Alpine.start();
+require('./bootstrap');
+
 const feather = require('feather-icons');
 
 
@@ -107,8 +108,3 @@ $(document).ready(function() {
 	
 });
 
-import VanillaTilt from 'vanilla-tilt';
-
-const element = document.querySelector(".js-tilt");
-VanillaTilt.init(element);
-element.addEventListener("tiltChange", callback);

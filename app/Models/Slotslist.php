@@ -9,6 +9,8 @@ use Illuminate\Support\Facades\DB;
 
 class Slotslist extends User
 {
+
+
     use HasFactory;
   
     /**

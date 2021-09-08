@@ -8,7 +8,7 @@
 
   --color-text-default: black;
   --color-text-default-soft: black;
-  --color-text-primary: #a991f7;
+  --color-text-primary: #8462f4;
   --color-text-primary-focus: #8462f4;
 
 
@@ -33,7 +33,6 @@
 
   --color-bg-inverse: #fff;
 
-  --color-text-primary: #fff;
   --color-text-secondary: fff;
 
   --color-text-inverse: #444;
@@ -48,36 +47,9 @@
   --rounded-btn: 0.25rem;
 }
 
-/** purgecss start ignore */
-.theme-dark {
-  --color-bg-primary: #847543;
-  --color-bg-secondary: #dcd0c0;
-  --color-bg-default: #f4f4f4;
-  --color-bg-inverse: #373737;
-
-  --color-text-primary: #fff;
-  --color-text-secondary: #927e7e;
-  --color-text-default: #373737;
-  --color-text-default-soft: #6a6a6a;
-  --color-text-inverse: #fff;
-  --color-text-inverse-soft: #bbb;
-
-  --font-display: Georgia, Times, 'Times New Roman', serif;
-  --font-body: Corbel, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans',
-    'DejaVu Sans', 'Bitstream Vera Sans', 'Liberation Sans', Verdana,
-    'Verdana Ref', sans-serif;
-
-  --font-weight-normal: 400;
-  --font-weight-display: 400;
-  --font-weight-btn: 600;
-
-  --rounded-btn: 0;
-}
-/** purgecss end ignore */
-
 
 .game-slot {
-  box-shadow:  rgb(0 0 0 / 15%) 0px 0px 16px;
+  box-shadow:  0 7px 10px rgb(0 0 0 / 50%);
 
 }
 .css-transitions-only-after-page-load * {
@@ -89,8 +61,8 @@
 }
 .thumbnail {
 
-min-height: 225px;
-max-height: 225px;
+min-height: 180px;
+max-height: 180px;
 aspect-ratio: auto 425/589;
 width: 100%; height: 100%;
 -o-object-fit: cover;
@@ -110,35 +82,8 @@ top: .125em;
 position: relative;
 }
 
-.skeleton-box {
-  position: relative;
-  overflow: hidden;
-  background-color: #e2e8f0;
 
-  &::after {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    transform: translateX(-100%);
-    background-image: linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 0) 0,
-      rgba(255, 255, 255, 0.2) 20%,
-      rgba(255, 255, 255, 0.5) 60%,
-      rgba(255, 255, 255, 0)
-    );
-    animation: shimmer 3s infinite;
-    content: '';
-  }
-}
 
-@keyframes shimmer {
-  100% {
-    transform: translateX(100%);
-  }
-}
 
 
  .pokerWrapper {
@@ -148,25 +93,7 @@ position: relative;
      height: 0;
      border-radius: 12px;
 
-    /* border: 2px solid #263337;
-     */
 
-    .label-fair {
-    position: absolute;
-    z-index: 5;
-    right: 0px;
-    border-radius: 11px 0px 0px 12px;
-    opacity: 1;
-    top: 20px;
-    background: #31a3f6;
-    box-shadow: 0 8px 12px rgb(0 0 0 / 16%), inset 0 -2px 0 rgb(0 0 0 / 30%);
-    font-size: 16px;
-    color: #fff;
-    font-weight: 600;
-    background-color: #1f61f8;
-    padding: 6px 19px;
-    text-transform: uppercase;
-    }
 }
  .pokerWrapper iframe {
      position: absolute;
@@ -187,22 +114,6 @@ position: relative;
     /* border: 2px solid #263337;
      */
 
-    .label-fair {
-    position: absolute;
-    z-index: 5;
-    right: 0px;
-    border-radius: 11px 0px 0px 12px;
-    opacity: 1;
-    top: 20px;
-    background: #31a3f6;
-    box-shadow: 0 8px 12px rgb(0 0 0 / 16%), inset 0 -2px 0 rgb(0 0 0 / 30%);
-    font-size: 16px;
-    color: #fff;
-    font-weight: 600;
-    background-color: #1f61f8;
-    padding: 6px 19px;
-    text-transform: uppercase;
-    }
 }
  .gameWrapper iframe {
      position: absolute;

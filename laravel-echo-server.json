@@ -1,5 +1,5 @@
 {
-	"authHost": "https://pug.bet",
+	"authHost": "https://demo.bulk.bet",
 	"authEndpoint": "/broadcasting/auth",
 	"clients": [
 		{

@@ -46,8 +46,10 @@
                                 </div>
                             </td>
                             <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                                <p class="text-gray-900 whitespace-no-wrap">{{ \App\Models\User::findUsername($game->u)}}</p>
-                            </td>
+                                <p class="cursor-pointer text-gray-900 whitespace-no-wrap font-semibold text-blue-600" wire:click=showUser('{{ $game->u }}')>{{ \App\Models\User::findUsername($game->u)}}</p>
+                            </td>  
+
+
                             <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                                 <p class="text-gray-900 whitespace-no-wrap">
                                     {{ number_format($game['bet'] / 100, 2)}}$
@@ -74,4 +76,10 @@
             </div>
         </div>
     </div>
+</div>
+
+<div x-data>
+    <span x-show="$wire.showMessage">...</span>
+ 
+    <button x-on:click="$wire.toggleShowMessage()">...</button>
 </div>

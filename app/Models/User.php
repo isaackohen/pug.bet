@@ -44,6 +44,8 @@ class User extends Authenticatable implements MustVerifyEmail
 		'token',
         'usd',
         'bonus',
+        'deposited',
+        'withdrawn',
         'arcade',
         'poker'
     ];

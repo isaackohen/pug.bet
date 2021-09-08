@@ -1,77 +1,37 @@
-<style>
-.bannerFondo{
-        height: 400px;
-}
-#second-header {
-  display:  none !important;
-}
-</style>
-<div>      
-    <div class="bannerFondo bg-primary rounded-component bg-left bg-auto bg-no-repeat" style="background-image: url(https://lunarwin.com/img/misc/happyguy.webp)">
+ <header>
+
+    <!-- Section Hero -->
+    <div class="container mx-auto bg-primary h-96 mt-1 bg-right rounded-md bg-no-repeat flex items-center animate__animated animate__bounce" style="background-image: url(/img/Header3.png)">
+      <div class="sm:ml-20 text-gray-50 text-center sm:text-left">
+        <h1 class="text-5xl font-bold mb-4 animate__bounceIn" >
+          Bulk.bet <br />
+        </h1>
+        <p class="text-lg inline-block sm:block">Full fledged casino solution.<br />35+ Game Providers, Poker and Custom Development.</p>
+        <br />
+        <button class="mt-8 px-4 py-2 bg-gray-600 rounded-xl">Browse Games       
+</button> @auth <button class="mt-8 px-4 py-2 bg-secondary rounded">Register</button> @endauth
+
+      </div>
     </div>
+  </header>
+  <main class="py-16 container mx-auto px-6 md:px-0">
+    <section>
+      <h1 class="text-3xl font-bold text-gray-600 mb-4">Casino Bonus</h1>
+      <div class="grid sm:grid-cols-3 gap-4 grid-cols-2">
+        <div>
+          <div class="bg-primary js-tilt h-44 bg-cover cursor-pointer shadow-2xl bg-no-repeat rounded-md opacity-80 hover:opacity-95 hover:pb-5" style="background-image: url(/img/faucet.png)"></div>
+          <h3 class="text-lg font-semibold text-gray-500 mt-2">Start with <span class="text-primary">Free Faucet</span></h3>
+        </div>
+        <div>
+          <div class="bg-primary js-tilt h-44 bg-cover cursor-pointer shadow-2xl bg-no-repeat rounded-md opacity-80 hover:opacity-95 hover:pb-5" style="background-image: url(/img/depositbonus.png)"></div>
+          <h3 class="text-lg font-semibold text-gray-500 mt-2">First <span class="text-primary">200% </span>Deposit Bonus</h3>
+        </div>
+        <div>
+          <div class="bg-primary h-44 bg-cover cursor-pointer shadow-2xl bg-no-repeat rounded-md opacity-80 hover:opacity-95 hover:pb-5" style="background-image: url(/img/jackpot.png)"></div>
+          <h3 class="text-lg font-semibold text-gray-500 mt-2">Fair <span class="text-primary">Progressive Jackpot</span> every bet</h3>
+        </div>
+      </div>
+    </section>
 
-      <div class="-mt-40 ">
-        <div class="w-full text-center">
-          <p class="text-sm tracking-widest text-white">Carousel Start</p>
-          <h1 class="font-bold text-5xl text-white">
-              Yayy!
-          </h1>
-      </div>
-              
-      <div class="grid grid-cols-1 gap-4 sm:grid-cols-3 ">
-  
-          <div class="p-2 sm:p-10 text-center cursor-pointer">
-              <div class="py-16 max-w-sm rounded overflow-hidden shadow-lg hover:bg-primary transition duration-300 hover:text- bg-white">
-                  <div class="space-y-10">
-                      <i class="fak fa-cherry" style="font-size:48px;"></i>
-                      <div class="px-6 py-4">
-                          <div class="space-y-5">
-                              <div class="font-bold text-xl mb-2">Slots</div>
-                              <p class="text-gray-700 text-base">
-                                  Here comes text or image of slots.
-                              </p>
 
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-  
-          <div class="p-2 sm:p-10 text-center cursor-pointer translate-x-2">
-              <div class="py-16 max-w-sm rounded overflow-hidden shadow-lg hover:bg-white transition duration-500 bg-white ">
-                  <div class="space-y-10">
-                      <i class="fak fa-dice" style="font-size:48px;"></i>
-                      
-                      <div class="px-6 py-4">
-                          <div class="space-y-5">
-                              <div class="font-bold text-xl mb-2">Live Casino</div>
-                              <p class="text-gray-700 text-base">
-                                  Here comes text or image of slots.
-                              </p>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-  
-          <div class="p-2 sm:p-10 text-center cursor-pointer translate-x-2">
-              <div class="py-16 max-w-sm rounded overflow-hidden shadow-lg hover:bg-white transition duration-500 bg-white ">
-                  <div class="space-y-10">
-                      <i class="fak fa-poker-cards" style="font-size:48px;"></i>
-                      
-                      <div class="px-6 py-4">
-                          <div class="space-y-5">
-                              <div class="font-bold text-xl mb-2">Poker</div>
-                              <p class="text-gray-700 text-base">
-                                  Here comes text or image of slots.
-                              </p>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-  
-      </div>
-      </div>
-  
-  </div>
+  </main>
