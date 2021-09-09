@@ -32,7 +32,7 @@ class Poker extends Component
     $getRunLink = $api->getRunLink($login); 
     $url = $getRunLink['uogetuserrunlink']['@attributes']['runlink'];
     $explode = explode('/', $url);
-    $link = 'https://poker.pug.bet/alogin/'.$explode[4].'/';
+    $link = 'https://poker.apigamble.com/alogin/'.$explode[4].'/';
 
         return view('livewire.poker')->with('url', $link);
     }

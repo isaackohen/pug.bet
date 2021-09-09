@@ -21,9 +21,11 @@
                     <x-jet-nav-link href="{{ route('poker') }}" :active="request()->routeIs('poker')">
                     {{ __('Poker') }}
                     </x-jet-nav-link>
+                    <!--
                     <x-jet-nav-link href="{{ route('bonus') }}" :active="request()->routeIs('bonus')">
                     {{ __('Bonus') }}
                     </x-jet-nav-link>
+                    !-->
                 </div>
             </div>
             @auth

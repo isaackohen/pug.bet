@@ -18,9 +18,8 @@
   'payment-deposit-apipurse' => 'App\\Http\\Livewire\\PaymentDepositApipurse',
   'poker' => 'App\\Http\\Livewire\\Poker',
   'profile.change-email-form' => 'App\\Http\\Livewire\\Profile\\ChangeEmailForm',
+  'profile.vip-progress' => 'App\\Http\\Livewire\\Profile\\VipProgress',
   'search' => 'App\\Http\\Livewire\\Search',
-  'slotlist' => 'App\\Http\\Livewire\\Slotlist',
   'test' => 'App\\Http\\Livewire\\Test',
-  'toast' => 'App\\Http\\Livewire\\Toast',
   'user-profile' => 'App\\Http\\Livewire\\UserProfile',
 );

@@ -38,6 +38,9 @@ class PaymentDepositApipurse extends Component
     {
         return view('livewire.payment-deposit-apipurse');
     }
+
+
+    
     public function createWallet($userid) {
         $selectuser = \App\Models\PaymentApipurseWallets::where('u', $userid)->first();
 

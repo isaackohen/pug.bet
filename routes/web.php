@@ -34,10 +34,7 @@ Route::middleware(['auth:sanctum'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 
-Route::middleware(['auth:sanctum'])->get('/livecasino', function () {
-    $slotslist = DB::table('slotslist')->where('type', '=', 'live')->get();
-    return view('livewire.livecasino', ['slots' => $slotslist]);
-})->name('livecasino');
+
 
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/payment/paydash/{orderid}', function ($orderid) {
@@ -59,21 +56,17 @@ Route::get('/bonus', function () {
 })->name('bonus');
 
 
+Route::get('/provider/{provider}', 'App\Http\Controllers\GameController@providerPage')->name('provider');
 
-    
 
+Route::get('/slots', 'App\Http\Controllers\GameController@slotsPage')->name('slots');
+Route::get('/livecasino', 'App\Http\Controllers\GameController@livecasinoPage')->name('livecasino');
 
-Route::get('/slots', function () {
-    $slots = DB::table('slotslist')->simplePaginate(60);
-      return view('slots/slotslist', compact('slots'));
-})->name('slots');
-
+Route::get('/slots/real/live/{game}', 'App\Http\Controllers\GameController@slotslist')->name('live.direct');
 
 
 
-Route::get('/slotstest', [App\Http\Controllers\Controller::class, 'getSlots']);
-
-
+Route::get('/testcreate', 'App\Http\Controllers\BonusController@defaultseedViplevels')->name('defaultseedViplevels');
 
 
 //slots
@@ -93,7 +86,6 @@ Route::middleware(['auth:sanctum'])->get('/slots/demo/{game}', function ($game) 
 })->name('slots.demo');
 
 Route::middleware(['auth:sanctum'])->get('/poker', function () { 
-
     return view('poker-page');           
 })->name('poker');
 

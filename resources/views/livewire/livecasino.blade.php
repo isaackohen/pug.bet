@@ -20,16 +20,7 @@
         @endforeach
     </div>
 
-
-
-
         <div class="spacer mt-5 mb-5"></div>
-@php
-
-$user = auth()->user();
-$user->add('5.00', "usd", "deposit", "nothing");
-        @endphp
-
         <div class="container mx-auto px-4 sm:px-8">
             <div class="py-12">
                 <aside class="relative overflow-hidden text-gray-300 bg-gray-900 rounded-xl lg:flex">

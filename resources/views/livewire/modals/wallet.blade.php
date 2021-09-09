@@ -37,7 +37,7 @@ class="px-5 m-1 py-2.5 font-medium bg-blue-50 hover:bg-blue-100 hover:text-blue-
         </button>
     </x-slot>
 
-        <button class="px-5 m-1 py-2.5 font-medium bg-blue-50 hover:bg-blue-100 hover:text-blue-600 text-blue-500 rounded-lg text-sm">
+        <button href="#_" onclick="$openModal('creditcard')" class="px-5 m-1 py-2.5 font-medium bg-blue-50 hover:bg-blue-100 hover:text-blue-600 text-blue-500 rounded-lg text-sm">
           <x-icon name="credit-card" class="w-4 h-4 text-gray-500" /> 
           <p>Pay Secure by CREDITCARD</p>
         </button>

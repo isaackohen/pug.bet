@@ -12,4 +12,3 @@ class Livecasino extends Component
         return view('livewire.livecasino');
     }
 }
-

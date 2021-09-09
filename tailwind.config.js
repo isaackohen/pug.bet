@@ -17,12 +17,9 @@ module.exports = {
         './vendor/ph7jack/wireui/src/View/**/*.php'
     ],
     theme: {
-        
-        
-
-        extend: {
-
-                colors: {},
+    
+    extend: {
+    colors: {},
     textColor: {
       primary: 'var(--color-text-primary)',
       primaryfocus: 'var(--color-text-primary-focus)',
@@ -57,7 +54,6 @@ module.exports = {
    fontFamily: {
       display: 'var(--font-display)',
       bodysans: 'var(--font-body-sans)',
-
       body: 'var(--font-body)',
     },
 
@@ -68,12 +64,12 @@ module.exports = {
   require('tailwindcss-animatecss')({
         classes: ['animate__animated', 'pulse'],
         settings: {
-          animatedSpeed: 1000,
-          heartBeatSpeed: 1000,
-          hingeSpeed: 3000,
-          bounceInSpeed: 1000,
+          animatedSpeed: 750,
+          heartBeatSpeed: 750,
+          hingeSpeed: 2000,
+          bounceInSpeed: 650,
           bounceOutSpeed: 750,
-          animationDelaySpeed: 500
+          animationDelaySpeed: 200
         },
         variants: ['responsive', 'hover', 'reduced-motion'],
       }),

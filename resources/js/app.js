@@ -1,8 +1,5 @@
-
 import Alpine from 'alpinejs';
-
 window.Alpine = Alpine;
-
 Alpine.start();
 require('./bootstrap');
 
@@ -40,7 +37,7 @@ $(document).ready(function() {
 							<div class="flex items-center">
 								<div class="flex-shrink-0 w-10 h-10">
 									<img class="w-full h-full rounded-full shadow-inne"
-									src="https://cdn.apigamble.com/i/long/jpg/${game.gameid}.jpg?width=30"
+									src="https://cdn.apigamble.com/i/long/jpg/${game.gameid}.jpg?width=20"
 									alt="" />
 								</div>
 								<div class="ml-3">

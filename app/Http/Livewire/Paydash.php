@@ -24,7 +24,6 @@ class Paydash extends Component
     public function mount()
     {
         $this->email = auth()->user()->email;
-        $this->amount = '25';
 
     }
 

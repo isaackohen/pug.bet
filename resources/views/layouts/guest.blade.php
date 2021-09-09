@@ -24,15 +24,21 @@
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
         @livewireStyles
         <wireui:styles />
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
 
         <!-- Scripts -->
-
         <script src="{{ mix('js/app.js') }}" defer></script>
 
     </head>
     <body class="font-body">
 
-        <div class="bg-default" style="min-height: calc(100vh - 125px);">
+    @livewire('modals.login')     
+            @auth       
+                @livewire('modals.wallet')
+        @endauth
+
+
+        <div class="bg-default">
 
 
     
@@ -53,17 +59,12 @@
             <main>
                 {{ $slot }}
             </main>
- 
 
-
+        <x-dialog z-index="z-50" blur="md" align="center" />
+        <wireui:scripts />
+        <livewire:scripts/> 
+        <livewire:notifier/>
         @livewire('footer')
 
-
-        </div>
-
-
-                <livewire:scripts/>
-        <wireui:scripts />
-        <livewire:notifier/>
     </body>
 </html>

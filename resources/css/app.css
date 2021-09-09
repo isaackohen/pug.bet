@@ -2,7 +2,6 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-
 :root {
 
 
@@ -83,6 +82,44 @@ position: relative;
 }
 
 
+ .pulse {
+     -webkit-animation-name: pulse;
+     animation-name: pulse;
+     transition: all ease-in;
+     -webkit-animation-duration: 0.5s;
+     animation-duration: 0.5s;
+     -webkit-animation-fill-mode: both;
+     animation-delay: 0.25s;
+     animation-fill-mode: both;
+}
+ @-webkit-keyframes pulse {
+     0% {
+         -webkit-transform: scale3d(1, 1, 1);
+         transform: scale3d(1, 1, 1);
+    }
+     50% {
+         -webkit-transform: scale3d(1.05, 1.05, 1.05);
+         transform: scale3d(1.03, 1.03, 1.03);
+    }
+     100% {
+         -webkit-transform: scale3d(1, 1, 1);
+         transform: scale3d(1, 1, 1);
+    }
+}
+ @keyframes pulse {
+     0% {
+         -webkit-transform: scale3d(1, 1, 1);
+         transform: scale3d(1, 1, 1);
+    }
+     50% {
+         -webkit-transform: scale3d(1.05, 1.05, 1.05);
+         transform: scale3d(1.03, 1.03, 1.03);
+    }
+     100% {
+         -webkit-transform: scale3d(1, 1, 1);
+         transform: scale3d(1, 1, 1);
+    }
+}
 
 
 
@@ -125,4 +162,22 @@ position: relative;
 }
  .slotcontainer-big {
      max-width: 1500px !important;
+}
+.ldBar {
+  position: relative;
+}
+.ldBar.label-center > .ldBar-label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-shadow: 0 0 3px #fff;
+}
+.ldBar-label:after {
+  content: "%";
+  display: inline;
+}
+.ldBar.no-percent .ldBar-label:after {
+  content: "";
 }

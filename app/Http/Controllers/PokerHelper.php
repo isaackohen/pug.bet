@@ -73,12 +73,12 @@ class PokerHelper extends Controller
     }
 
     public static function getPokerAffID() {
-            return '584';
+            return '557';
          }
 
 
     public static function getPokerApikey() {
-     return 'v0kj3r9f-uwqg-f38p-kfuk-rsuvnehbw0he';
+     return 'kclmapho-snjp-0ip6-mkkd-lz0obx6o3opl';
     }
 
 

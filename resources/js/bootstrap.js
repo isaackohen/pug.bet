@@ -1,5 +1,7 @@
 window._ = require('lodash');
 window.$ = window.jQuery = require('jquery'); 
+require("slick-carousel");
+
 
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
@@ -49,3 +51,16 @@ const connect = function() {
 connect();
 
 import VanillaTilt from 'vanilla-tilt';
+
+
+    $(document).ready(function() {
+        $('#slider').slick({
+            infinite: true,
+            arrows: false,
+            speed: 500,
+            cssEase: 'cubic-bezier(0.175, 0.885, 0.320, 1.275)',
+            autoplay: 7000,
+            appendDots: "#dotted"
+        });
+    });
+  

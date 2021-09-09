@@ -24,10 +24,11 @@
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
         @livewireStyles
         <wireui:styles />
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
 
         <!-- Scripts -->
-
         <script src="{{ mix('js/app.js') }}" defer></script>
+        <script src="/js/extra/loading-bar.min.js" defer></script>
 
     </head>
     <body class="font-body">
@@ -59,12 +60,10 @@
             <main>
                 {{ $slot }}
             </main>
-<div wire:poll>
-    Current time: {{ now() }}
-</div>
+
         <x-dialog z-index="z-50" blur="md" align="center" />
-        <livewire:scripts/>
         <wireui:scripts />
+        <livewire:scripts/>
         <livewire:notifier/>
         @livewire('footer')
 

@@ -47,7 +47,8 @@ class User extends Authenticatable implements MustVerifyEmail
         'deposited',
         'withdrawn',
         'arcade',
-        'poker'
+        'poker',
+        'viplevel'
     ];
 
     /**
@@ -79,6 +80,7 @@ class User extends Authenticatable implements MustVerifyEmail
     protected $appends = [
         'profile_photo_url',
     ];
+
 
 
     public function add(float $amount, $type, $reason, $internal = null, array $data = null) {
@@ -131,6 +133,23 @@ class User extends Authenticatable implements MustVerifyEmail
         return $user->name;
     }
 
+    public static function progressVip($id) {
+        $user = \App\Models\UserStatistics::where('u', $id)->first();
+
+        return $user->vip_wager;
+    }
+
+    public function vipPercent() {
+
+            $getViplevels = \App\Models\VIP\VipLevels::where('level', '=', ($this->viplevel + 1))->first();
+
+
+        $vippercentfunc = ($this->progressVip($this->_id) / $getViplevels->start) * 100;
+        return number_format($vippercentfunc, 0, '.', ''); 
+
+    }
+
+    
     public function balance(): float {
         $value = floatval($this->usd);
         return number_format($value, 2, '.', '');

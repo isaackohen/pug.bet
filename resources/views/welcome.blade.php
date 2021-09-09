@@ -8,7 +8,7 @@
             </div>             
 
             </div>
-            </div>   @livewire('user-profile')
+            </div>  
 
 
 @livewire('latestgames', ['rowlength' => '10'])

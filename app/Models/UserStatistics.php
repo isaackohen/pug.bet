@@ -20,7 +20,6 @@ class UserStatistics extends User
         'usd_wager',
         'usd_win',
         'usd_games',
-        'vip_level',
         'vip_wager',
         'biggest',
         'luckiest',

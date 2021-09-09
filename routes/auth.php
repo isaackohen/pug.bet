@@ -123,7 +123,7 @@ Route::group(['middleware' => config('fortify.middleware', ['web'])], function (
         }
 
         Route::get('/email/verify/{id}/{hash}', [VerifyEmailController::class, '__invoke'])
-            ->middleware(['auth:'.config('fortify.guard'), 'signed', 'throttle:5,10'])
+            //->middleware(['auth:'.config('fortify.guard'), 'signed', 'throttle:5,10'])
             ->name('verification.verify');
 
         Route::post('/email/verification-notification', [EmailVerificationNotificationController::class, 'store'])

@@ -87,46 +87,33 @@ module.exports = {
 }
 </style>
 
-    <x-card title="Creditcard">
+<x-card title="Creditcard - Choose Amount">
+    <x-slot name="action">
+        <button class="rounded-full focus:outline-none focus:ring-2 focus:ring-indigo-600">
+            <x-icon name="information-circle" class="w-4 h-4 text-gray-500" />
+        </button>
+    </x-slot>
 
+<x-input value="{{auth()->user()->email}}" wire:model="email" icon="user" label="E-mail" placeholder="Your E-mail" />
 
-          <header class="flex flex-wrap">
+<br>
 
-          <main class="p-2 text-center">
+<x-inputs.currency
+    label="Currency"
+    placeholder="Enter Amount"
+    icon="currency-dollar"
+    thousands="."
+    decimal=","
+    precision="2"
+    wire:model="amount"
+/>
 
-
-
-<div>
-
-
-
-
-        <div class="mb-5 mt-5">
-            <h1 class="text-center font-bold text-md uppercase">Creditcard  <img src="https://leadershipmemphis.org/wp-content/uploads/2020/08/780370.png" class="absolute h-8 ml-3"></h1>
-        </div>
-        <div class="mb-3">
-            <label class="font-bold text-sm mb-2 ml-1">E-mail</label>
-            <div>
-                <input wire:model="email" value="{{auth()->user()->email}}" class="w-50 px-3 py-2 mb-1 border-2 border-blue-400 bg-gray-100 rounded-md focus:outline-none focus:border-indigo-500 transition-colors" placeholder="Enter your e-mail" type="text"/>
-
-            </div>
-        </div>
-
- 
-        <div class="mb-10">
-            <label  class="font-bold text-sm mb-2 ml-1">Amount</label>
-            <div>
-                <input wire:model="amount" class="w-50 px-3 py-2 mb-1 border-2 border-blue-200 bg-gray-100 rounded-md focus:outline-none focus:border-indigo-500 font-sm transition-colors" placeholder="Enter amount" value="10" type="text"/>
-
-            </div>
-        </div>
         <div>
             <button wire:click="paydash_link()" class="block w-full max-w-xs mx-auto bg-indigo-500 hover:bg-indigo-700 focus:bg-indigo-700 text-white rounded-lg px-3 py-3 font-semibold"><i class="mdi mdi-lock-outline mr-1"></i> SECURE PAY NOW</button>
-        </div>                   
+        </div>   
 
-    </div>
+      </x-card>
 
-    </x-card>
     </div>
 
 </x-modal>

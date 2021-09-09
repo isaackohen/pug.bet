@@ -14,6 +14,7 @@ class UserController extends Controller
 
         public static function processGame($playerId, $wager, $win, $gameid) {
 
+         $user = \App\Models\User::where('_id', $playerId)->first();
          $stats = \App\Models\UserStatistics::where('u', $playerId)->first();
          $multiplier = 0;
          if($wager > 0 and $win > 0){
@@ -26,6 +27,7 @@ class UserController extends Controller
                 'usd_games' => 0,
                 'usd_wager' => 0,
                 'usd_win' => 0,
+                'vip_wager' => 0,
                 'biggest' => 0,
                 'luckiest' => 0,
                 'biggest_game' => 0,
@@ -34,6 +36,12 @@ class UserController extends Controller
            return;
          }
 
+         if($multiplier > 1.20 || $multiplier < 0.92) {
+            $stats->update([
+                'vip_wager' => round($stats->vip_wager ?? 0, 2) + round($wager, 2),
+            ]);
+
+         }
          if($win > $stats->biggest) {
             $stats->update([
                 'biggest' => $win,

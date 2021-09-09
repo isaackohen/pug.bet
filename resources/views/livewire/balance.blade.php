@@ -7,7 +7,7 @@
       
 <x-button rounded  spinner primary icon-home label="Wallet" />
 
-      <span id="balance-id" class="inline-flex px-2 text-blue-400">Your Balance: &nbsp;<span class="text-blue-500 font-semibold">{{auth()->user()->balance()}} </span>$</span>
+      <span id="balance-id" class="inline-flex px-2 text-blue-400">Your Balance: &nbsp;<span class="text-blue-500 font-semibold">{{auth()->user()->balance()}} </span>$</span> 
     </div>
   </div>
 </div>
