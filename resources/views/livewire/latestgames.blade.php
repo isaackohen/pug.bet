@@ -77,9 +77,3 @@
         </div>
     </div>
 </div>
-
-<div x-data>
-    <span x-show="$wire.showMessage">...</span>
- 
-    <button x-on:click="$wire.toggleShowMessage()">...</button>
-</div>

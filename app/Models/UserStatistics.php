@@ -21,6 +21,7 @@ class UserStatistics extends User
         'usd_win',
         'usd_games',
         'vip_wager',
+        'vip_wager_tot',
         'biggest',
         'luckiest',
         'biggest_game',

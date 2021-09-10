@@ -22620,3 +22620,177 @@ Emitted 'error' event on Server instance at:
 [36mEvent: App\Events\BalanceModification[39m
 [36mChannel: bulkbet_database_private-App.User.6134e75a50a0972bfc0d1c72[39m
 [36mEvent: App\Events\BalanceModification[39m
+[1m[22m
+[1mL A R A V E L  E C H O  S E R V E R[22m
+[1m[22m
+[36mversion 1.6.2[39m
+[36m[39m
+[33m⚠ Starting server in DEV mode...[39m
+[33m[39m
+[31mError: ENOENT: no such file or directory, open '/var/www/main/cert.pem'[39m
+[31m    at Object.openSync (node:fs:585:3)[39m
+[31m    at Object.readFileSync (node:fs:453:35)[39m
+[31m    at /root/.nvm/versions/node/v16.9.0/lib/node_modules/laravel-echo-server/dist/server.js:49:26[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at Server.secure (/root/.nvm/versions/node/v16.9.0/lib/node_modules/laravel-echo-server/dist/server.js:44:16)[39m
+[31m    at /root/.nvm/versions/node/v16.9.0/lib/node_modules/laravel-echo-server/dist/server.js:33:23[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at Server.serverProtocol (/root/.nvm/versions/node/v16.9.0/lib/node_modules/laravel-echo-server/dist/server.js:31:16)[39m
+[31m    at /root/.nvm/versions/node/v16.9.0/lib/node_modules/laravel-echo-server/dist/server.js:17:19[39m
+[31m    at new Promise (<anonymous>) {[39m
+[31m  errno: -2,[39m
+[31m  syscall: 'open',[39m
+[31m  code: 'ENOENT',[39m
+[31m  path: '/var/www/main/cert.pem'[39m
+[31m}[39m
+[1m[22m
+[1mL A R A V E L  E C H O  S E R V E R[22m
+[1m[22m
+[36mversion 1.6.2[39m
+[36m[39m
+[33m⚠ Starting server in DEV mode...[39m
+[33m[39m
+[31mError: ENOENT: no such file or directory, open '/var/www/main/cert.pem'[39m
+[31m    at Object.openSync (node:fs:585:3)[39m
+[31m    at Object.readFileSync (node:fs:453:35)[39m
+[31m    at /root/.nvm/versions/node/v16.9.0/lib/node_modules/laravel-echo-server/dist/server.js:49:26[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at Server.secure (/root/.nvm/versions/node/v16.9.0/lib/node_modules/laravel-echo-server/dist/server.js:44:16)[39m
+[31m    at /root/.nvm/versions/node/v16.9.0/lib/node_modules/laravel-echo-server/dist/server.js:33:23[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at Server.serverProtocol (/root/.nvm/versions/node/v16.9.0/lib/node_modules/laravel-echo-server/dist/server.js:31:16)[39m
+[31m    at /root/.nvm/versions/node/v16.9.0/lib/node_modules/laravel-echo-server/dist/server.js:17:19[39m
+[31m    at new Promise (<anonymous>) {[39m
+[31m  errno: -2,[39m
+[31m  syscall: 'open',[39m
+[31m  code: 'ENOENT',[39m
+[31m  path: '/var/www/main/cert.pem'[39m
+[31m}[39m
+[1m[22m
+[1mL A R A V E L  E C H O  S E R V E R[22m
+[1m[22m
+[36mversion 1.6.2[39m
+[36m[39m
+[33m⚠ Starting server in DEV mode...[39m
+[33m[39m
+[32m✔ [39m Running at localhost on port 6001
+[32m✔ [39m Channels are ready.
+[32m✔ [39m Listening for http events...
+[ioredis] Unhandled error event: ReplyError: NOAUTH Authentication required.
+    at parseError (/root/.nvm/versions/node/v16.9.0/lib/node_modules/laravel-echo-server/node_modules/redis-parser/lib/parser.js:179:12)
+    at parseType (/root/.nvm/versions/node/v16.9.0/lib/node_modules/laravel-echo-server/node_modules/redis-parser/lib/parser.js:302:14)
+[ioredis] Unhandled error event: ReplyError: NOAUTH Authentication required.
+    at parseError (/root/.nvm/versions/node/v16.9.0/lib/node_modules/laravel-echo-server/node_modules/redis-parser/lib/parser.js:179:12)
+    at parseType (/root/.nvm/versions/node/v16.9.0/lib/node_modules/laravel-echo-server/node_modules/redis-parser/lib/parser.js:302:14)
+[32m✔ [39m Listening for redis events...
+node:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+[UnhandledPromiseRejection: This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). The promise rejected with the reason "Redis could not subscribe.".] {
+  code: 'ERR_UNHANDLED_REJECTION'
+}
+[1m[22m
+[1mL A R A V E L  E C H O  S E R V E R[22m
+[1m[22m
+[36mversion 1.6.2[39m
+[36m[39m
+[33m⚠ Starting server in DEV mode...[39m
+[33m[39m
+[32m✔ [39m Running at localhost on port 6001
+[32m✔ [39m Channels are ready.
+[32m✔ [39m Listening for http events...
+[ioredis] Unhandled error event: ReplyError: NOAUTH Authentication required.
+    at parseError (/root/.nvm/versions/node/v16.9.0/lib/node_modules/laravel-echo-server/node_modules/redis-parser/lib/parser.js:179:12)
+    at parseType (/root/.nvm/versions/node/v16.9.0/lib/node_modules/laravel-echo-server/node_modules/redis-parser/lib/parser.js:302:14)
+[ioredis] Unhandled error event: ReplyError: NOAUTH Authentication required.
+    at parseError (/root/.nvm/versions/node/v16.9.0/lib/node_modules/laravel-echo-server/node_modules/redis-parser/lib/parser.js:179:12)
+    at parseType (/root/.nvm/versions/node/v16.9.0/lib/node_modules/laravel-echo-server/node_modules/redis-parser/lib/parser.js:302:14)
+[32m✔ [39m Listening for redis events...
+node:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+[UnhandledPromiseRejection: This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). The promise rejected with the reason "Redis could not subscribe.".] {
+  code: 'ERR_UNHANDLED_REJECTION'
+}
+[1m[22m
+[1mL A R A V E L  E C H O  S E R V E R[22m
+[1m[22m
+[36mversion 1.6.2[39m
+[36m[39m
+[33m⚠ Starting server in DEV mode...[39m
+[33m[39m
+[32m✔ [39m Running at localhost on port 6001
+[32m✔ [39m Channels are ready.
+[32m✔ [39m Listening for http events...
+[32m✔ [39m Listening for redis events...
+[36m[39m
+[36mServer ready![39m
+[36m[39m
+[36mChannel: bulkbet_database_private-App.User.613a3f23efeaaf119e012a27[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.613a3f23efeaaf119e012a27[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.613a3f23efeaaf119e012a27[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.613a3f23efeaaf119e012a27[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.613a3f23efeaaf119e012a27[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_private-App.User.613a3f23efeaaf119e012a27[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.613a3f23efeaaf119e012a27[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[1m[22m
+[1mL A R A V E L  E C H O  S E R V E R[22m
+[1m[22m
+[36mversion 1.6.2[39m
+[36m[39m
+[33m⚠ Starting server in DEV mode...[39m
+[33m[39m
+[32m✔ [39m Running at localhost on port 6001
+[32m✔ [39m Channels are ready.
+[32m✔ [39m Listening for http events...
+node:events:371
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::6001
+    at Server.setupListenHandle [as _listen2] (node:net:1319:16)
+    at listenInCluster (node:net:1367:12)
+    at Server.listen (node:net:1454:7)
+    at Server.httpServer (/root/.nvm/versions/node/v16.9.0/lib/node_modules/laravel-echo-server/dist/server.js:72:20)
+    at /root/.nvm/versions/node/v16.9.0/lib/node_modules/laravel-echo-server/dist/server.js:34:35
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1346:8)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 6001
+}
+[36mChannel: bulkbet_database_private-App.User.613a3f23efeaaf119e012a27[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.613a3f23efeaaf119e012a27[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m
+[36mChannel: bulkbet_database_private-App.User.613a3f23efeaaf119e012a27[39m
+[36mEvent: App\Events\BalanceModification[39m
+[36mChannel: bulkbet_database_Everyone[39m
+[36mEvent: App\Events\LiveFeed[39m

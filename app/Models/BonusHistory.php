@@ -1,34 +1,24 @@
 <?php
 
-namespace App\Models\VIP;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Jenssegers\Mongodb\Eloquent\Model;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\DB;
 
-class VipLevels extends Model
+class BonusHistory extends Model
 {
     use HasFactory;
     protected $connection = 'mongodb';
-    protected $collection = 'viplevels';
-
+    protected $collection = 'user_bonushistory';
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
-    protected $fillable = [
-        '_id',
-        'level',
-        'icon',
-        'level_name',
-        'start',
-        'rake_percent',
-        'promocode_bonus',
-        'faucet_bonus',
-        'fs_bonus',
-        'jackpot_bonus'
-    ];
 
+    protected $fillable = [
+        'u', 'faucet_total', 'faucet_lastused', 'promocode_total', 'promocode_lastused', 'promocode_freespins', 'promocode_usedtoday'
+    ];
 }

@@ -7,7 +7,7 @@
         <a @auth href="/slots/real/{{$slotslist['_id']}}" @else href="/slots/demo/{{$slotslist['_id']}}" @endauth>
             <div class="group cursor-pointer bg-gray-200 rounded-lg transition duration-400 ease transform translate-x-4 translate-y-4 top-5 hover:bg-primarysoft">
               <div class="absolute inset-0 z-10 bg-gray-100 rounded-t-lg text-center flex flex-col items-center justify-center opacity-20 hover:opacity-0 bg-opacity-0 duration-400 ease"></div>
-                <img class="thumbnail rounded-t-lg" src="https://cdn.apigamble.com/i/long/jpg/{{$slotslist['_id']}}.jpg" alt="">
+                <img class="big-thumbnail rounded-t-lg" src="https://cdn.apigamble.com/i/long/jpg/{{$slotslist['_id']}}.jpg" alt="">
                 <div class="flex flex-col p-3 font-semibold text-black group-hover:text-gray-100">
                     <p class="text-xs md:text-xs sm:text-xs">{{$slotslist['n']}}</p>
                     <p class="text-xs font-light text-gray-400 group-hover:text-gray-300 mt-1">

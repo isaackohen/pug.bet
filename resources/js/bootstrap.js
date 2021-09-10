@@ -59,7 +59,7 @@ import VanillaTilt from 'vanilla-tilt';
             arrows: false,
             speed: 500,
             cssEase: 'cubic-bezier(0.175, 0.885, 0.320, 1.275)',
-            autoplay: 7000,
+            autoplay: 9500,
             appendDots: "#dotted"
         });
     });

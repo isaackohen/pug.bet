@@ -45,6 +45,8 @@ class User extends Authenticatable implements MustVerifyEmail
         'usd',
         'bonus',
         'deposited',
+        'rake',
+        'freespins',
         'withdrawn',
         'arcade',
         'poker',
@@ -101,7 +103,6 @@ class User extends Authenticatable implements MustVerifyEmail
             'internal' => $decode['round'] ?? 0,
             'data' => $internal ?? []
         ]);
-
     }
 
     public function subtract(float $amount, $type, $reason, $internal = null, array $data = null) {
@@ -123,8 +124,6 @@ class User extends Authenticatable implements MustVerifyEmail
             'internal' => $decode['round'] ?? 0,
             'data' => $internal ?? []
         ]);
-
-
     } 
 
     public static function findUsername($id) {
@@ -136,19 +135,15 @@ class User extends Authenticatable implements MustVerifyEmail
     public static function progressVip($id) {
         $user = \App\Models\UserStatistics::where('u', $id)->first();
 
-        return $user->vip_wager;
+        return $user->vip_wager ?? 0;
     }
 
     public function vipPercent() {
-
             $getViplevels = \App\Models\VIP\VipLevels::where('level', '=', ($this->viplevel + 1))->first();
+            $vippercentfunc = round(($this->progressVip($this->_id) / $getViplevels->start) * 100, 2) ?? 0;
 
-
-        $vippercentfunc = ($this->progressVip($this->_id) / $getViplevels->start) * 100;
-        return number_format($vippercentfunc, 0, '.', ''); 
-
+    return number_format($vippercentfunc, 0, '.', ''); 
     }
-
     
     public function balance(): float {
         $value = floatval($this->usd);

@@ -31,7 +31,7 @@ Route::get('/', function () {
 });
 
 Route::middleware(['auth:sanctum'])->get('/dashboard', function () {
-    return view('dashboard');
+    return view('welcome');
 })->name('dashboard');
 
 
@@ -43,7 +43,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/payment/paydash/{orderid}
 })->name('paydash-orderpage');
 
 
-
+ 
 
 
 
@@ -74,8 +74,11 @@ Route::get('/testcreate', 'App\Http\Controllers\BonusController@defaultseedViple
 
 
 Route::middleware(['auth:sanctum'])->get('/slots/demo/{game}', function ($game) { 
-    $apigamble_apikey = Controller::operatorkey();
-    $construct = 'https://api.bulk.bet/api/slots/createDemoSession/'.$apigamble_apikey.'/'.$game;
+            $apigamble_apikey = \App\Http\Controllers\Controller::operatorkey();
+    $playerid = auth()->user()->_id;
+
+    $construct = "https://api.bulk.bet/v2/createSession?apikey=".$apigamble_apikey."&userid=".$playerid."-usd&game=".$game.'&mode=demo';
+    Log::notice($construct);
     $response = json_decode(file_get_contents($construct), true);
     $url = $response['url'];
 

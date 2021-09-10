@@ -26,11 +26,11 @@ public function showUser($user) {
         $user = \App\Models\User::where('_id', $user)->first();
 
         $this->dialog()->confirm([
-            'title'       => '<b>Player Info: </b>'.$user->name.'<br><i><small>Member since '.$user->created_at.'</i></small>',
+            'title'       => '<b>'.$user->name.'</b> - VIP Level <span class="text-primary font-md">'.$user->viplevel.'</span><br><i><small>Member since '.$user->created_at.'</i></small>',
             'description' =>  'Amount Wagered: <b>'.$stats->usd_wager.'$</b>
             <br>Games Played:  <b>'.$stats->usd_games.'</b>
             <br>Biggest Win: <b>'.$stats->biggest.'$</b>
-            <br>Luckiest Win: <b>'.$stats->luckiest.'x </b>
+            <br>Luckiest Win: <b>'.$stats->luckiest.'x multiplier</b>
             ',
             'acceptLabel' => 'Ok',
                         'icon'        => 'info',

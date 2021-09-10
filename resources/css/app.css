@@ -58,6 +58,17 @@
   -o-transition: none !important;
   transition: none !important;
 }
+
+.big-thumbnail {
+
+min-height: 255px;
+max-height: 255px;
+aspect-ratio: auto 425/589;
+width: 100%; height: 100%;
+-o-object-fit: cover;
+object-fit: cover;
+}
+
 .thumbnail {
 
 min-height: 180px;
