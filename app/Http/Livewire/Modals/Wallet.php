@@ -13,6 +13,7 @@ use Illuminate\Http\Request;
 
 class Wallet extends Component
 {
+    public $wallet2;
     use Actions;
 
     function generateRandomString($length = 10) {

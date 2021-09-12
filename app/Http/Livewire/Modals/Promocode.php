@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\DB;
 
 class Promocode extends Component
 {
-        use Actions;
+    use Actions;
 
     public $code;
 
@@ -68,7 +68,7 @@ class Promocode extends Component
 
         $promoVipBonus = ($promocode_basevalue / 100) * $getcurrentVipInfo->promocode_bonus;
 
-        $endNettoPromocode = $promocode_basevalue + $promoVipBonus;
+        $endNettoPromocode = number_format(($promocode_basevalue + $promoVipBonus), 2, ".", "");
 
         $getUserBonusHistory->update([
                 'promocode_total' => ($getUserBonusHistory->promocode_total ?? 0) + $endNettoPromocode,
@@ -86,14 +86,20 @@ class Promocode extends Component
         ]);
 
         $user->add(
-            round($endNettoPromocode, 2),
+            $endNettoPromocode,
             "usd",
             "promocode",
             json_encode(["promocode" => $code, "promocode_total" => $getUserBonusHistory->promocode_total])
         );
         
-        return $this->notification()->success($title = 'Success!', $description = 'Added '.$endNettoPromocode.'$ using promocode to your balance.');
+        return $this->notification()->success($title = 'Success!', $description = 'Added '.$amount.'$ to your balance.');
     }
+
+        public function notificateSuccess($user, $amount)
+        {
+            $this->notification()->success($title = 'Success!', $description = 'Added '.$amount.'$ to your balance.');
+            event(new \App\Events\PlaySound($user, "/sounds/coins.mp3"));
+        }
 
     public function render()
     {

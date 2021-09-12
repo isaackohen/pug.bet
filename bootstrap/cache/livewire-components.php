@@ -1,7 +1,6 @@
 <?php return array (
   'auth-modal' => 'App\\Http\\Livewire\\AuthModal',
   'balance' => 'App\\Http\\Livewire\\Balance',
-  'exliner' => 'App\\Http\\Livewire\\Exliner',
   'faucet' => 'App\\Http\\Livewire\\Faucet',
   'footer' => 'App\\Http\\Livewire\\Footer',
   'index' => 'App\\Http\\Livewire\\Index',
@@ -11,8 +10,7 @@
   'livecasino' => 'App\\Http\\Livewire\\Livecasino',
   'logo-full' => 'App\\Http\\Livewire\\LogoFull',
   'logo-icon' => 'App\\Http\\Livewire\\LogoIcon',
-  'modal.faucet' => 'App\\Http\\Livewire\\Modal\\Faucet',
-  'modals.faucet' => 'App\\Http\\Livewire\\Modals\\Faucet',
+  'modals.free-spins' => 'App\\Http\\Livewire\\Modals\\FreeSpins',
   'modals.login' => 'App\\Http\\Livewire\\Modals\\Login',
   'modals.promocode' => 'App\\Http\\Livewire\\Modals\\Promocode',
   'modals.rakeback' => 'App\\Http\\Livewire\\Modals\\Rakeback',
@@ -25,6 +23,5 @@
   'profile.change-email-form' => 'App\\Http\\Livewire\\Profile\\ChangeEmailForm',
   'profile.vip-progress' => 'App\\Http\\Livewire\\Profile\\VipProgress',
   'search' => 'App\\Http\\Livewire\\Search',
-  'test' => 'App\\Http\\Livewire\\Test',
   'user-profile' => 'App\\Http\\Livewire\\UserProfile',
 );

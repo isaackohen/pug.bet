@@ -32,6 +32,7 @@ module.exports = {
     backgroundColor: {
       primary: 'var(--color-bg-primary)',
       primarysoft: 'var(--color-bg-primary-soft)',
+      primarylight: 'var(--color-bg-primary-light)',
       secondary: 'var(--color-bg-secondary)',
       component: 'var(--color-bg-component)',
 

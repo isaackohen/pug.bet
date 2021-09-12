@@ -1,49 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>@yield('title')</title>
-
+        <meta name="csrf-token" content="{{ csrf_token() }}">
+        <script>
+        window.Laravel = {!! 
+                json_encode([
+                    'csrfToken' => csrf_token(),
+                    'userId' => auth()->guest() ? null : auth()->user()->id,
+                    'application' => config('app.name')
+                ]) 
+        !!};
+        </script>
+        <title>{{ config('app.name', 'Gamble') }}</title>
+        <link rel="icon" type="image/png" href="/img/bulk-icon.png">
+        <!-- Fontawesome !-->
+        <script src="https://kit.fontawesome.com/23f13eab24.js" crossorigin="anonymous"></script>        
         <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
 
         <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
+        <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+        @livewireStyles
+        <wireui:styles />
 
-            .full-height {
-                height: 100vh;
-            }
+        <!-- Scripts -->
+        <script src="{{ mix('js/app.js') }}" defer></script>
+        <script src="/js/extra/loading-bar.min.js" defer></script>
 
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 36px;
-                padding: 20px;
-            }
-        </style>
     </head>
     <body>
         <div class="flex-center position-ref full-height">

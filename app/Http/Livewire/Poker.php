@@ -17,7 +17,7 @@ class Poker extends Component
     public function render()
     {
 
-    $login = substr(auth()->user()->_id,0,12);
+    $login = substr(auth()->user()->_id,0,15);
     $api = new PokerApi(PokerHelper::getPokerAffID(), PokerHelper::getPokerApikey(), '217.182.195.96', 4000);
     $api->connect();
     $playerid = $api->getIdByLogin($login);
@@ -33,6 +33,7 @@ class Poker extends Component
     $url = $getRunLink['uogetuserrunlink']['@attributes']['runlink'];
     $explode = explode('/', $url);
     $link = 'https://poker.apigamble.com/alogin/'.$explode[4].'/';
+    Log::notice($link);
 
         return view('livewire.poker')->with('url', $link);
     }

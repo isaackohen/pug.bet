@@ -16,86 +16,48 @@ use Laravel\Jetstream\Jetstream;
 | routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group. Now create something great!
 |
-    return view('livewire.show-posts')
-        ->layout('layouts.base', ['title' => 'Show Posts'])
-}
-
 */
-
-
-            //http://slots.apigamble.com/api/callback/riselive?provider=evolution&subgame=0&userid=6132c49351836a34fb1ebcf2-btc&operator=62
-
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::get('/test', function () {
+    return view('test');
 });
 
 Route::middleware(['auth:sanctum'])->get('/dashboard', function () {
     return view('welcome');
 })->name('dashboard');
 
-
-
-
 Route::middleware(['auth:sanctum', 'verified'])->get('/payment/paydash/{orderid}', function ($orderid) {
     $redirectURL = "https://paydash.co.uk/checkout/" . $orderid;
     return view('livewire/paydash-orderpage', ['url' => $redirectURL]);
 })->name('paydash-orderpage');
 
-
- 
-
-
-
-
-
-
-
 Route::get('/bonus', function () {
     return view('bonus-page');
 })->name('bonus');
-
-
-Route::get('/provider/{provider}', 'App\Http\Controllers\GameController@providerPage')->name('provider');
-
-
-Route::get('/slots', 'App\Http\Controllers\GameController@slotsPage')->name('slots');
-Route::get('/livecasino', 'App\Http\Controllers\GameController@livecasinoPage')->name('livecasino');
-
-Route::get('/slots/real/live/{game}', 'App\Http\Controllers\GameController@slotslist')->name('live.direct');
-
-
-
-Route::get('/testcreate', 'App\Http\Controllers\BonusController@defaultseedViplevels')->name('defaultseedViplevels');
-
-
-//slots
-
-
-
-Route::middleware(['auth:sanctum'])->get('/slots/demo/{game}', function ($game) { 
-            $apigamble_apikey = \App\Http\Controllers\Controller::operatorkey();
-    $playerid = auth()->user()->_id;
-
-    $construct = "https://api.bulk.bet/v2/createSession?apikey=".$apigamble_apikey."&userid=".$playerid."-usd&game=".$game.'&mode=demo';
-    Log::notice($construct);
-    $response = json_decode(file_get_contents($construct), true);
-    $url = $response['url'];
-
-    $slotslist = DB::table('slotslist')->get();
-    $filter = $slotslist->where('_id', '=', $slotslist)->first();
-
-    return view('slots/play')->with('id_game', $game)->with('name_game', $filter)->with('url', $url);           
-})->name('slots.demo');
 
 Route::middleware(['auth:sanctum'])->get('/poker', function () { 
     return view('poker-page');           
 })->name('poker');
 
+Route::get('/provider/{provider}', 'App\Http\Controllers\GameController@providerPage')->name('provider');
+Route::get('/slots', 'App\Http\Controllers\GameController@slotsPage')->name('slots');
+Route::get('/livecasino', 'App\Http\Controllers\GameController@livecasinoPage')->name('livecasino');
+
 Route::get('/slots/real/live/{game}', 'App\Http\Controllers\GameController@livegame')->name('live.direct');
+Route::middleware(['auth:sanctum'])->get('/slots/real/{game}', 'App\Http\Controllers\GameController@slotsgame')->name('slots.direct');
+Route::get('/slots/demo/{game}', 'App\Http\Controllers\GameController@slotsgameDemo')->name('slots.demo');
+Route::middleware(['auth:sanctum'])->get('/slots/freespins/{game}', 'App\Http\Controllers\GameController@slotsgameFreespins')->name('slots.freespins');
 
-Route::get('/slots/real/{game}', 'App\Http\Controllers\GameController@slotsgame')->name('slots.direct');
+//Route::get('/testcreate', 'App\Http\Controllers\BonusController@defaultseedViplevels')->name('defaultseedViplevels');
 
+//slots
+
+
+/*
 Route::get('/slots/real/live/lobby/{provider}', function ($provider) { 
     $currency = 'usd';
     $playerid = auth()->user()->_id;
@@ -108,12 +70,4 @@ Route::get('/slots/real/live/lobby/{provider}', function ($provider) {
 
     return view('slots/play')->with('id_game', $provider)->with('name_game', 'livegame')->with('url', $url);           
 })->name('live.lobby');
-
-
-
-
-
-
-      
-
-
+*/

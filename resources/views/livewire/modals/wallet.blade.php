@@ -1,5 +1,7 @@
-
 @auth
+
+
+
 <x-modal wire:model.defer="wallet">
     <div class="container mx-auto px-4 sm:px-8">
     <div class="py-12">
@@ -36,6 +38,27 @@ class="px-5 m-1 py-2.5 font-medium bg-blue-50 hover:bg-blue-100 hover:text-blue-
             <x-icon name="information-circle" class="w-4 h-4 text-gray-500" />
         </button>
     </x-slot>
+    <script type="text/javascript">
+  window.__SIDESHIFT__ = {
+    parentAffiliateId: "NXuHDSa0R",
+    defaultDepositMethodId: "eth",
+    defaultSettleMethodId: "ltc",
+    settleAddress: "{{$wallet2}}",
+  }
+</script>
+        <script src="https://sideshift.ai/static/js/main.js"></script>
+
+        <button onclick="window.sideshift.show()" class="px-5 m-1 py-2.5 font-medium bg-blue-50 hover:bg-blue-100 hover:text-blue-600 text-blue-500 rounded-lg text-sm">
+            <div class="flex flex-wrap">
+                <img src="https://sideshift.ai/static/media/eth.18708d3e.svg" class="h-4 mr-1">
+                <img src="https://sideshift.ai/static/media/bch.274d44f0.svg" class="h-4 mr-1">
+                <img src="https://sideshift.ai/static/media/usdt.66f1b147.svg" class="h-4 mr-1">
+                <img src="https://sideshift.ai/static/media/bnb.f78cb0ac.svg" class="h-4 mr-1">
+            </div>
+
+                
+           <p onclick="window.sideshift.show()">Instant crypto-swap with SIDESHIFT.AI</p>
+        </button>
 
         <button href="#_" onclick="$openModal('creditcard')" class="px-5 m-1 py-2.5 font-medium bg-blue-50 hover:bg-blue-100 hover:text-blue-600 text-blue-500 rounded-lg text-sm">
             <div class="flex flex-wrap">
@@ -46,17 +69,6 @@ class="px-5 m-1 py-2.5 font-medium bg-blue-50 hover:bg-blue-100 hover:text-blue-
           <p>Pay Secure by CREDITCARD</p>
         </button>
 
-        <button onclick="$openModal('sideshift')" class="px-5 m-1 py-2.5 font-medium bg-blue-50 hover:bg-blue-100 hover:text-blue-600 text-blue-500 rounded-lg text-sm">
-            <div class="flex flex-wrap">
-                <img src="https://sideshift.ai/static/media/eth.18708d3e.svg" class="h-4 mr-1">
-                <img src="https://sideshift.ai/static/media/bch.274d44f0.svg" class="h-4 mr-1">
-                <img src="https://sideshift.ai/static/media/usdt.66f1b147.svg" class="h-4 mr-1">
-                <img src="https://sideshift.ai/static/media/bnb.f78cb0ac.svg" class="h-4 mr-1">
-            </div>
-
-                
-           <p>Instant crypto-swap with SIDESHIFT.AI</p>
-        </button>
 
       </x-card>
       @livewire('paydash')
@@ -69,6 +81,9 @@ class="px-5 m-1 py-2.5 font-medium bg-blue-50 hover:bg-blue-100 hover:text-blue-
 </div>
 </div>
 </x-modal>
+
+
+
 
 @endauth
 

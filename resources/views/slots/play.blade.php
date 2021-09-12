@@ -4,9 +4,8 @@
                 <div class="gameWrapper filter drop-shadow-lg" style="min-width: 100%; ">
                     <iframe src="<?php echo $url; ?>" style="min-height: 100%; border: none !important;" border="0"></iframe>
                 </div>
-            </div>
-@livewire('latestgames', ['rowlength' => '5'])
-
+        </div>
+    @livewire('latestgames', ['rowlength' => '5'])
         </div>
 
     @php

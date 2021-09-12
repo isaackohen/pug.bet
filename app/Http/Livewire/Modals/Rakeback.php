@@ -7,11 +7,17 @@ use Livewire\Component;
 use WireUi\Traits\Actions;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\DB;
- use Carbon\Carbon;
+use Carbon\Carbon;
 
 class Rakeback extends Component
 {
     use Actions;
+
+    public function notificateSuccess($user, $amount)
+    {
+        $this->notification()->success($title = 'Success!', $description = 'Added '.$amount.'$ rake to your balance.');
+        event(new \App\Events\PlaySound($user, "/sounds/coins.mp3"));
+    }
 
     public function useRakeback() { 
         $user = auth()->user();
@@ -55,8 +61,7 @@ class Rakeback extends Component
         if($getUserBonusHistory->rakeback_lastused > $min_timestamp) {
             $timeEndConvert = Carbon::createFromTimestamp($getUserBonusHistory->rakeback_lastused)->addMinutes($rakeback_cooldown)->toDateTimeString();
             $timeLeft = Carbon::now()->diffInMinutes($timeEndConvert);
-
-            return $this->notification()->error($title = 'Not able to redeem faucet', $description = 'You have redeemed rakeback recently. Wait '.$timeLeft.' minutes before using again.');
+            return $this->notification()->error($title = 'Not able to redeem rakeback', $description = 'You have redeemed rakeback recently. Wait '.$timeLeft.' minutes before using again.');
         }
         
         //Let's add extra rakeback bonuses later
@@ -78,8 +83,7 @@ class Rakeback extends Component
             json_encode(["rakeback" => $rakebackValue, "rakeback_total" => $getUserBonusHistory->faucet_total])
         );
 
-        event(new \App\Events\PlaySound($user, "/sounds/coins.mp3"));
-        return $this->notification()->success($title = 'Success!', $description = 'Added '.$endNettoRakeback.'$ rake to your balance.');
+        return self::notificateSuccess($user, $endNettoRakeback);
     }
 
     public function render()

@@ -24,7 +24,6 @@
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
         @livewireStyles
         <wireui:styles />
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
 
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
@@ -34,8 +33,11 @@
     <body class="font-body">
 
     @livewire('modals.login')     
-            @auth       
+        @auth       
                 @livewire('modals.wallet')
+        @if(auth()->user()->freespins > 1)
+                        @livewire('modals.free-spins')
+        @endif
         @endauth
 
 
@@ -46,21 +48,12 @@
 
             @livewire('navigation-menu')
 
-            <!-- Page Heading -->
-            @auth
-                <header class="font-header">
-                    <div id="second-header" class="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
-                        @livewire('balance')
-                    </div>
-                </header>
-
-            @endauth
-
             <!-- Page Content -->
             <main>
                 {{ $slot }}
             </main>
-        <x-notifications z-index="z-50" />
+
+        <x-notifications z-index="z-50" class="mt-10" />
         <x-dialog z-index="z-50" blur="sm" align="center" />
         <wireui:scripts />
         <livewire:scripts/>

@@ -31,7 +31,6 @@
       </div>
     </div>
   </div>
-
   <!--
     <div class="slick-slide">
     <div class="container bg-primary h-96 rounded-md bg-no-repeat flex items-center" style="background-image: url(/img/vip.jpg)">
@@ -39,22 +38,41 @@
 
   !-->
   </div>
+    @auth
+        <header class="font-header">
+            <div id="second-header" class="max-w-7xl mx-auto p-2">
+                @livewire('balance')
+            </div>
+        </header>
+    @endauth
+
+    <button wire:click.prefetch="toggleContent">Show Content</button>
+ 
+    @if ($contentIsVisible)
+        <span>Some Content...</span>
+    @endif
 
     <!-- Bonuses !-->
     <section>
       <h1 class="text-3xl font-bold text-gray-600 mb-4">Casino Bonus</h1>
       <div class="grid sm:grid-cols-3 gap-4 grid-cols-2 zoom-in">
+        <a href="/bonus/">
         <div>
           <div class="bg-primary js-tilt h-44 bg-cover cursor-pointer shadow-2xl bg-no-repeat rounded-md opacity-80 hover:opacity-95 hover:pb-5" style="background-image: url(/img/faucet.png)"></div>
           <h3 class="text-lg font-semibold text-gray-500 mt-2">Start with <span class="text-primary">Free Faucet</span></h3>
         </div>
+        </a>
         <div>
+          <a href="/bonus/">
           <div class="bg-primary js-tilt h-44 bg-cover cursor-pointer shadow-2xl bg-no-repeat rounded-md opacity-80 hover:opacity-95 hover:pb-5" style="background-image: url(/img/depositbonus.png)"></div>
           <h3 class="text-lg font-semibold text-gray-500 mt-2">First <span class="text-primary">200% </span>Deposit Bonus</h3>
+          </a>
         </div>
         <div>
+        <a href="/bonus/">
           <div class="bg-primary h-44 bg-cover cursor-pointer shadow-2xl bg-no-repeat rounded-md opacity-80 hover:opacity-95 hover:pb-5" style="background-image: url(/img/jackpot.png)"></div>
           <h3 class="text-lg font-semibold text-gray-500 mt-2">Fair <span class="text-primary">Progressive Jackpot</span> every bet</h3>
+        </a>
         </div>
       </div>
     </section>

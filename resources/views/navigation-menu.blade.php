@@ -6,12 +6,10 @@
                 <!-- Logo -->
                 @livewire('logo-full')
                 <!-- Navigation Links -->
-                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <!--
-                    <x-jet-nav-link href="/" :active="request()->routeIs('home')">
+                <div class="hidden space-x-8 sm:-my-px sm:ml-8 sm:flex">
+                    <x-jet-nav-link href="/" :active="request()->routeIs('home')" :active="request()->routeIs('dashboard')">
                     {{ __('Home') }}
                     </x-jet-nav-link>
-                    !-->
                     <x-jet-nav-link href="{{ route('slots') }}" :active="request()->routeIs('slots')" :active="request()->routeIs('slots.real')">
                     {{ __('Slots') }}
                     </x-jet-nav-link>
@@ -21,11 +19,9 @@
                     <x-jet-nav-link href="{{ route('poker') }}" :active="request()->routeIs('poker')">
                     {{ __('Poker') }}
                     </x-jet-nav-link>
-                    <!--
                     <x-jet-nav-link href="{{ route('bonus') }}" :active="request()->routeIs('bonus')">
                     {{ __('Bonus') }}
                     </x-jet-nav-link>
-                    !-->
                 </div>
             </div>
             @auth
@@ -63,8 +59,8 @@
                     <x-jet-dropdown-link onclick="$openModal('wallet')" href="#">
                     {{ __('Wallet') }}
                     </x-jet-dropdown-link>
-                    <x-jet-dropdown-link href="#">
-                    {{ __('Wallet') }}
+                    <x-jet-dropdown-link href="{{ route('bonus') }}">
+                    {{ __('Bonus') }}
                     </x-jet-dropdown-link> 
                     <x-jet-dropdown-link href="{{ route('profile.show') }}">
                     {{ __('Profile') }}

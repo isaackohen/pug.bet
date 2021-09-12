@@ -35,7 +35,7 @@ class PokerApi extends Controller
 
 
     public function createPlayer($login, $password, $firstName, $lastName, $email, $sex, $location) {
-        return $this->TCP->request('<objects><object name="user"><uoregister_2 loginname="'.$login.'" password="'.$password.'" firstname="'.$firstName.'" lastname="'.$lastName.'" email="'.$email.'" sexid="'.$sex.'" location="'.$location.'" showlocation="1" affiliateid="'.$this->affID.'" secretkey="'.$this->secret.'" /></object></objects>');
+        return $this->TCP->request('<objects><object name="user"><uoregister_2 loginname="'.$login.'" password="'.$password.'" firstname="'.$firstName.'" lastname="'.$lastName.'" email="'.$email.'@email.com" sexid="'.$sex.'" location="'.$location.'" showlocation="1" affiliateid="'.$this->affID.'" secretkey="'.$this->secret.'" /></object></objects>');
     }
     
     public function changePlayer($id, $firstName, $lastName, $sex, $status, $chatAccess, $address, $city, $phone, $stateId, $countryId) {

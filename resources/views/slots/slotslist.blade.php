@@ -22,22 +22,27 @@ border-radius: 18px;
 </div>
 
 <div class="flex flex-wrap mt-2 max-w-7xl mx-auto sm:px-6 lg:px-8">
-
-    @foreach($slots as $slotslist)
-    <div id="game-card" data-tilt data-tilt-scale="1.1" data-tilt-glare data-tilt-max="10" data-tilt-speed="300" data-tilt-perspective="1000" data-tilt class="xl:w-1/7 lg:w-1/6 md:w-1/4 sm:w-1/3 w-1/2 px-3 my-4 pulse">
-        <a @auth href="/slots/real/{{$slotslist['_id']}}" @else href="/slots/demo/{{$slotslist['_id']}}" @endauth>
-            <div class="group cursor-pointer shadow-md rounded-t-xl">
-                <img class="thumbnail rounded-t-xl" src="https://cdn.apigamble.com/i/long/jpg/{{$slotslist['_id']}}.jpg">
-                <div class="flex flex-col p-3 font-bold text-gray-700">
-                    <p id="thumbnail-text" class="text-sm md:text-xs sm:text-xs">{{$slotslist['n']}}</p>
-                    <p class="text-xs font-light text-gray-400 mt-1">
-                        {{$slotslist['p']}}
-                        <span class="text-xs opacity-0 float-right font-semibold text-blue-300 group-hover:opacity-100">play</span>
+    @foreach($slots->shuffle() as $game)
+    <div data-tilt-scale="1.05" data-tilt-max="10" data-tilt-speed="500" data-tilt-perspective="1000" data-tilt class="xl:w-1/7 lg:w-1/6 md:w-1/4 sm:w-1/3 w-1/2 p-2 my-4 wire:loading.remove">
+        @if($game["ext"] === "c2")
+        <a @auth href="/slots/real/{{$game['_id']}}" @else href="/slots/demo/{{$game['_id']}}" @endauth>
+        @else
+        <a @auth href="/slots/real/{{$game['_id']}}" @else onclick="$openModal('login')" @endauth>
+        @endif
+            <div class="group cursor-pointer bg-gray-200 rounded-lg transition duration-400 ease hover:bg-primary hover:shadow-2xl">
+                <div class="absolute inset-0 z-10 bg-gray-100 rounded-t-lg text-center flex flex-col items-center justify-center opacity-20 hover:opacity-0 bg-opacity-0 duration-400 ease"></div>
+                <img class="big-thumbnail rounded-t-lg" src="https://cdn.apigamble.com/i/long/jpg/{{$game['_id']}}.jpg" alt="">
+                <div class="flex flex-col p-3 font-semibold text-black group-hover:text-gray-100">
+                    <p class="text-xs md:text-xs sm:text-xs">{{$game['n']}}</p>
+                    <p class="text-xs font-light text-gray-400 group-hover:text-gray-300 mt-1">
+                        {{$game['p']}}
+                        <span class="text-xs opacity-0 float-right font-semibold text-blue-200 group-hover:opacity-100">play</span>
                     </p>
                 </div>
             </div></a>
         </div>
         @endforeach
+        
 
     </div>
 <div class="d-flex justify-content-center p-5">

@@ -89,7 +89,7 @@
     wire:ignore>
     <div class="max-w-sm w-full space-y-2 pointer-events-auto flex flex-col-reverse">
         <template x-for="notification in notifications" :key="`notification-${notification.id}`">
-            <div class="max-w-sm w-full bg-white shadow-lg rounded-lg ring-1 ring-black
+            <div class="max-w-sm w-full cursor-pointer bg-component hover:bg-primarylight shadow-lg rounded-lg ring-1 ring-black
                         ring-opacity-5 relative overflow-hidden pointer-events-auto
                         dark:bg-secondary-800 dark:border dark:border-secondary-700"
                 :class="{ 'flex': notification.rightButtons }"
@@ -132,11 +132,11 @@
                         <div class="w-0 flex-1 pt-0.5" :class="{
                                 'ml-3': Boolean(notification.icon || notification.img)
                             }">
-                            <p class="text-sm font-medium text-secondary-900 dark:text-secondary-400"
+                            <p class="text-sm font-semibold text-default dark:text-secondary-400"
                                 x-show="notification.title"
                                 x-text="notification.title">
                             </p>
-                            <p class="text-sm text-secondary-500"
+                            <p class="text-sm font-light text-default"
                                 x-show="notification.description"
                                 x-text="notification.description">
                             </p>
@@ -182,7 +182,7 @@
                             </button>
 
                             <!-- close button -->
-                            <button class="rounded-md inline-flex text-secondary-400 hover:text-secondary-500 focus:outline-none"
+                            <button class="rounded-md inline-flex text-white hover:text-gray-200 focus:outline-none"
                                 x-show="notification.closeButton"
                                 x-on:click="closeNotification(notification)">
                                 <span class="sr-only">Close</span>
