@@ -25,6 +25,7 @@
     "dependencies": {
         "audit": "^0.0.6",
         "feather-icons": "^4.28.0",
+        "howler": "^2.2.3",
         "jquery": "^3.6.0",
         "slick-carousel": "^1.8.1",
         "slick-slider": "^1.8.2",

@@ -15,6 +15,8 @@ class Faucet extends Component
     public function useFaucet() { 
         $user = auth()->user();
 
+        if(!$user) return $this->notification()->error($title = 'Not able to redeem faucet', $description = 'You are not logged in.');
+
         $getUserBonusHistory = \App\Models\BonusHistory::where('u', $user->_id)->first();
 
         $faucet_basevalue = \App\Models\Settings::where('key', 'faucet_basevalue')->first()->value;
@@ -27,6 +29,9 @@ class Faucet extends Component
         if(!$getUserBonusHistory) {
            \App\Models\BonusHistory::create([
                 'u' => $user->_id,
+                'freespins_initiated' => 0,
+                'rakeback_lastused' => 0,
+                'rakeback_total' => 0,
                 'faucet_total' => 0,
                 'faucet_lastused' => 0,
                 'promocode_total' => 0,
@@ -61,6 +66,7 @@ class Faucet extends Component
             json_encode(["faucet" => $endNettoFaucet, "faucet_total" => $getUserBonusHistory->faucet_total])
         );
 
+        event(new \App\Events\PlaySound($user, "/sounds/coins.mp3"));
         return $this->notification()->success($title = 'Success!', $description = 'Added '.$endNettoFaucet.'$ faucet to your balance.');
     }
 

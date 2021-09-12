@@ -18,6 +18,8 @@ use Illuminate\Support\Facades\Log;
 use Maklad\Permission\Traits\HasRoles;
 use Maklad\Permission\Models\Role;
 use Maklad\Permission\Models\Permission;
+use Illuminate\Support\Facades\Cache;
+ use Carbon\Carbon;
 
 class User extends Authenticatable implements MustVerifyEmail
 {
@@ -140,10 +142,18 @@ class User extends Authenticatable implements MustVerifyEmail
 
     public function vipPercent() {
             $getViplevels = \App\Models\VIP\VipLevels::where('level', '=', ($this->viplevel + 1))->first();
-            $vippercentfunc = round(($this->progressVip($this->_id) / $getViplevels->start) * 100, 2) ?? 0;
+        $concatVip = 'getViplevels'.$this->viplevel;
+        $concatVip = Cache::get($concatVip);     
+        if (!$concatVip) { $concatVip = \App\Models\VIP\VipLevels::where('level', '=', ($this->viplevel + 1))->first();
+            Cache::put($concatVip, $concatVip, Carbon::now()->addMinutes(15));
+
+
+
+            $vippercentfunc = round(($this->progressVip($this->_id) / $concatVip->start) * 100, 2) ?? 0;
 
     return number_format($vippercentfunc, 0, '.', ''); 
     }
+}
     
     public function balance(): float {
         $value = floatval($this->usd);

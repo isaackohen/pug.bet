@@ -38,13 +38,24 @@ class="px-5 m-1 py-2.5 font-medium bg-blue-50 hover:bg-blue-100 hover:text-blue-
     </x-slot>
 
         <button href="#_" onclick="$openModal('creditcard')" class="px-5 m-1 py-2.5 font-medium bg-blue-50 hover:bg-blue-100 hover:text-blue-600 text-blue-500 rounded-lg text-sm">
-          <x-icon name="credit-card" class="w-4 h-4 text-gray-500" /> 
+            <div class="flex flex-wrap">
+                <img src="/img/payments/visa.svg" class="h-4 mr-1">
+                <img src="/img/payments/mastercard.svg" class="h-4 mr-1">
+                <img src="/img/payments/amex.svg" class="h-4 mr-1">
+            </div>
           <p>Pay Secure by CREDITCARD</p>
         </button>
 
         <button onclick="$openModal('sideshift')" class="px-5 m-1 py-2.5 font-medium bg-blue-50 hover:bg-blue-100 hover:text-blue-600 text-blue-500 rounded-lg text-sm">
-           <x-icon name="credit-card" class="w-4 h-4 text-gray-500" /> 
-           <p> Insta-swap crypto with SIDESHIFT.AI</p>
+            <div class="flex flex-wrap">
+                <img src="https://sideshift.ai/static/media/eth.18708d3e.svg" class="h-4 mr-1">
+                <img src="https://sideshift.ai/static/media/bch.274d44f0.svg" class="h-4 mr-1">
+                <img src="https://sideshift.ai/static/media/usdt.66f1b147.svg" class="h-4 mr-1">
+                <img src="https://sideshift.ai/static/media/bnb.f78cb0ac.svg" class="h-4 mr-1">
+            </div>
+
+                
+           <p>Instant crypto-swap with SIDESHIFT.AI</p>
         </button>
 
       </x-card>

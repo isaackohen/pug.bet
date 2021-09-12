@@ -2,6 +2,7 @@ import Alpine from 'alpinejs';
 window.Alpine = Alpine;
 Alpine.start();
 require('./bootstrap');
+const {Howl} = require('howler');
 
 const feather = require('feather-icons');
 
@@ -98,10 +99,24 @@ $(document).ready(function() {
 	})
 
 	if(!$.isGuest()) {
+		window.Echo.channel(`${$.application()}_database_private-App.User.${$.userId()}`).listen('PlaySound', function(data) {
+			var sound = new Howl({
+			  src: [data.sound]
+			});
+			sound.play();
+		});
+
 		window.Echo.channel(`${$.application()}_database_private-App.User.${$.userId()}`).listen('BalanceModification', function(data) {
 			$('#balance-id span').html(data.balance.toFixed(2));
 		});
+		window.Echo.channel(`${$.application()}_database_private-App.User.${$.userId()}`).listen('UserNotification', function(data) {
+			window.$wireui.notify({
+			    title: data.title,
+			    description: data.message,
+			    icon: data.icon,
+			    timeout: '14500'
+			})
+		});
 	}
-	
 });
 

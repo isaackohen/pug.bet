@@ -19,10 +19,12 @@ class Promocode extends Component
     ];
 
     public function usePromocode() { 
+
         $this->validate();
         $code = $this->code;
 
         $user = auth()->user();
+        if(!$user) return $this->notification()->error($title = 'Not able to redeem promocode', $description = 'You are not logged in.');
 
         $getPromocode = \App\Models\Promocodes::where('code', $code)->first();
         if(!$getPromocode) return $this->notification()->error($title = 'Unable to redeem promocode', $description = 'Promocode does not exist, is no longer valid or you are ineligible to use this promocode.');
@@ -42,6 +44,9 @@ class Promocode extends Component
         if(!$getUserBonusHistory) {
            \App\Models\BonusHistory::create([
                 'u' => $user->_id,
+                'freespins_initiated' => 0,
+                'rakeback_lastused' => 0,
+                'rakeback_total' => 0,
                 'faucet_total' => 0,
                 'faucet_lastused' => 0,
                 'promocode_total' => 0,

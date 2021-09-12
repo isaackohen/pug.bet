@@ -15,39 +15,6 @@ use App\Http\Controllers\UserController;
 class GameController extends Controller
 {
 
-     public function defaultseedViplevelsForeach($level, $level_name, $start, $end, $rake_percent, $promo, $faucet, $fsbonus, $jackpotbonus) {
-
-            \App\Models\Viplevels::create([
-            'level' => $level,
-            'level_name' => $level_name,
-            'start' => $start,
-            'end' => $end,
-            'rake_percent' => $rake_percent,
-            'promocode_bonus' => $promo,
-            'faucet_bonus' => $faucet,
-            'fs_bonus' => $fsbonus,
-            'jackpot_bonus' => $jackpotbonus        ]);
-
-}
-     public function defaultseedViplevels() {
-
-    self::defaultseedViplevelsForeach(1, "VIP 1", "299.99", "999.99", "0.002", "1.5", "5", "6", "0.02");
-
-    self::defaultseedViplevelsForeach(2, "VIP 2", "1000.00", "1999.99", "0.006", "2", "10", "12", "0.03");
-    self::defaultseedViplevelsForeach(3, "VIP 3", "2000.00", "3999.99", "0.007", "2.5", "15", "12", "0.04");
-    self::defaultseedViplevelsForeach(4, "VIP 4", "1000", "1999.99", "0.008", "3", "20", "12", "0.05");
-    self::defaultseedViplevelsForeach(5, "VIP 5", "1000", "1999.99", "0.009", "3.5", "25", "15", "0.06");
-    self::defaultseedViplevelsForeach(6, "VIP 6", "1000", "1999.99", "0.010", "4", "30", "20", "0.07");
-    self::defaultseedViplevelsForeach(7, "VIP 7", "1000", "1999.99", "0.011", "4.5", "35", "25", "0.08");
-    self::defaultseedViplevelsForeach(8, "VIP 8", "1000", "1999.99", "0.012", "5", "40", "25", "0.09");
-    self::defaultseedViplevelsForeach(9, "VIP 9", "1000", "1999.99", "0.013", "5.5", "45", "30", "0.1");
-    self::defaultseedViplevelsForeach(10, "VIP 10", "1000", "1999.99", "0.014", "6", "50", "35", "0.12");
-
-
-    return 'ok';
-              
-}
-
 
     public function slotsPage()
     {
@@ -82,9 +49,9 @@ class GameController extends Controller
 
         //if(auth()->user()->balance() === '0') { redirect('slots.demo');};
             $playerid = auth()->user()->_id;
-            $apigamble_apikey = \App\Http\Controllers\Controller::operatorkey();
+        $apigamble_apikey = env('OPERATOR_APIKEY');
 
-        $construct = "https://api.bulk.bet/v2/createSession?apikey=".$apigamble_apikey."&userid=".$playerid."-".$currency."&game=".$game['_id'];
+        $construct = "https://api.bulk.bet/v2/createSession?apikey=2C678B78219C3F4EABEBFA8149C1A2F2&userid=".$playerid."-".$currency."&game=".$game['_id'];
        
         $response = json_decode(file_get_contents($construct), true);
         $url = $response['url'];
@@ -100,7 +67,7 @@ class GameController extends Controller
     {
         $currency = 'usd';
         $game = DB::table('slotslist')->where('_id', '=', $game)->first();
-            $apigamble_apikey = \App\Http\Controllers\Controller::operatorkey();
+        $apigamble_apikey = env('OPERATOR_APIKEY');
 
         $subgame = $game['u_id'];
         $provider = $game['p'];
@@ -117,11 +84,35 @@ class GameController extends Controller
             $category = '&category=baccarat';
         }
 
-        $construct = "https://api.bulk.bet/v2/createSession?apikey=".$apigamble_apikey."&userid=".$playerid."-".$currency."&game=".$game['_id'];
+        $construct = 'https://api.bulk.bet/v2/createSession?apikey=2C678B78219C3F4EABEBFA8149C1A2F2&name='.$playername.'&userid='.$playerid.'-'.$currency.'&game='.$game['_id'];
+ 
 
-        //$construct = 'http://slots.apigamble.com/api/callback/riselive?provider='.$provider.'&subgame='.$subgame.'&name='.$playername.'&userid='.$playerid.'-usd&operator=201';
-        $response = Http::get($construct);
-        $url = $response['url'];
+            //Log::notice($url);
+            $userdata = array('playerId' => $playername, "currency" => $currency);
+            $jsonbody = json_encode($userdata);
+            $curlcatalog = curl_init();
+            curl_setopt_array($curlcatalog, array(
+            CURLOPT_URL => $construct,
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_ENCODING => '',
+            CURLOPT_MAXREDIRS => 10,
+            CURLOPT_TIMEOUT => 0,
+            CURLOPT_POST => 1,
+            CURLOPT_POSTFIELDS => $jsonbody,
+            CURLOPT_FOLLOWLOCATION => true,
+            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+            CURLOPT_CUSTOMREQUEST => 'POST',
+            CURLOPT_HTTPHEADER => array(
+            "Content-Type: application/json"
+          ),
+        ));
+        
+        $responsecurl = curl_exec($curlcatalog);
+        curl_close($curlcatalog);
+        $responsecurl = json_decode($responsecurl, true);
+ 
+
+        $url = $responsecurl['url'];
 
 
         return view('slots/play')->with('id_game', $provider)->with('name_game', 'livegame')->with('url', $url);     
@@ -200,7 +191,7 @@ class GameController extends Controller
         if ($final === "1" and $bonusmode === "0") {
             $getwager = BalanceLog::where("internal", "=", $roundid)->first();
             $decode = json_decode($getwager, true);
-			$getwager = number_format($decode["subtract"] * 100, 0, ".", "") ?? 0;
+			$getwager = number_format($decode["subtract"] * 100, 0, ".", "") ?? (0 * 100);
             $game = GameHistory::create([
                 "u" => $playerId,
                 "win" => $win,

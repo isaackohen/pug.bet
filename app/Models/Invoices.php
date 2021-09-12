@@ -7,11 +7,11 @@ use Jenssegers\Mongodb\Eloquent\Model;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\DB;
 
-class BonusHistory extends Model
+class Invoices extends Model
 {
     use HasFactory;
     protected $connection = 'mongodb';
-    protected $collection = 'user_bonushistory';
+    protected $collection = 'invoices';
     /**
      * The attributes that are mass assignable.
      *
@@ -19,6 +19,6 @@ class BonusHistory extends Model
      */
 
     protected $fillable = [
-        'u', 'rakeback_total', 'freespins_initiated', 'rakeback_lastused', 'faucet_total', 'faucet_lastused', 'promocode_total', 'promocode_lastused', 'promocode_freespins', 'promocode_usedtoday'
+       'invoice_id', 'u', 'type', 'usd', 'crypto_amount'
     ];
 }

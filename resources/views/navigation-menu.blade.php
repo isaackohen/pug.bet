@@ -35,8 +35,11 @@
                     <x-jet-dropdown align="right" width="48">
                     <x-slot name="trigger">
                     @if (Laravel\Jetstream\Jetstream::managesProfilePhotos())
-                    <button class="flex text-sm border-2 border-transparent rounded-full focus:outline-none focus:border-gray-300 transition">
-                    <img class="h-8 w-8 rounded-full object-cover" src="{{ Auth::user()->profile_photo_url }}" alt="{{ Auth::user()->name }}" />
+                    <button class="flex text-sm border-2 border-transparent rounded-full hover:outline-none focus:outline-none">
+                    <img class="h-6 w-6 rounded-full object-cover mt-2 ml-2" src="{{ Auth::user()->profile_photo_url }}" alt="{{ Auth::user()->name }}" />
+                    <div wire:poll class="mt-3 mr-3 ml-3">
+                        <span class="text-primary hover:text-primarysoft">{{auth()->user()->balance()}}$</span>    
+                    </div>
                     </button>
                         <div onclick="$openModal('vip')"  class="inline-flex items-center bg-white leading-none cursor-pointer">
                               <span id="vip-progress" class="inline-flex px-2 text-blue-400">@livewire('profile.vip-progress')</span> 
@@ -57,17 +60,18 @@
                     <div class="block px-4 py-2 text-xs text-gray-400">
                         {{ __('Your Account') }}
                     </div>
-                    <x-jet-dropdown-link href="#">
+                    <x-jet-dropdown-link onclick="$openModal('wallet')" href="#">
                     {{ __('Wallet') }}
                     </x-jet-dropdown-link>
+                    <x-jet-dropdown-link href="#">
+                    {{ __('Wallet') }}
+                    </x-jet-dropdown-link> 
                     <x-jet-dropdown-link href="{{ route('profile.show') }}">
                     {{ __('Profile') }}
                     </x-jet-dropdown-link>
-                    @if (Laravel\Jetstream\Jetstream::hasApiFeatures())
-                    <x-jet-dropdown-link href="{{ route('api-tokens.index') }}">
-                    {{ __('API Tokens') }}
+                    <x-jet-dropdown-link href="{{ route('profile.show') }}">
+                    {{ __('Settings') }}
                     </x-jet-dropdown-link>
-                    @endif
                     <div class="border-t border-gray-100"></div>
                     <!-- Authentication -->
                     <form method="POST" action="{{ route('logout') }}">
