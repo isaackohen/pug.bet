@@ -61,8 +61,16 @@
   transition: none !important;
 }
 
-.big-thumbnail {
+.welcome-big-thumbnail {
+min-height: 275px;
+max-height: 275px;
+aspect-ratio: auto 425/589;
+width: 100%; height: 100%;
+-o-object-fit: cover;
+object-fit: cover;
+}
 
+.big-thumbnail {
 min-height: 255px;
 max-height: 255px;
 aspect-ratio: auto 425/589;

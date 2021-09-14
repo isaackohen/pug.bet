@@ -1,4 +1,5 @@
 <?php return array (
+  'admin.modal-crud' => 'App\\Http\\Livewire\\Admin\\ModalCrud',
   'auth-modal' => 'App\\Http\\Livewire\\AuthModal',
   'balance' => 'App\\Http\\Livewire\\Balance',
   'faucet' => 'App\\Http\\Livewire\\Faucet',
@@ -6,11 +7,13 @@
   'index' => 'App\\Http\\Livewire\\Index',
   'index-header' => 'App\\Http\\Livewire\\IndexHeader',
   'jackpot' => 'App\\Http\\Livewire\\Jackpot',
+  'jackpot-section' => 'App\\Http\\Livewire\\JackpotSection',
   'latestgames' => 'App\\Http\\Livewire\\Latestgames',
   'livecasino' => 'App\\Http\\Livewire\\Livecasino',
   'logo-full' => 'App\\Http\\Livewire\\LogoFull',
   'logo-icon' => 'App\\Http\\Livewire\\LogoIcon',
   'modals.free-spins' => 'App\\Http\\Livewire\\Modals\\FreeSpins',
+  'modals.jackpot-info' => 'App\\Http\\Livewire\\Modals\\JackpotInfo',
   'modals.login' => 'App\\Http\\Livewire\\Modals\\Login',
   'modals.promocode' => 'App\\Http\\Livewire\\Modals\\Promocode',
   'modals.rakeback' => 'App\\Http\\Livewire\\Modals\\Rakeback',
@@ -23,5 +26,4 @@
   'profile.change-email-form' => 'App\\Http\\Livewire\\Profile\\ChangeEmailForm',
   'profile.vip-progress' => 'App\\Http\\Livewire\\Profile\\VipProgress',
   'search' => 'App\\Http\\Livewire\\Search',
-  'user-profile' => 'App\\Http\\Livewire\\UserProfile',
 );

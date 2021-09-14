@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Jenssegers\Mongodb\Eloquent\Model as Eloquent;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Cache;
+use Carbon\Carbon;
 
 class Slotslist extends User
 {
@@ -30,7 +32,17 @@ class Slotslist extends User
         'type'
     ];
 
+    public static function cachedList() {
+        $cachedList = Cache::get('cachedList');  
 
+        if (!$cachedList) { 
+            $cachedList = \App\Models\Slotslist::get();
+            Cache::put('cachedList', $cachedList, Carbon::now()->addMinutes(10));
+        } 
+
+        return $cachedList;
+    }
+  
     public static function findGameName($gameid) {
         $game = DB::table('slotslist')
              ->where('_id', '=', $gameid)

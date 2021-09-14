@@ -12,6 +12,7 @@ use App\Http\Livewire\Latestgames;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Http;
 use App\Http\Controllers\UserController;
+
 class GameController extends Controller
 {
 
@@ -19,23 +20,7 @@ class GameController extends Controller
     public function slotsPage()
     {
         $slots = DB::table('slotslist')->where('p', '!=', 'playstar')->where('d', '!=', '1')->where('p', '!=', 'upgames')->simplePaginate(60);
-
         return view('slots/slotslist', compact('slots'));
-    }
-
-    public function slotsgameDemo($game)
-    {
-    $apigamble_apikey = \App\Http\Controllers\Controller::operatorkey();
-
-    $construct = "https://api.bulk.bet/v2/createSession?apikey=2C678B78219C3F4EABEBFA8149C1A2F2&userid=demo-usd&game=".$game.'&mode=demo';
-    Log::notice($construct);
-    $response = json_decode(file_get_contents($construct), true);
-    $url = $response['url'];
-
-    $slotslist = DB::table('slotslist')->get();
-    $filter = $slotslist->where('_id', '=', $slotslist)->first();
-
-    return view('slots/play')->with('id_game', $game)->with('name_game', $filter)->with('url', $url);   
     }
 
 
@@ -54,60 +39,60 @@ class GameController extends Controller
 
     // Start free spin session slots game //
     public function slotsgameFreespins($game)
-    {
-     
+    {  
         $currency = 'usd';
         $game = DB::table('slotslist')->where('_id', '=', $game)->first();
-
         if($game['type'] === 'live' && $game['p'] !== 'upgames') { return redirect('/slots/real/live/'.$game['_id']);};
-
         //if(auth()->user()->balance() === '0') { redirect('slots.demo');};
         $user = auth()->user();
+        $getcurrentViplevels = \App\Models\VIP\VipLevels::where('level', '=', ($user->viplevel))->first();
 
-        if(auth()->user()->freespins > 0) {
+        if(auth()->user()->freespins > 0 and $getcurrentViplevels->fs_superspin === '0') {
         $construct = "https://api.bulk.bet/v2/createSession?apikey=2C678B78219C3F4EABEBFA8149C1A2F2&userid=".$user->_id."-".$currency."&game=".$game['_id'].'&freespins='.auth()->user()->freespins.'&freespins_value=0.3&mode=bonus';
         } else {
-        $construct = "https://api.bulk.bet/v2/createSession?apikey=2C678B78219C3F4EABEBFA8149C1A2F2&userid=".$playerid."-".$currency."&game=".$game['_id'];
+        $construct = "https://api.bulk.bet/v2/createSession?apikey=2C678B78219C3F4EABEBFA8149C1A2F2&userid=".$user->_id."-".$currency."&game=".$game['_id'];
         }
+
         $user->update([
                 'freespins' => 0
         ]);
-
-        Log::notice($construct);
-       
+        
         $response = json_decode(file_get_contents($construct), true);
         $url = $response['url'];
-
         $slotslist = DB::table('slotslist')->get();
-        $filter = $slotslist->where('_id', '=', $slotslist)->first();
+        $filter = $game;
 
-        return view('slots/play')->with('id_game', $game)->with('name_game', $filter)->with('url', $url);
-
+    return view('slots/play')->with('mode', 'Free Spins Mode')->with('id_game', $game['_id'])->with('name_game', $filter)->with('url', $url);   
     }
 
     // Start slots game //
     public function slotsgame($game)
     {
-     
         $currency = 'usd';
         $game = DB::table('slotslist')->where('_id', '=', $game)->first();
-
         if($game['type'] === 'live' && $game['p'] !== 'upgames') { return redirect('/slots/real/live/'.$game['_id']);};
-
-        //if(auth()->user()->balance() === '0') { redirect('slots.demo');};
-            $playerid = auth()->user()->_id;
-        $apigamble_apikey = env('OPERATOR_APIKEY');
-
+        $playerid = auth()->user()->_id;
         $construct = "https://api.bulk.bet/v2/createSession?apikey=2C678B78219C3F4EABEBFA8149C1A2F2&userid=".$playerid."-".$currency."&game=".$game['_id'];
        
         $response = json_decode(file_get_contents($construct), true);
         $url = $response['url'];
-
         $slotslist = DB::table('slotslist')->get();
-        $filter = $slotslist->where('_id', '=', $slotslist)->first();
+        $filter = $slotslist->where('_id', '=', $game['_id'])->first();
 
-        return view('slots/play')->with('id_game', $game)->with('name_game', $filter)->with('url', $url);
+        return view('slots/play')->with('mode', 'Real Mode')->with('id_game', $game['_id'])->with('name_game', $filter)->with('url', $url);   
+    }
 
+    public function slotsgameDemo($game)
+    {
+        $slotslist = DB::table('slotslist')->get();
+        $filter = $slotslist->where('_id', '=', $game)->first();
+        if($filter['ext'] !== "c2") return redirect('/slots/real/'.$filter['_id']);
+
+        $construct = "https://api.bulk.bet/v2/createSession?apikey=2C678B78219C3F4EABEBFA8149C1A2F2&userid=demo-usd&game=".$game.'&mode=demo';
+        $response = json_decode(file_get_contents($construct), true);
+        $url = $response['url'];
+
+        return view('slots/play')->with('mode', 'Demo Mode')->with('id_game', $filter['_id'])->with('name_game', $filter)->with('url', $url);   
     }
     // Start live game //
     public function livegame($game)
@@ -132,8 +117,6 @@ class GameController extends Controller
         }
 
         $construct = 'https://api.bulk.bet/v2/createSession?apikey=2C678B78219C3F4EABEBFA8149C1A2F2&name='.$playername.'&userid='.$playerid.'-'.$currency.'&game='.$game['_id'];
- 
-
             //Log::notice($url);
             $userdata = array('playerId' => $playername, "currency" => $currency);
             $jsonbody = json_encode($userdata);
@@ -157,42 +140,40 @@ class GameController extends Controller
         $responsecurl = curl_exec($curlcatalog);
         curl_close($curlcatalog);
         $responsecurl = json_decode($responsecurl, true);
- 
-
         $url = $responsecurl['url'];
+        $filter = $game;
 
-
-        return view('slots/play')->with('id_game', $provider)->with('name_game', 'livegame')->with('url', $url);     
-    }
+        return view('slots/play')->with('mode', 'Real Mode')->with('id_game', $game['_id'])->with('name_game', $filter)->with('url', $url);   
+        }
 
     // Callbacks //
-public function simpleXmlToArray($xmlObject, $out = array ())
-{
-    foreach ($xmlObject as $index => $node ){
-        if(count($node) === 0){
-            $out[$node->getName()] = $node->__toString ();
-        }else{
-            $out[$node->getName()][] = $this->simpleXmlToArray($node);
+    public function simpleXmlToArray($xmlObject, $out = array ())
+    {
+        foreach ($xmlObject as $index => $node ){
+            if(count($node) === 0){
+                $out[$node->getName()] = $node->__toString ();
+            }else{
+                $out[$node->getName()][] = $this->simpleXmlToArray($node);
+            }
         }
-    }
 
-    return $out;
-}
+        return $out;
+    }
     public function pokerCallback(Request $request)
     {
         $content = json_decode($request->getContent());
-        Log::notice(json_encode($content));
-        Log::notice($request);
-$xmlstr = <<<XML
-<?xml version='1.0' standalone='yes'?>
-<balanceget id="1" Code="200" AmountPlay="123" AmountReal="345"
-AmountBonus="456" PlayerId="444" />
-XML;
+        //Log::notice(json_encode($content));
+        //Log::notice($request);
+        $xmlstr = <<<XML
+        <?xml version='1.0' standalone='yes'?>
+        <balanceget id="1" Code="200" AmountPlay="123" AmountReal="345"
+        AmountBonus="456" PlayerId="444" />
+        XML;
 
-header('Content-type: text/xml; charset=utf-8');
+        header('Content-type: text/xml; charset=utf-8');
         $return = '<balanceget id="1" Code="200" AmountPlay="123" AmountReal="345"
-AmountBonus="456" PlayerId="444" />';
-$xmlDoc = new \SimpleXMLElement($xmlstr);
+        AmountBonus="456" PlayerId="444" />';
+        $xmlDoc = new \SimpleXMLElement($xmlstr);
         echo $xmlDoc->asXML();
     }
 
@@ -202,7 +183,6 @@ $xmlDoc = new \SimpleXMLElement($xmlstr);
         $currency = $request["currency"];
         $user = \App\Models\User::where("_id", $playerId)->first();
         $balancenumber = number_format($user->usd * 100, 0, ".", "");
-
         return response()->json([
             "status" => "ok",
             "result" => [
@@ -224,7 +204,6 @@ $xmlDoc = new \SimpleXMLElement($xmlstr);
         $roundid = $request["roundid"];
         $final = $request["final"];
         $bonusmode = $request["bonusmode"] ?? 0;
-
         $gamestatus = "game";
         if ($final === "1") {
             $gamestatus = "game_final";
@@ -269,7 +248,7 @@ $xmlDoc = new \SimpleXMLElement($xmlstr);
                 "bet" => $getwager,
                 "gameid" => $gameid,
                 "curr" => $currency,
-                "meta" => null,
+                "meta" => $roundid ?? 0,
             ]);
             UserController::processGame($playerId, $decode["subtract"], round($win / 100, 2), $gameid);
 			event(new \App\Events\LiveFeed($game, 2000));

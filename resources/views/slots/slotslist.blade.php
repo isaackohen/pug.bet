@@ -29,7 +29,7 @@ border-radius: 18px;
         @else
         <a @auth href="/slots/real/{{$game['_id']}}" @else onclick="$openModal('login')" @endauth>
         @endif
-            <div class="group cursor-pointer bg-gray-200 rounded-lg transition duration-400 ease hover:bg-primary hover:shadow-2xl">
+            <div class="group cursor-pointer bg-gray-200 rounded-lg transition duration-300 ease hover:bg-primary hover:shadow-2xl">
                 <div class="absolute inset-0 z-10 bg-gray-100 rounded-t-lg text-center flex flex-col items-center justify-center opacity-20 hover:opacity-0 bg-opacity-0 duration-400 ease"></div>
                 <img class="big-thumbnail rounded-t-lg" src="https://cdn.apigamble.com/i/long/jpg/{{$game['_id']}}.jpg" alt="">
                 <div class="flex flex-col p-3 font-semibold text-black group-hover:text-gray-100">

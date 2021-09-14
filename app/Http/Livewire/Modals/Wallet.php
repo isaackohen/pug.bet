@@ -1,8 +1,9 @@
 <?php
 
-    namespace App\Http\Livewire\Modals;
-    use WireUi\Traits\Actions;
-    use Livewire\Component;
+namespace App\Http\Livewire\Modals;
+
+use WireUi\Traits\Actions;
+use Livewire\Component;
 use App\Models\PaymentApipurseTransactions;
 use App\Models\PaymentApipurseWallets;
 use Jenssegers\Mongodb\Eloquent\Model as Eloquent;
@@ -14,6 +15,7 @@ use Illuminate\Http\Request;
 class Wallet extends Component
 {
     public $wallet2;
+
     use Actions;
 
     function generateRandomString($length = 10) {
@@ -23,6 +25,7 @@ class Wallet extends Component
     public function mount()
     {
         $uid = auth()->user()->_id;
+
         $this->wallet = self::findWalletAddress($uid, 'btc');
         $this->wallet2 = self::findWalletAddress($uid, 'ltc');
         $this->wallet3 = self::findWalletAddress($uid, 'doge');

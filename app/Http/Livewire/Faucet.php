@@ -51,14 +51,14 @@ class Faucet extends Component
 
         $getcurrentVipInfo = \App\Models\VIP\VipLevels::where('level', '=', ($user->viplevel))->first();
         $faucetVipBonus = ($faucet_basevalue / 100) * $getcurrentVipInfo->faucet_bonus;
-        $endNettoFaucet = $faucet_basevalue + $faucetVipBonus;
+        $endNettoFaucet = number_format(($faucet_basevalue + $faucetVipBonus), 2, ".", "");
         $getUserBonusHistory->update([
                 'faucet_total' => ($getUserBonusHistory->faucet_total ?? 0) + $endNettoFaucet,
                 'faucet_lastused' => $current_timestamp
         ]);
 
         $user->add(
-            round($endNettoFaucet, 2),
+            $endNettoFaucet,
             "usd",
             "faucet",
             json_encode(["faucet" => $endNettoFaucet, "faucet_total" => $getUserBonusHistory->faucet_total])

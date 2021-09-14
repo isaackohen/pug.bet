@@ -16,6 +16,13 @@ use Laravel\Jetstream\Jetstream;
 | routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group. Now create something great!
 |
+Route::get('/test', function () {
+
+        $games = DB::table('game_histories')->where('u', '=', auth()->user()->_id)->paginate();
+
+        return view('test', compact('games'));
+});
+
 */
 
 Route::get('/', function () {
@@ -23,8 +30,12 @@ Route::get('/', function () {
 });
 
 Route::get('/test', function () {
-    return view('test');
+
+
+    return view('test');           
 });
+
+
 
 Route::middleware(['auth:sanctum'])->get('/dashboard', function () {
     return view('welcome');

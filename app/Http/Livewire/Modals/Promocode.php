@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\DB;
 
 class Promocode extends Component
 {
-    use Actions;
+        use Actions;
 
     public $code;
 
@@ -19,7 +19,6 @@ class Promocode extends Component
     ];
 
     public function usePromocode() { 
-
         $this->validate();
         $code = $this->code;
 
@@ -92,7 +91,7 @@ class Promocode extends Component
             json_encode(["promocode" => $code, "promocode_total" => $getUserBonusHistory->promocode_total])
         );
         
-        return $this->notification()->success($title = 'Success!', $description = 'Added '.$amount.'$ to your balance.');
+        return self::notificateSuccess($user, $endNettoPromocode);
     }
 
         public function notificateSuccess($user, $amount)

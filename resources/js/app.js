@@ -4,8 +4,8 @@ Alpine.start();
 
 require('./bootstrap');
 const {Howl} = require('howler');
-
 const feather = require('feather-icons');
+import VanillaTilt from 'vanilla-tilt';
 
 
 feather.replace();
@@ -44,7 +44,7 @@ $(document).ready(function() {
 								</div>
 								<div class="ml-3">
 									<p class="text-gray-900 whitespace-no-wrap font-semibold text-blue-600">
-										<a ${!$.isGuest() ? `href="/slots/real/${game.gameid}"` : `href="/slots/demo/${game.gameid}"`}>
+										<a href="/slots/real/${game.gameid}"}>
 										${game.name}
 										</a>
 										<br>
@@ -56,7 +56,7 @@ $(document).ready(function() {
 							</div>
 						</td>
 						<td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-							<p class="text-gray-900 whitespace-no-wrap">
+							<p class="cursor-pointer text-gray-900 whitespace-no-wrap font-semibold text-blue-600" wire:click="showUser('{{ $game->u }}')">
 							${game.username}
 							</p>
 						</td>
@@ -97,6 +97,19 @@ $(document).ready(function() {
 		setTimeout(function() {
             $.insertLiveGame(data);
         }, data.delay);
+	})
+	.listen('PublicNotification', function(data) {
+			var sound = new Howl({
+			  src: [data.sound]
+			});
+			sound.play();
+
+			window.$wireui.notify({
+			    title: data.title,
+			    description: data.message,
+			    icon: data.icon,
+			    timeout: '14500'
+			})
 	})
 
 	if(!$.isGuest()) {

@@ -40,17 +40,11 @@
   </div>
     @auth
         <header class="font-header">
-            <div id="second-header" class="max-w-7xl mx-auto p-2">
+            <div id="second-header" class="flex flex-wrap justify-center max-w-7xl mx-auto p-2">
                 @livewire('balance')
             </div>
         </header>
     @endauth
-
-    <button wire:click.prefetch="toggleContent">Show Content</button>
- 
-    @if ($contentIsVisible)
-        <span>Some Content...</span>
-    @endif
 
     <!-- Bonuses !-->
     <section>

@@ -19,6 +19,6 @@ class BonusHistory extends Model
      */
 
     protected $fillable = [
-        'u', 'rakeback_total', 'freespins_initiated', 'rakeback_lastused', 'faucet_total', 'faucet_lastused', 'promocode_total', 'promocode_lastused', 'promocode_freespins', 'promocode_usedtoday'
+        'u', 'rakeback_total', 'jackpot_total', 'jackpot_total_usd', 'freespins_initiated', 'rakeback_lastused', 'faucet_total', 'faucet_lastused', 'promocode_total', 'promocode_lastused', 'promocode_freespins', 'promocode_usedtoday'
     ];
 }

@@ -36,11 +36,33 @@
       0 => 'Fideloper\\Proxy\\TrustedProxyServiceProvider',
     ),
   ),
+  'flightsadmin/livewire-crud' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Flightsadmin\\LivewireCrud\\LivewireCrudServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'LivewireCrud' => 'Flightsadmin\\LivewireCrud\\LivewireCrudFacade',
+    ),
+  ),
   'fruitcake/laravel-cors' => 
   array (
     'providers' => 
     array (
       0 => 'Fruitcake\\Cors\\CorsServiceProvider',
+    ),
+  ),
+  'imritesh/livecrud' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Imritesh\\LiveCrud\\LiveCrudServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'LiveCrud' => 'Imritesh\\LiveCrud\\Facades\\LiveCrud',
     ),
   ),
   'jenssegers/agent' => 

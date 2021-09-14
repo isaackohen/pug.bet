@@ -33,19 +33,15 @@
     <body class="font-body">
 
     @livewire('modals.login')     
+
         @auth       
-                @livewire('modals.wallet')
-        @if(auth()->user()->freespins > 1)
-                        @livewire('modals.free-spins')
-        @endif
+            @livewire('modals.wallet')     
+            @if(auth()->user()->freespins > 1)
+                @livewire('modals.free-spins')
+            @endif
         @endauth
 
-
         <div class="bg-default">
-
-
-    
-
             @livewire('navigation-menu')
 
             <!-- Page Content -->
@@ -53,12 +49,12 @@
                 {{ $slot }}
             </main>
 
-        <x-notifications z-index="z-50" class="mt-10" />
+        <x-notifications z-index="z-50"/>
         <x-dialog z-index="z-50" blur="sm" align="center" />
         <wireui:scripts />
         <livewire:scripts/>
         <livewire:notifier/>
         @livewire('footer')
-
+        @livewire('modals.jackpot-info')
     </body>
 </html>

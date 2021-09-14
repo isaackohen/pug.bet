@@ -20,8 +20,20 @@
                     {{ __('Poker') }}
                     </x-jet-nav-link>
                     <x-jet-nav-link href="{{ route('bonus') }}" :active="request()->routeIs('bonus')">
-                    {{ __('Bonus') }}
+                    {{ __('Bonus') }}                   
                     </x-jet-nav-link>
+                    @auth
+                    @if(auth()->user()->freespins > 0)
+                    <x-jet-nav-link onclick="$openModal('freespins')" class="cursor-pointer" :active="request()->routeIs('bonus')">
+                    {{ __('Free Spins') }}                   
+                        <span class="relative inline-block">
+                          <svg class="w-4 h-4 text-white fill-current" viewBox="0 0 20 20"><path d="M18 5v8a2 2 0 01-2 2h-5l-5 4v-4H4a2 2 0 01-2-2V5a2 2 0 012-2h12a2 2 0 012 2zM7 8H5v2h2V8zm2 0h2v2H9V8zm6 0h-2v2h2V8z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
+
+                          <span class="absolute top-0 right-0 inline-flex items-center justify-center px-1 py-0.5 text-xs leading-none text-gray-50 transform translate-x-1/2 -translate-y-1/2 bg-primary rounded-full">{{auth()->user()->freespins}}</span>
+                        </span>
+                    </x-jet-nav-link>
+                    @endif
+                    @endauth
                 </div>
             </div>
             @auth
@@ -37,7 +49,7 @@
                         <span class="text-primary hover:text-primarysoft">{{auth()->user()->balance()}}$</span>    
                     </div>
                     </button>
-                        <div onclick="$openModal('vip')"  class="inline-flex items-center bg-white leading-none cursor-pointer">
+                        <div onclick="$openModal('vip')" class="inline-flex items-center bg-white leading-none cursor-pointer">
                               <span id="vip-progress" class="inline-flex px-2 text-blue-400">@livewire('profile.vip-progress')</span> 
                         </div>
                     @else

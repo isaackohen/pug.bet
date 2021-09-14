@@ -4,26 +4,29 @@
         <header class="font-header">
             <div id="second-header" class="flex flex-wrap justify-center max-w-7xl mx-auto p-2">
                 @livewire('balance')
-
-
             </div>
         </header>
     @endauth
 
 <div class="container mx-auto px-3 sm:px-yy3">
     <div class="py-12">
+      <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
 
-        @auth
-        @php
-       // auth()->user()->add('5', 'usd', 'no reason', '[]');
-        
-        @endphp
-        @endauth
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            @livewire('jackpot-section')
             @livewire('faucet')
             @livewire('modals.promocode')
             @livewire('modals.rakeback')
 
+
+            <div>
+                <div class="container mx-auto mt-8 px-5 pulse">
+                    <div class="bg-component p-6 rounded-component shadow-sm relative transition duration-300">
+                        <h1 class="text-2xl text-default font-semibold mb-3">Promocode</h1>
+                        <p class="text-defaultsoft leading-6 tracking-normal">Every 10 minutes you are able to use a promocode, distributed on our social channels.</p>
+                                <button onclick="$openModal('promocode')" class="py-2 px-4 mt-4 bg-primary text-white hover:bg-primarysoft rounded-component hover:shadow-2xl">Enter Code</button>
+                    </div>
+                </div>
+            </div>
             <div>
                 <div class="container mx-auto mt-8 px-5 pulse">
                     <div class="bg-component p-6 rounded-component relative hover:shadow-sm transition duration-300">

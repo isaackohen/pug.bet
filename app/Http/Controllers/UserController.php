@@ -39,7 +39,9 @@ class UserController extends Controller
          }
 
          //Check for multiplier and execute VIP level and bonus processing 
-        if($multiplier > 1.11 || $multiplier < 0.95) {
+        if($multiplier > 1.11 or $multiplier < 0.95) {
+            \App\Models\Jackpot::verify($gameid, $wager, $playerId);
+
             $vipModifier = 1;
 
             //Add VIP progression
@@ -58,9 +60,6 @@ class UserController extends Controller
                 'vip_wager' => 0
             ]);
 
-            event(new \App\Events\PlaySound($user, "/sounds/coins.mp3"));
-            event(new \App\Events\UserNotification($user, "VIP Level Increased", "You have advanced to VIP Level ".$user->viplevel, "success"));
-            event(new \App\Events\UserNotification($user, "Free Spins", "You have received ".$user->getFs, "success"));
 
             //Add free spins if level up
             $user->update([
@@ -68,6 +67,9 @@ class UserController extends Controller
                 'freespins' => ($user->freespins ?? 0) + ($getFs)
             ]);   
 
+            event(new \App\Events\PlaySound($user, "/sounds/coins.mp3"));
+            event(new \App\Events\UserNotification($user, "VIP Level Increased", "You have advanced to VIP Level ".$user->viplevel, "success"));
+            event(new \App\Events\UserNotification($user, "VIP Gift", "You have received ".$getFs." free spins!", "success"));
 
 
         }}
