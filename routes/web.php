@@ -6,6 +6,7 @@ use Jenssegers\Mongodb\Eloquent\Model as Eloquent;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\DB;
 use Laravel\Jetstream\Jetstream;
+use App\Http\Livewire\Blogs;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,12 +30,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/test', function () {
-
-
-    return view('test');           
-});
-
+Route::get('/offertoro', 'App\Http\Controllers\PaymentController@offertoroPage')->name('offertoro.page');
 
 
 Route::middleware(['auth:sanctum'])->get('/dashboard', function () {

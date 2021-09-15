@@ -2,6 +2,8 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Model;
+
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Jenssegers\Mongodb\Auth\User as Authenticatable;
@@ -20,7 +22,7 @@ use Maklad\Permission\Models\Role;
 use Maklad\Permission\Models\Permission;
 use Illuminate\Support\Facades\Cache;
  use Carbon\Carbon;
-
+use Backpack\CRUD\app\Models\Traits\CrudTrait;
 class User extends Authenticatable implements MustVerifyEmail
 {
     use HasApiTokens;
@@ -29,11 +31,14 @@ class User extends Authenticatable implements MustVerifyEmail
     use Notifiable;
     use TwoFactorAuthenticatable;
     use HasRoles;
-
+    use CrudTrait;
     protected $connection = 'mongodb';
     public $guard_name = 'sanctum';
 
-
+public function openGoogle($crud = false)
+{
+    return '<a class="btn btn-sm btn-link" target="_blank" href="http://google.com?q='.urlencode($this->text).'" data-toggle="tooltip" title="Just a demo custom button."><i class="fa fa-search"></i> Google it</a>';
+}
     /**
      * The attributes that are mass assignable.
      *
@@ -49,6 +54,7 @@ class User extends Authenticatable implements MustVerifyEmail
         'deposited',
         'rake',
         'freespins',
+        'is_admin',
         'withdrawn',
         'arcade',
         'poker',

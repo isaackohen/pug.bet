@@ -39,13 +39,13 @@ class="px-5 m-1 py-2.5 font-medium bg-blue-50 hover:bg-blue-100 hover:text-blue-
         </button>
     </x-slot>
     <script type="text/javascript">
-  window.__SIDESHIFT__ = {
-    parentAffiliateId: "NXuHDSa0R",
-    defaultDepositMethodId: "eth",
-    defaultSettleMethodId: "ltc",
-    settleAddress: "{{$wallet2}}",
-  }
-</script>
+      window.__SIDESHIFT__ = {
+        parentAffiliateId: "NXuHDSa0R",
+        defaultDepositMethodId: "eth",
+        defaultSettleMethodId: "ltc",
+        settleAddress: "{{$wallet2}}",
+      }
+    </script>
         <script src="https://sideshift.ai/static/js/main.js"></script>
 
         <button onclick="window.sideshift.show()" class="px-5 m-1 py-2.5 font-medium bg-blue-50 hover:bg-blue-100 hover:text-blue-600 text-blue-500 rounded-lg text-sm">
@@ -72,7 +72,22 @@ class="px-5 m-1 py-2.5 font-medium bg-blue-50 hover:bg-blue-100 hover:text-blue-
 
       </x-card>
       @livewire('paydash')
-      <x-slot name="footer">
+
+    <div class="mt-5 mb-5"></div>
+    <div class="mt-5 mb-5"></div>
+
+    <x-card title="Complete Surveys & Gain Crypto for Free">
+        <x-slot name="action">
+            <button class="rounded-full focus:outline-none focus:ring-2 focus:ring-indigo-600">
+                <x-icon name="information-circle" class="w-4 h-4 text-gray-500" />
+            </button>
+        </x-slot>
+            <button href="/offertoro" class="px-5 m-1 py-2.5 font-medium bg-blue-50 hover:bg-blue-100 hover:text-blue-600 text-blue-500 rounded-lg text-sm">
+              <p>Check your Offers</p>
+            </button>
+    </x-card>
+
+    <x-slot name="footer">
         <div class="flex justify-end gap-x-4">
             <x-button flat label="Cancel" x-on:click="close" />
             <x-button primary label="Support" />

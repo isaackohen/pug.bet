@@ -1,5 +1,5 @@
 <x-modal wire:model.defer="jackpotInfo">
-<x-card title="Jackpot Info">
+    <x-card title="Jackpot Info">
         <div>
             <p>The current Jackpot is at <span class="text-primary font-semibold">{{$jackpot_sum}}$</span>. You automatically have a chance to win Jackpot on every bet above {{$jackpot_min}}$.</p>
             <br>

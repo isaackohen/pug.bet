@@ -1,7 +1,7 @@
 <?php return array (
-  'admin.modal-crud' => 'App\\Http\\Livewire\\Admin\\ModalCrud',
   'auth-modal' => 'App\\Http\\Livewire\\AuthModal',
   'balance' => 'App\\Http\\Livewire\\Balance',
+  'blogs' => 'App\\Http\\Livewire\\Blogs',
   'faucet' => 'App\\Http\\Livewire\\Faucet',
   'footer' => 'App\\Http\\Livewire\\Footer',
   'index' => 'App\\Http\\Livewire\\Index',

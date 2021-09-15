@@ -5,7 +5,6 @@ Alpine.start();
 require('./bootstrap');
 const {Howl} = require('howler');
 const feather = require('feather-icons');
-import VanillaTilt from 'vanilla-tilt';
 
 
 feather.replace();
@@ -89,6 +88,7 @@ $(document).ready(function() {
         }
         else e.show();
     };
+
 
     setInterval($.putNextInLiveQueue, 150);
 	

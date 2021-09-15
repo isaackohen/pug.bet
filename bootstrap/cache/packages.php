@@ -7,6 +7,46 @@
       1 => 'Arcanedev\\LogViewer\\Providers\\DeferredServicesProvider',
     ),
   ),
+  'backpack/crud' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Backpack\\CRUD\\BackpackServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'CRUD' => 'Backpack\\CRUD\\app\\Library\\CrudPanel\\CrudPanelFacade',
+      'Widget' => 'Backpack\\CRUD\\app\\Library\\Widget',
+    ),
+  ),
+  'backpack/generators' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Backpack\\Generators\\GeneratorsServiceProvider',
+    ),
+  ),
+  'backpack/logmanager' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Backpack\\LogManager\\LogManagerServiceProvider',
+    ),
+  ),
+  'backpack/permissionmanager' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Backpack\\PermissionManager\\PermissionManagerServiceProvider',
+    ),
+  ),
+  'barryvdh/laravel-ide-helper' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Barryvdh\\LaravelIdeHelper\\IdeHelperServiceProvider',
+    ),
+  ),
   'codespb/livewire-notifier' => 
   array (
     'providers' => 
@@ -16,6 +56,17 @@
     'aliases' => 
     array (
       'LivewireNotifier' => 'CodeSPB\\LivewireNotifier\\Facades\\LaravelLivewireNotifier',
+    ),
+  ),
+  'creativeorange/gravatar' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Creativeorange\\Gravatar\\GravatarServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Gravatar' => 'Creativeorange\\Gravatar\\Facades\\Gravatar',
     ),
   ),
   'facade/ignition' => 
@@ -36,33 +87,11 @@
       0 => 'Fideloper\\Proxy\\TrustedProxyServiceProvider',
     ),
   ),
-  'flightsadmin/livewire-crud' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'Flightsadmin\\LivewireCrud\\LivewireCrudServiceProvider',
-    ),
-    'aliases' => 
-    array (
-      'LivewireCrud' => 'Flightsadmin\\LivewireCrud\\LivewireCrudFacade',
-    ),
-  ),
   'fruitcake/laravel-cors' => 
   array (
     'providers' => 
     array (
       0 => 'Fruitcake\\Cors\\CorsServiceProvider',
-    ),
-  ),
-  'imritesh/livecrud' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'Imritesh\\LiveCrud\\LiveCrudServiceProvider',
-    ),
-    'aliases' => 
-    array (
-      'LiveCrud' => 'Imritesh\\LiveCrud\\Facades\\LiveCrud',
     ),
   ),
   'jenssegers/agent' => 
@@ -199,6 +228,24 @@
     ),
     'aliases' => 
     array (
+    ),
+  ),
+  'prologue/alerts' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Prologue\\Alerts\\AlertsServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Alert' => 'Prologue\\Alerts\\Facades\\Alert',
+    ),
+  ),
+  'spatie/laravel-permission' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Spatie\\Permission\\PermissionServiceProvider',
     ),
   ),
   'tymon/jwt-auth' => 

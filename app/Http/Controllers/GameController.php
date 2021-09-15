@@ -162,17 +162,14 @@ class GameController extends Controller
     public function pokerCallback(Request $request)
     {
         $content = json_decode($request->getContent());
-        //Log::notice(json_encode($content));
-        //Log::notice($request);
+        Log::notice($content);
+        Log::notice($request);
         $xmlstr = <<<XML
-        <?xml version='1.0' standalone='yes'?>
         <balanceget id="1" Code="200" AmountPlay="123" AmountReal="345"
-        AmountBonus="456" PlayerId="444" />
+        AmountBonus="456" PlayerId="613a3f23efea" />
         XML;
 
         header('Content-type: text/xml; charset=utf-8');
-        $return = '<balanceget id="1" Code="200" AmountPlay="123" AmountReal="345"
-        AmountBonus="456" PlayerId="444" />';
         $xmlDoc = new \SimpleXMLElement($xmlstr);
         echo $xmlDoc->asXML();
     }

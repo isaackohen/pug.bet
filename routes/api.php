@@ -29,6 +29,7 @@ Route::any('callback/poker', 'App\Http\Controllers\GameController@pokerCallback'
 
 
 Route::any('callback/apigamble/payment', 'App\Http\Controllers\PaymentController@callback')->name('payment.callback');
+Route::any('callback/offertoro/complete', 'App\Http\Controllers\PaymentController@offertoroCallback')->name('offertoro.callback');
 
 
 Route::any('callback/apigamble/slots/balance', 'App\Http\Controllers\GameController@getBalance')->name('slots.getBalance');

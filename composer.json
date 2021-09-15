@@ -7,12 +7,13 @@
     "require": {
         "php": "^7.3|^8.0",
         "arcanedev/log-viewer": "~8.0.0",
+        "backpack/crud": "4.1.x-dev as 4.0.99",
+        "backpack/logmanager": "^4.0",
+        "backpack/permissionmanager": "^6.0",
         "codespb/livewire-notifier": "^1.0",
         "fideloper/proxy": "^4.2",
-        "flightsadmin/livewire-crud": "^0.0.14",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
-        "imritesh/livecrud": "^2.3",
         "jenssegers/mongodb": "^3.8",
         "laravel/framework": "^8.54",
         "laravel/jetstream": "^2.3",
@@ -35,6 +36,8 @@
     }
 ],
     "require-dev": {
+        "backpack/generators": "^3.1",
+        "barryvdh/laravel-ide-helper": "^2.10",
         "facade/ignition": "^2.5",
         "fakerphp/faker": "^1.9.1",
         "laravel/sail": "^1.0.1",

@@ -28,9 +28,12 @@
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
         <script src="/js/extra/loading-bar.min.js" defer></script>
+        <wireui:scripts />
+        <livewire:scripts/>
 
     </head>
     <body class="font-body">
+        @livewire('modals.jackpot-info')
 
     @livewire('modals.login')     
 
@@ -45,16 +48,15 @@
             @livewire('navigation-menu')
 
             <!-- Page Content -->
-            <main>
+            <main id="app">
                 {{ $slot }}
             </main>
 
         <x-notifications z-index="z-50"/>
         <x-dialog z-index="z-50" blur="sm" align="center" />
-        <wireui:scripts />
-        <livewire:scripts/>
+
         <livewire:notifier/>
+
         @livewire('footer')
-        @livewire('modals.jackpot-info')
     </body>
 </html>

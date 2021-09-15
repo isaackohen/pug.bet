@@ -1,5 +1,4 @@
 <x-app-layout>
-
     @auth
         <header class="font-header">
             <div id="second-header" class="flex flex-wrap justify-center max-w-7xl mx-auto p-2">
@@ -7,23 +6,29 @@
             </div>
         </header>
     @endauth
-
-<div class="container mx-auto px-3 sm:px-yy3">
+<div class="container mx-auto px-3 sm:px-y-3">
     <div class="py-12">
       <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-
             @livewire('jackpot-section')
             @livewire('faucet')
             @livewire('modals.promocode')
             @livewire('modals.rakeback')
-
-
+            
             <div>
                 <div class="container mx-auto mt-8 px-5 pulse">
                     <div class="bg-component p-6 rounded-component shadow-sm relative transition duration-300">
                         <h1 class="text-2xl text-default font-semibold mb-3">Promocode</h1>
                         <p class="text-defaultsoft leading-6 tracking-normal">Every 10 minutes you are able to use a promocode, distributed on our social channels.</p>
-                                <button onclick="$openModal('promocode')" class="py-2 px-4 mt-4 bg-primary text-white hover:bg-primarysoft rounded-component hover:shadow-2xl">Enter Code</button>
+                        <button onclick="$openModal('promocode')" class="py-2 px-4 mt-4 bg-primary text-white hover:bg-primarysoft rounded-component hover:shadow-2xl">Enter Code</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="container mx-auto mt-8 px-5 pulse">
+                    <div class="bg-component p-6 rounded-component shadow-sm relative transition duration-300">
+                        <h1 class="text-2xl text-default font-semibold mb-3">Complete Surveys & Install Apps</h1>
+                        <p class="text-defaultsoft leading-6 tracking-normal">Get instant cryptocurrency, just by taking your time to complete surveys, install apps and play mobile games.</p>
+                        <a href="/offertoro"><button class="py-2 px-4 mt-4 bg-primary text-white hover:bg-primarysoft rounded-component hover:shadow-2xl">Check your offers</button></a>
                     </div>
                 </div>
             </div>
@@ -31,7 +36,8 @@
                 <div class="container mx-auto mt-8 px-5 pulse">
                     <div class="bg-component p-6 rounded-component relative hover:shadow-sm transition duration-300">
                         <h1 class="text-2xl text-default font-semibold mb-5">VIP Benefits</h1>
-                        <p class="text-defaultsoft leading-6 tracking-normal">Simply by playing, you unlock VIP benefits. @auth Your VIP level is currently at <span class="text-primary font-semibold">level {{ auth()->user()->viplevel }}</span>. @endauth</p>
+                        <p class="text-defaultsoft leading-6 tracking-normal">Simply by playing, you unlock VIP benefits.
+                            @auth Your VIP level is currently at <span class="text-primary font-semibold">level {{ auth()->user()->viplevel }}</span>. @endauth</p>
                         <br>
                         <p class="text-defaultsoft leading-6 tracking-normal">Be it increased rakeback, chance to win jackpot and not to forget <span class="text-primary font-md">every VIP level-up you receive a bunch of free spins.</span></p>
                         <div class="mt-5 hidden sm:flex flex-col show">

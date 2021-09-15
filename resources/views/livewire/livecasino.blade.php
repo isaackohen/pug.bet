@@ -3,6 +3,8 @@
 
 <div class="flex flex-wrap max-w-7xl mx-auto sm:px-3 lg:px-4">
     @foreach($slots as $slotslist)
+    @if($slotslist['_id'] === 'evo_lobby' || $slotslist['_id'] === 'vivo_lobby')
+    @else
     <div data-tilt-scale="1.05" data-tilt-max="8" data-tilt-speed="400" data-tilt-perspective="1000" data-tilt class="xl:w-1/7 lg:w-1/6 md:w-1/4 sm:w-1/3 w-1/2 px-3 my-4 wire:loading.remove">
         <a @auth href="/slots/real/{{$slotslist['_id']}}" @else href="/slots/demo/{{$slotslist['_id']}}" @endauth>
             <div class="group cursor-pointer bg-gray-200 rounded-lg transition duration-400 ease transform translate-x-4 translate-y-4 top-5 hover:bg-primarysoft">
@@ -17,6 +19,7 @@
                 </div>
             </div></a>
         </div>
+    @endif
         @endforeach
     </div>
 
@@ -25,7 +28,7 @@
             <div class="py-12">
                 <aside class="relative overflow-hidden text-gray-300 bg-gray-900 rounded-xl lg:flex">
                     <div class="w-full p-12 text-center lg:w-1/2 sm:p-16 lg:p-24 lg:text-left">
-                        <div class="max-w-xl mx-auto lg:ml-0">w
+                        <div class="max-w-xl mx-auto lg:ml-0">
                             <p class="text-xs text-grey-200 font-semibold">
                                 LIVE CASINO
                             </p>

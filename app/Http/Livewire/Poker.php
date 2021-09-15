@@ -17,7 +17,8 @@ class Poker extends Component
     public function render()
     {
 
-    $login = substr(auth()->user()->_id,0,15);
+    $login = auth()->user()->_id.'_usd_205';
+
     $api = new PokerApi(PokerHelper::getPokerAffID(), PokerHelper::getPokerApikey(), '217.182.195.96', 4000);
     $api->connect();
     $playerid = $api->getIdByLogin($login);

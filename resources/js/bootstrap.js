@@ -21,6 +21,7 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 import Echo from 'laravel-echo';
 //const token = localStorage.getItem('auth._token.local');
+import VanillaTilt from 'vanilla-tilt';
 
 
 window.io = require('socket.io-client');
@@ -61,7 +62,115 @@ connect();
             appendDots: "#dotted"
         });
     });
-  
+  $(document).ready(function() {
+$.request = function(route, options = [], type = 'post', timeout = 25000) {
+    const url = `${!route.startsWith('/') ? '/api/' : ''}${route + (type === 'get' ? arrayToRouteParams(options) : '')}`;
+    return new Promise(function(resolve, reject) {
+        $.ajax({
+            url: url,
+            type: type.toUpperCase(),
+            data: type.toLowerCase() === 'get' ? [] : options,
+            dataType: 'json',
+            timeout: timeout,
+            success: (json) => handleApiResponse(url, json, resolve, reject),
+            error: function(data) {
+                if(data.status === 500) {
+                    console.error('Failed request (500)');
+                    reject(0);
+
+                    if(typeof $.error === "function") {
+                        $.error($.lang('error.code', {'code': 500}));
+                        $.blockPlayButton(false);
+                    }
+                } else if(data.status === 422) {
+                    console.log('Failed validation (422):');
+                    let json = JSON.parse(data.responseText);
+                    console.log(json.message);
+                    console.log(json.errors);
+                    reject(json.errors);
+                } else if(data.status !== 0) {
+                    console.error(`Failed request (${data.status}):`);
+                    console.error(`Route ${route + arrayToRouteParams(options)} is unreachable`);
+                    reject(-1);
+                } else {
+                    console.error(`Route ${route + arrayToRouteParams(options)} timed out (${timeout}ms)`);
+                    reject(0);
+                }
+            }
+        });
+    })
+};
+
+function handleApiResponse(url, json, resolve, reject) {
+    if(json.message != null && json.errors != null) {
+        reject(0);
+        return;
+    }
+
+    if(json.error != null) {
+        if(json.error[0] === -1024) {
+            console.log(url, '-1024', '2FA session expired');
+
+            $.tfa(function() {
+                $.request(route, options, type).then(function(response) {
+                    resolve(response);
+                }, function(error) {
+                    reject(error);
+                });
+            });
+            return;
+        } else console.error(url, json.error[0] + ' > ' + json.error[1]);
+        reject(json.error[0]);
+        return;
+    }
+
+    console.log(url, json);
+    resolve(json.response);
+}
+
+$.formDataRequest = function(route, options) {
+    return new Promise(function(resolve, reject) {
+        $.ajax({
+            url: `${!route.startsWith('/') ? '/api/' : ''}${route}`,
+            type: 'POST',
+            data: options,
+            contentType: false,
+            processData: false,
+            success: function() {
+                resolve();
+            },
+            error: function(data) {
+                reject(data);
+            }
+        });
+    })
+};
+    $('[data-key]').on('input', function() {
+        $.request('/admin/settings/edit', {
+            key: $(this).attr('data-key'),
+            value: $(this).val().length === 0 ? 'null' : $(this).val()
+        });
+    });
+
+    $('#finish').on('click', function() {
+        $('#close').click();
+        $.request('/admin/settings/create', {
+            key: $('#key').val(),
+            description: $('#description').val()
+        }).then(function() {
+            $('.modal-backdrop').remove();
+            redirect(window.location.pathname);
+        }, function(error) {});
+    });
+
+    $('[data-remove]').on('click', function() {
+        $.request('/admin/settings/remove', {
+            'key': $(this).attr('data-remove')
+        }).then(function() {
+            redirect(window.location.pathname);
+        });
+    });
+    });
 
     $(document).ready(function() {
           
