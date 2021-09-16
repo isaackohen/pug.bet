@@ -6,10 +6,13 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Jenssegers\Mongodb\Eloquent\Model;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\DB;
+use Backpack\CRUD\app\Models\Traits\CrudTrait;
 
 class VipLevels extends Model
 {
     use HasFactory;
+    use CrudTrait;
+
     protected $connection = 'mongodb';
     protected $collection = 'viplevels';
 

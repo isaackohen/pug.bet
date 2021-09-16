@@ -24,14 +24,14 @@ return [
     // ----
 
     // Project name. Shown in the window title.
-    'project_name' => 'Backpack Admin Panel',
+    'project_name' => 'Bulk.bet Admin Panel',
 
     // When clicking on the admin panel's top-left logo/name,
     // where should the user be redirected?
     // The string below will be passed through the url() helper.
     // - default: '' (project root)
     // - alternative: 'admin' (the admin's dashboard)
-    'home_link' => '',
+    'home_link' => 'admin',
 
     // Content of the HTML meta robots tag to prevent indexing and link following
     'meta_robots_content' => 'noindex, nofollow',
@@ -42,7 +42,7 @@ return [
 
     // CSS files that are loaded in all pages, using Laravel's asset() helper
     'styles' => [
-       // 'https://demo.bulk.bet/packages/backpack/base/css/bundle.css',
+       'https://demo.bulk.bet/packages/backpack/base/css/bundle.css',
 
         // Here's what's inside the bundle:
         'https://demo.bulk.bet/packages/@digitallyhappy/backstrap/css/style.min.css',
@@ -52,10 +52,10 @@ return [
         // Load the fonts separately (so that you can replace them at will):
         //'packages/source-sans-pro/source-sans-pro.css',
         //'packages/line-awesome/css/line-awesome.min.css',
-         'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css',
+         //'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css',
 
         // Example (the fonts above, loaded from CDN instead)
-         'https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css',
+        // 'https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css',
          'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic',
 
         // Example (load font-awesome instead of line-awesome):
@@ -71,7 +71,7 @@ return [
     // ------
 
     // Menu logo. You can replace this with an <img> tag if you have a logo.
-    'project_logo'   => '<b>Back</b>pack',
+    'project_logo'   => '<b style="color: #7c69ef;">Bulk</b>.admin',
 
     // Show / hide breadcrumbs on admin panel pages.
     'breadcrumbs' => true,
@@ -105,13 +105,13 @@ return [
     // change background color with bg-dark, bg-primary, bg-secondary, bg-danger, bg-warning, bg-success, bg-info, bg-blue, bg-light-blue, bg-indigo, bg-purple, bg-pink, bg-red, bg-orange, bg-yellow, bg-green, bg-teal, bg-cyan, bg-white
 
     // Developer or company name. Shown in footer.
-    'developer_name' => 'Cristian Tabacitu',
+    'developer_name' => 'Bulk.bet',
 
     // Developer website. Link in footer. Type false if you want to hide it.
-    'developer_link' => 'http://tabacitu.ro',
+    'developer_link' => 'http://bulk.bet',
 
     // Show powered by Laravel Backpack in the footer? true/false
-    'show_powered_by' => true,
+    'show_powered_by' => false,
 
     // -------
     // SCRIPTS
@@ -120,16 +120,16 @@ return [
     // JS files that are loaded in all pages, using Laravel's asset() helper
     'scripts' => [
         // Backstrap includes jQuery, Bootstrap, CoreUI, PNotify, Popper
-        //'/packages/backpack/base/js/bundle.js',
-
+       'https://demo.bulk.bet/packages/backpack/base/js/bundle.js',
+       'https://kit.fontawesome.com/23f13eab24.js',
         // examples (everything inside the bundle, loaded from CDN)
-        'https://code.jquery.com/jquery-3.4.1.min.js',
-         'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js',
-         'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js',
-         'https://unpkg.com/@coreui/coreui/dist/js/coreui.min.js',
-         'https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js',
-         'https://unpkg.com/sweetalert/dist/sweetalert.min.js',
-         'https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js'
+        //'https://code.jquery.com/jquery-3.4.1.min.js',
+        // 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js',
+         //'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js',
+         //'https://unpkg.com/@coreui/coreui/dist/js/coreui.min.js',
+         //'https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js',
+         //'https://unpkg.com/sweetalert/dist/sweetalert.min.js',
+         //'https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js',
 
         // examples (VueJS or React)
         // 'https://unpkg.com/vue@2.4.4/dist/vue.min.js',
@@ -236,7 +236,9 @@ return [
 
     // The guard that protects the Backpack admin panel.
     // If null, the config.auth.defaults.guard value will be used.
-    'guard' => 'backpack',
+
+    //changed
+    'guard' => null,
 
     // The password reset configuration for Backpack.
     // If null, the config.auth.defaults.passwords value will be used.

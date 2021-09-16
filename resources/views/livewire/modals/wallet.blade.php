@@ -2,7 +2,7 @@
 
 
 
-<x-modal wire:model.defer="wallet">
+<x-modal wire:model.defer="wallets">
     <div class="container mx-auto px-4 sm:px-8">
     <div class="py-12">
        <div class="inline-flex items-center bg-white leading-none ring-4 ring-blue-40 text-blue-600 rounded-full p-2 mb-5 shadow text-grey-700 text-sm hover:ring-4 hover:ring-blue-10 cursor-pointer">

@@ -7,6 +7,13 @@
       1 => 'Arcanedev\\LogViewer\\Providers\\DeferredServicesProvider',
     ),
   ),
+  'backpack/backupmanager' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Backpack\\BackupManager\\BackupManagerServiceProvider',
+    ),
+  ),
   'backpack/crud' => 
   array (
     'providers' => 
@@ -17,13 +24,6 @@
     array (
       'CRUD' => 'Backpack\\CRUD\\app\\Library\\CrudPanel\\CrudPanelFacade',
       'Widget' => 'Backpack\\CRUD\\app\\Library\\Widget',
-    ),
-  ),
-  'backpack/generators' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'Backpack\\Generators\\GeneratorsServiceProvider',
     ),
   ),
   'backpack/logmanager' => 
@@ -67,6 +67,13 @@
     'aliases' => 
     array (
       'Gravatar' => 'Creativeorange\\Gravatar\\Facades\\Gravatar',
+    ),
+  ),
+  'eduardoarandah/usermanager' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'EduardoArandaH\\UserManager\\UserManagerServiceProvider',
     ),
   ),
   'facade/ignition' => 
@@ -127,17 +134,6 @@
       0 => 'Laravel\\Jetstream\\JetstreamServiceProvider',
     ),
   ),
-  'laravel/nova' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'Laravel\\Nova\\NovaCoreServiceProvider',
-    ),
-    'aliases' => 
-    array (
-      'Nova' => 'Laravel\\Nova\\Nova',
-    ),
-  ),
   'laravel/sail' => 
   array (
     'providers' => 
@@ -157,13 +153,6 @@
     'providers' => 
     array (
       0 => 'Laravel\\Tinker\\TinkerServiceProvider',
-    ),
-  ),
-  'laravel/ui' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'Laravel\\Ui\\UiServiceProvider',
     ),
   ),
   'livewire/livewire' => 
@@ -239,6 +228,13 @@
     'aliases' => 
     array (
       'Alert' => 'Prologue\\Alerts\\Facades\\Alert',
+    ),
+  ),
+  'spatie/laravel-backup' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Spatie\\Backup\\BackupServiceProvider',
     ),
   ),
   'spatie/laravel-permission' => 

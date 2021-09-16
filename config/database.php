@@ -51,6 +51,12 @@ return [
             'password' => env('DB_PASSWORD'),
             'options'  => [
                 'database' => 'admin' // sets the authentication database required by mongo 3
+            ],
+                        'dump' => [
+               'use_single_transaction',
+               'timeout' => 60 * 5, // 5 minute timeout
+               // 'exclude_tables' => ['table1', 'table2'],
+               // 'add_extra_option' => '--optionname=optionvalue',
             ]
         ],
         'mysql' => [

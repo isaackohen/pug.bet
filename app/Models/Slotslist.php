@@ -8,20 +8,22 @@ use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Cache;
 use Carbon\Carbon;
-
+use Backpack\CRUD\app\Models\Traits\CrudTrait;
+ 
 class Slotslist extends User
 {
 
+    use CrudTrait;
 
     use HasFactory;
-  
+      protected $connection = 'mongodb';
+    protected $collection = 'slotslist';
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
     protected $fillable = [
-        '_id',
         'n',
         'desc',
         'p',

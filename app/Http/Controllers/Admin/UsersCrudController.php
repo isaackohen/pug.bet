@@ -16,8 +16,9 @@ class UsersCrudController extends CrudController
     use \Backpack\CRUD\app\Http\Controllers\Operations\ListOperation;
     use \Backpack\CRUD\app\Http\Controllers\Operations\CreateOperation;
     use \Backpack\CRUD\app\Http\Controllers\Operations\UpdateOperation;
-    use \Backpack\CRUD\app\Http\Controllers\Operations\DeleteOperation;
-    use \Backpack\CRUD\app\Http\Controllers\Operations\ShowOperation;
+    //use \Backpack\CRUD\app\Http\Controllers\Operations\DeleteOperation;
+    //use \Backpack\CRUD\app\Http\Controllers\Operations\ShowOperation;
+
 
     /**
      * Configure the CrudPanel object. Apply settings to all operations.
@@ -28,7 +29,7 @@ class UsersCrudController extends CrudController
     {
         CRUD::setModel(\App\Models\User::class);
         CRUD::setRoute(config('backpack.base.route_prefix') . '/users');
-        CRUD::setEntityNameStrings('user', 'user');
+        CRUD::setEntityNameStrings('player', 'players');
 
     }
 
@@ -46,8 +47,7 @@ class UsersCrudController extends CrudController
             'type' => 'table',
             'columns' => [
                 'name'  => 'Name',
-                'desc'  => 'Description',
-                'price' => 'Price',
+                'email'  => 'Description',
             ]
         ]);
     }
@@ -66,25 +66,37 @@ class UsersCrudController extends CrudController
           'label' => "E-mail", // Table column heading
           'type' => 'email'
         ]);
+        $this->crud->addColumn([
+          'name' => 'usd', // The db column name
+          'label' => "Balance", // Table column heading
+          'type' => 'number'
+        ]);
 
-$this->crud->addColumn([
-    'name'        => 'viplevel',
-    'label'       => 'VIP Level',
-    'type'        => 'radio',
-    'options'     => [
-        0 => 'Level 0',
-        1 => 'Level 1',
-        2 => 'Level 2',
-        3 => 'Level 3',
-        4 => 'Level 4',
-        5 => 'Level 5',
-        6 => 'Level 6',
-        7 => 'Level 7',
-        8 => 'Level 8',
-        9 => 'Level 9',
-        10 => 'Level 10'
-    ]
-]);
+        $this->crud->addColumn([
+            'name'        => 'viplevel',
+            'label'       => 'VIP',
+            'type'        => 'radio',
+            'options'     => [
+                0 => 'Level 0',
+                1 => 'Level 1',
+                2 => 'Level 2',
+                3 => 'Level 3',
+                4 => 'Level 4',
+                5 => 'Level 5',
+                6 => 'Level 6',
+                7 => 'Level 7',
+                8 => 'Level 8',
+                9 => 'Level 9',
+                10 => 'Level 10'
+            ]
+        ]);
+
+        $this->crud->addColumn([
+          'name' => 'created_at', // The db column name
+          'label' => "Created", // Table column heading
+          'type' => 'datetime'
+        ]);
+
 
 $this->crud->enableExportButtons();
 
@@ -119,22 +131,55 @@ $this->crud->enableExportButtons();
     protected function setupCreateOperation()
     {
         CRUD::setValidation(UsersRequest::class);
+
       $this->crud->addField([
         'name' => 'name',
         'type' => 'text',
-        'label' => "Name"
+        'label' => "Name",
+        'tab' => 'User'
+
       ]);
       $this->crud->addField([
         'name' => 'email',
         'type' => 'text',
-        'label' => "E-mail Address"
+        'label' => "E-mail Address",
+        'tab' => 'User'
       ]);
+      $this->crud->addField([
+        'name' => 'password',
+        'type' => 'password',
+        'label' => "Password",
+        'tab' => 'Change User\'s Password'
+      ]);
+
       $this->crud->addField([
         'name' => 'viplevel',
         'type' => 'text',
-        'label' => "VIP Level"
+        'label' => "VIP Level",
+        'tab' => 'User'
       ]);
 
+      $this->crud->addField([
+        'name' => 'usd',
+        'type' => 'number',
+        'label' => "User Balance ($)",
+        'tab' => 'User'
+      ]);
+      
+      $this->crud->addField([
+        'name' => 'freespins',
+        'type' => 'text',
+        'label' => "Free Spins (used on Evoplay)",
+        'tab' => 'User'
+      ]);
+
+        $this->crud->addField([
+            'name'        => 'is_admin',
+            'label'       => 'Admin',
+            'type' => 'boolean',
+        'tab' => 'User'
+
+        ]);
         //CRUD::setFromDb(); // fields
 
         /**

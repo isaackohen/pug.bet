@@ -27,9 +27,9 @@
 
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
-        <script src="/js/extra/loading-bar.min.js" defer></script>
         <wireui:scripts />
         <livewire:scripts/>
+        <script src="/js/extra/loading-bar.min.js" defer></script>
 
     </head>
     <body class="font-body">
@@ -48,7 +48,7 @@
             @livewire('navigation-menu')
 
             <!-- Page Content -->
-            <main id="app">
+            <main>
                 {{ $slot }}
             </main>
 

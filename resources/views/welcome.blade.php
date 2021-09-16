@@ -15,7 +15,7 @@ $featuredslots = \App\Models\Settings::where('key', 'featured_slots')->first()->
     
     @foreach($slotslist->shuffle() as $game)
     @if(in_array($game["_id"], explode(',', $featuredslots)))
-    <div class="xl:w-1/7 lg:w-1/6 md:w-1/6 sm:w-1/5 w-1/3 sm:p-4 p-2 my-2 pulse">
+    <div class="xl:w-1/7 lg:w-1/5 md:w-1/5 sm:w-1/3 xs:w-1/2 p-3 w-1/2 my-2 pulse">
         @if($game["ext"] === "c2")
         <a @auth href="/slots/real/{{$game['_id']}}" @else href="/slots/demo/{{$game['_id']}}" @endauth>
         @else

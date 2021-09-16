@@ -19,14 +19,14 @@ class GameController extends Controller
 
     public function slotsPage()
     {
-        $slots = DB::table('slotslist')->where('p', '!=', 'playstar')->where('d', '!=', '1')->where('p', '!=', 'upgames')->simplePaginate(60);
+        $slots = DB::table('slotslist')->where('p', '!=', 'playstar')->where('d', '!=', '1')->where('p', '!=', 'upgames')->simplePaginate(132);
         return view('slots/slotslist', compact('slots'));
     }
 
 
     public function providerPage($provider)
     {
-        $slots = DB::table('slotslist')->where('p', '=', $provider)->simplePaginate(60);
+        $slots = DB::table('slotslist')->where('p', '=', $provider)->simplePaginate(132);
 
         return view('slots/slotslist', compact('slots'));
     }

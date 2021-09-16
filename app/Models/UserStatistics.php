@@ -4,11 +4,20 @@ namespace App\Models;
   
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Jenssegers\Mongodb\Eloquent\Model as Eloquent;
-  
+  use Backpack\CRUD\app\Models\Traits\CrudTrait;
+
 class UserStatistics extends User
 {
     use HasFactory;
-  
+      use CrudTrait;
+
+    public function user()
+    {
+        return $this->belongsTo('App\Models\User');
+    }
+
+
+
     /**
      * The attributes that are mass assignable.
      *

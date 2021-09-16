@@ -4,38 +4,28 @@
 @import "slick.css";
 
 :root {
-
-
   --color-text-default: black;
   --color-text-default-soft: black;
   --color-text-primary: #6366f1;
   --color-text-primary-focus: #8462f4;
 
-
   --font-weight-normal: 400;
   --font-weight-display: 400;
   --font-weight-btn: 600;
-
-
   --font-body-sans:  ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-
 
   --color-bg-default: #ffffff;
   --color-bg-component: #f3f4f6;
 
   --color-bg-primary: #6366f1;
   --color-bg-primary-soft: #5154ef;
---color-bg-primary-light: #f3f3fe; 
+  --color-bg-primary-light: #f3f3fe; 
   --color-bg-secondary: #ffc402;
   --rounded-component: 20px;
-
-
   --box-shadow-component:  12px 8px 24px #0000004c;
 
   --color-bg-inverse: #fff;
-
   --color-text-secondary: #fff;
-
   --color-text-inverse: #444;
   --color-text-inverse-soft: #767676;
 
@@ -44,11 +34,47 @@
     'DejaVu Sans', 'Bitstream Vera Sans', 'Liberation Sans', Verdana,
     'Verdana Ref', sans-serif;
 
-
   --rounded-btn: 0.25rem;
 }
+ @media(max-width: 550px) {
+     .slick_slots_browse_poster {
+         height: auto;
+         background: transparent !important;
+         width: calc(50vw - 50px) !important;
+         background-position-y: center;
+         aspect-ratio: auto 445 / 589;
+    }
+}
+.long-slick-cover {
+aspect-ratio: auto 445 / 589;
+border-radius: 6px;
+width: 100%;
+height: 100%;
+transition: all 0.2s ease !important;
+object-fit: cover;
+}
+.slick_slots_browse_poster {
+height: 190px;
+}
+.slick_slots_browse_poster {
+display: inline-flex;
+margin: 12px;
+font-size: 10px;
+background-size: cover !important;
+transition: all 0.2s ease !important;
 
+background-repeat: no-repeat !important;
+background-position: center !important;
+z-index: 1;
+top: 0;
+position: relative;
+cursor: pointer;
+border-radius: 6px;
+}
 
+#slotmachine-thumb {
+aspect-ratio: auto 445 / 589;
+}
 .game-slot {
   box-shadow:  0 7px 10px rgb(0 0 0 / 50%);
 

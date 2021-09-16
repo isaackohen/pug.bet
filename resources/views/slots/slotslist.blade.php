@@ -1,51 +1,47 @@
 <x-app-layout>
 
-    <style>
-.js-tilt-glare {
-border-radius: 18px;
-}
-
-#game-card {
-  transform-style: preserve-3d;
-  transform: perspective(1000px);
-}
-
-#thumbnail-text {
-  transform: translateZ(10px);
-}
-
-
-</style>
-
-<div class="d-flex justify-content-center pr-7 pl-7">
-    {{ $slots->onEachSide(5)->links() }}
-</div>
-
-<div class="flex flex-wrap mt-2 max-w-7xl mx-auto sm:px-6 lg:px-8">
+<div class="flex flex-wrap max-w-6xl mx-auto sm:px-3 lg:px-4">
     @foreach($slots->shuffle() as $game)
-    <div data-tilt-scale="1.05" data-tilt-max="10" data-tilt-speed="500" data-tilt-perspective="1000" data-tilt class="xl:w-1/7 lg:w-1/6 md:w-1/4 sm:w-1/3 w-1/2 p-2 my-4 wire:loading.remove">
-        @if($game["ext"] === "c2")
-        <a @auth href="/slots/real/{{$game['_id']}}" @else href="/slots/demo/{{$game['_id']}}" @endauth>
+    @if($game["ext"] === "c2")
+    <a @auth href="/slots/real/{{$game['_id']}}" @else href="/slots/demo/{{$game['_id']}}" @endauth>
         @else
         <a @auth href="/slots/real/{{$game['_id']}}" @else onclick="$openModal('login')" @endauth>
-        @endif
-            <div class="group cursor-pointer bg-gray-200 rounded-lg transition duration-300 ease hover:bg-primary hover:shadow-2xl">
-                <div class="absolute inset-0 z-10 bg-gray-100 rounded-t-lg text-center flex flex-col items-center justify-center opacity-20 hover:opacity-0 bg-opacity-0 duration-400 ease"></div>
-                <img class="big-thumbnail rounded-t-lg" src="https://cdn.apigamble.com/i/long/jpg/{{$game['_id']}}.jpg" alt="">
-                <div class="flex flex-col p-3 font-semibold text-black group-hover:text-gray-100">
-                    <p class="text-xs md:text-xs sm:text-xs">{{$game['n']}}</p>
-                    <p class="text-xs font-light text-gray-400 group-hover:text-gray-300 mt-1">
-                        {{$game['p']}}
-                        <span class="text-xs opacity-0 float-right font-semibold text-blue-200 group-hover:opacity-100">play</span>
-                    </p>
+            @endif
+            <div onclick="redirect('/game/{{$game['_id']}}')" class="slick_slots_browse_poster justify-center bg-gray-700 pulse group shadow-2xl hover:-top-1">
+                <div class="main-thumb opacity-95 group-hover:opacity-10">
+                    <div class="long-slick-cover" style="aspect-ratio: auto 445 / 589;">
+                        <img class="long-slick-cover" id="slotmachine-thumb" alt="Slotmachine" style="aspect-ratio: auto 445 / 589;" width="100%" height="100%" loading="lazy" src="https://cdn.static.bet/i/long/jpg/{{$game['_id']}}.jpg">
+                    </div>
                 </div>
-            </div></a>
-        </div>
+                <div class="absolute opacity-0 content-center pt-4 group-hover:opacity-100">
+                    <div class="name">
+                    <div class="font-bold mt-2 text-white" style="font-size: 10px !important;">{{$game['n']}}</div>
+                                        <div class="font-light mt-2 text-white" style="font-size: 9px !important;">by <span class="font-semibold" style="font-size: 9px !important;">{{$game['p']}}</span></div>
+
+                    </div>
+                    <div>
+                    <div class="py-2 px-2 mt-10 bg-primary text-center text-xs text-white hover:bg-primarysoft rounded-component hover:shadow-2xl">Play</div>
+                </div>
+                </div>
+            </div>
+        </a>
         @endforeach
-        
 
     </div>
-<div class="d-flex justify-content-center p-5">
-        {{ $slots->links() }}
-    </div>
+
+    <br>
+    <br>
+<div class="flex flex-wrap max-w-7xl bg-primary mx-auto py-1 sm:px-6 lg:px-4" style="border-radius: 16px;">
+
+<div class="d-flex justify-content-center p-1">
+            {{ $slots->links() }}
+        </div>
+
+</div>
+    <br>
+    <br>
+    <br>
+    <br>
+        </div>
+
 </x-app-layout>

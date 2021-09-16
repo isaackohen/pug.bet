@@ -45,7 +45,8 @@
                     @if (Laravel\Jetstream\Jetstream::managesProfilePhotos())
                     <button class="flex text-sm border-2 border-transparent rounded-full hover:outline-none focus:outline-none">
                     <img class="h-6 w-6 rounded-full object-cover mt-2 ml-2" src="{{ Auth::user()->profile_photo_url }}" alt="{{ Auth::user()->name }}" />
-                    <div wire:poll class="mt-3 mr-3 ml-3">
+                    <div wire:poll.4000ms class="mt-3 mr-3 ml-3">
+
                         <span class="text-primary hover:text-primarysoft">{{auth()->user()->balance()}}$</span>    
                     </div>
                     </button>
@@ -68,7 +69,7 @@
                     <div class="block px-4 py-2 text-xs text-gray-400">
                         {{ __('Your Account') }}
                     </div>
-                    <x-jet-dropdown-link onclick="$openModal('wallet')" href="#">
+                    <x-jet-dropdown-link onclick="$openModal('wallets')" href="#">
                     {{ __('Wallet') }}
                     </x-jet-dropdown-link>
                     <x-jet-dropdown-link href="{{ route('bonus') }}">

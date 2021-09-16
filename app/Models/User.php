@@ -2,8 +2,6 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Model;
-
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Jenssegers\Mongodb\Auth\User as Authenticatable;
@@ -21,8 +19,11 @@ use Maklad\Permission\Traits\HasRoles;
 use Maklad\Permission\Models\Role;
 use Maklad\Permission\Models\Permission;
 use Illuminate\Support\Facades\Cache;
- use Carbon\Carbon;
+use Carbon\Carbon;
 use Backpack\CRUD\app\Models\Traits\CrudTrait;
+use Illuminate\Support\Facades\Hash;
+
+
 class User extends Authenticatable implements MustVerifyEmail
 {
     use HasApiTokens;
@@ -35,9 +36,13 @@ class User extends Authenticatable implements MustVerifyEmail
     protected $connection = 'mongodb';
     public $guard_name = 'sanctum';
 
+    public function setPasswordAttribute($value) {
+        $this->attributes['password'] = Hash::make($value);
+    }
+
 public function openGoogle($crud = false)
 {
-    return '<a class="btn btn-sm btn-link" target="_blank" href="http://google.com?q='.urlencode($this->text).'" data-toggle="tooltip" title="Just a demo custom button."><i class="fa fa-search"></i> Google it</a>';
+    return '<a class="btn btn-sm btn-link" target="_blank" href="http://google.com?q='.urlencode($this->name).'" data-toggle="tooltip" title="Just a demo custom button."><i class="fa fa-search"></i> User Stats</a>';
 }
     /**
      * The attributes that are mass assignable.
@@ -92,6 +97,10 @@ public function openGoogle($crud = false)
     ];
 
 
+    public function userstatistics()
+    {
+        return $this->hasMany('App\Models\UserStatistics');
+    }
 
     public function add(float $amount, $type, $reason, $internal = null, array $data = null) {
         $decode = json_decode($internal, true);
